@@ -1,0 +1,473 @@
+filename,description
+td_world_acid.png,acid
+td_world_acid_a1.png,spilt acid
+td_world_acid_a2.png,acid
+td_world_acid_edge.png,acid
+td_world_bed.png,bed
+td_world_blank.png,blank
+td_world_blood_a.png,blood
+td_world_blood_b.png,spilt blood
+td_world_blood_bone.png,blood and bone
+td_world_blood_bone.png,blood and bones
+td_world_blood_c.png,blood
+td_world_blood_d.png,red ink
+td_world_blood_d.png,spilt red ink
+td_world_blood_d.png,spilt red paint
+td_world_bones_a.png,bones
+td_world_bones_b.png,Alot of bones
+td_world_bones_d.png,bones  
+td_world_bookshelf_a.png,bookshelf
+td_world_bookshelf_a.png,Full bookshelf
+td_world_bookshelf_b.png,bookshelf
+td_world_bookshelf_b.png,Empty bookshelf
+td_world_campfire1.png,campfire
+td_world_campfire1.png,lit campfire
+td_world_campfire2.png,campfire
+td_world_campfire2.png,lit campfire
+td_world_campfire_stones.png,stones
+td_world_campfire_stones.png,campfire stones
+td_world_candles_a1.png,candles
+td_world_candles_a2.png,lit candles
+td_world_cauldron1.png,cauldron
+td_world_cauldron1.png,pot
+td_world_cauldron1.png,metal pot
+td_world_chair.png,chair
+td_world_chair.png,wooden chair
+td_world_chest.png,chest
+td_world_chest_empty.png,empty chest
+td_world_crate.png,crate
+td_world_crate_broken.png,broken crate
+td_world_door_evil_h_closed.png,door
+td_world_door_evil_h_closed.png,evil door
+td_world_door_evil_h_closed.png,red door
+td_world_door_gate_h_closed.png,door
+td_world_door_stone_h_closed.png,door
+td_world_door_stone_h_closed.png,stone door
+td_world_door_wood_h_closed.png,wooden door
+td_world_floor_carpet_a.png,red floor
+td_world_floor_carpet_a.png,carpet
+td_world_floor_carpet_b.png,floor carpet
+td_world_floor_carpet_c.png,carpet on floor
+td_world_floor_carpet_d.png,carpet with a design
+td_world_floor_carpet_d.png,design carpet
+td_world_floor_carpet_e.png,carpet with a design
+td_world_floor_carpet_e.png,design carpet
+td_world_floor_cobble2_a.png,cobble
+td_world_floor_cobble2_b.png,cobble
+td_world_floor_cobble2_c.png,cobble
+td_world_floor_cobble2_d.png,cobble
+td_world_floor_cobble2_drain.png,cobble drain
+td_world_floor_cobble2_drain.png,drain in cobble path
+td_world_floor_cobble2_e.png,cobble
+td_world_floor_cobble2_f.png,cobble
+td_world_floor_cobble2_pit_edge.png,pit
+td_world_floor_cobble_a-119.png,cobble
+td_world_floor_cobble_a.png,coble
+td_world_floor_cobble_b-120.png,cobble stone
+td_world_floor_cobble_b.png,coble stone path
+td_world_floor_cobble_c-121.png,coble stone path
+td_world_floor_cobble_c.png,coble stone
+td_world_floor_cobble_d-122.png,coble stone path
+td_world_floor_cobble_d.png,coble stone
+td_world_floor_cobble_drain.png,cobble drain
+td_world_floor_cobble_e-123.png,coble stone path
+td_world_floor_cobble_e.png,cobble floor
+td_world_floor_cobble_f.png,cobble stone floor
+td_world_floor_cobble_pit_edge.png,pit
+td_world_floor_dirt_a.png,dirt
+td_world_floor_dirt_b.png,dirt path
+td_world_floor_dirt_c.png,dirt path
+td_world_floor_dirt_d.png,dirt path
+td_world_floor_dirt_e.png,dirt path
+td_world_floor_dirt_f.png,dirt path
+td_world_floor_dirt_hole.png,dirt hole
+td_world_floor_dirt_hole.png,entrance
+td_world_floor_dirt_pit_edge.png,pit
+td_world_floor_grass_a.png,grass
+td_world_floor_grass_b.png,grass
+td_world_floor_grass_c.png,grass
+td_world_floor_grass_c.png,green
+td_world_floor_grass_d.png,grass with flower
+td_world_floor_grass_e.png,grass with flower
+td_world_floor_grass_f.png,grass with flower
+td_world_floor_grass_f.png,flower
+td_world_floor_grass_path_a.png,grass path
+td_world_floor_grass_path_b.png,grass path
+td_world_floor_grass_path_d.png,grass path
+td_world_floor_grass_path_a.png,stone and grass path
+td_world_floor_grass_path_b.png,stone and grass path
+td_world_floor_grass_path_d.png,stone and grass path
+td_world_floor_grass_pit_edge.png,pit
+td_world_floor_grass_tile_c.png,grass path
+td_world_floor_mossy_a.png,moss floor
+td_world_floor_mossy_c.png,moss floor
+td_world_floor_mossy_c.png,stone floor
+td_world_floor_mossy_d.png,moss floor
+td_world_floor_mossy_e.png,moss floor path
+td_world_floor_pit.png,pit
+td_world_floor_tile2_a.png,mud floor 
+td_world_floor_tile2_b.png,mud floor office floor path
+td_world_floor_tile2_c.png,mud floor path office floor path
+td_world_floor_tile2_d.png,mud floor path floor
+td_world_floor_tile2_e.png,mud floor path floor
+td_world_floor_tile3_a.png,red floor
+td_world_floor_tile3_b.png,evil floor 
+td_world_floor_tile3_c.png,red floor path
+td_world_floor_tile3_d.png,evil floor path
+td_world_floor_tile3_e.png,evil floor path
+td_world_floor_tile_a.png,office floor
+td_world_floor_tile_b.png,office floor
+td_world_floor_tile_c.png,office floor
+td_world_floor_tile_d.png,office floor path
+td_world_floor_tile_e.png,office floor path
+td_world_floor_wood_a.png,wooden floor
+td_world_floor_wood_b.png,wooden floor path
+td_world_floor_wood_c.png,wood floor path
+td_world_floor_wood_d.png,wood floor
+td_world_house_door_closed.png,house door closed
+td_world_house_door_open.png,house door open
+td_world_house_roof_a.png,house roof
+td_world_house_roof_b.png,house roof 
+td_world_house_roof_c.png,house roof chimney
+td_world_house_wall.png,house wall
+td_world_house_wall.png,wall
+td_world_house_wall_lit.png,house wall lit
+td_world_house_wall_lit.png,wall lit
+td_world_house_wall_lit.png,wall with lamp
+td_world_lava.png,lava
+td_world_lava_a1.png,lava
+td_world_lava_a2.png,lava
+td_world_lava_edge.png,lava
+td_world_lava_edge_a1.png,lava
+td_world_lava_edge_a2.png,lava
+td_world_level_right.png,lever
+td_world_lever_left.png,lever
+td_world_lilypad_a1.png,lilypad
+td_world_lilypad_a2.png,lilypad
+td_world_lilypad_b1.png,lilypad
+td_world_lilypad_b2.png,lilypad
+td_world_lilypad_c1.png,lilypad
+td_world_lilypad_c2.png,lilypad
+td_world_lilypad_d1.png,lilypad
+td_world_lilypad_d2.png,lilypad
+td_world_magic_a.png,magic
+td_world_magic_b.png,magic
+td_world_magic_c.png,magic
+td_world_magic_d.png,magic
+td_world_magic_e1.png,neon
+td_world_magic_e2.png,neon
+td_world_mud_a1.png,mud
+td_world_mud_a2.png,mud path
+td_world_murky_a1.png,mist
+td_world_murky_a2.png,murky
+td_world_mushroom_pink.png,mushroom pink
+td_world_mushroom_red.png,mushroom red
+td_world_mushroom_yellow.png,mushroom yellow
+td_world_shadow.png,shadow
+td_world_shrub_a.png,shrub
+td_world_shrub_a.png,bush
+td_world_shrub_b.png,shrub
+td_world_shrub_b.png,tree
+td_world_shrub_b.png,bush
+td_world_sign_blank.png,blank sign
+td_world_sign_inn.png,inn sign
+td_world_sign_potions.png,potions sign 
+td_world_sign_weapons.png,weapons sign
+td_world_slab_a.png,slab
+td_world_slab_b.png,slab with bones
+td_world_slab_left.png,slab left
+td_world_slab_middle.png,slab middle
+td_world_slab_right.png,slab right
+td_world_stalagmite_a.png,stalagmite
+td_world_stalagmite_b.png,mineral
+td_world_stalagmite_b.png,mineral deposit
+td_world_statue_tentacle.png,statue
+td_world_statue_tentacle.png,ancient structure
+td_world_statue_warrior.png,statue warrior
+td_world_statue_winged.png,statue winged
+td_world_stone_cave.png,cave stone
+td_world_stone_cave.png,rock
+td_world_stone_cave.png,boulder
+td_world_stone_cave.png,dirt stone
+td_world_stone_grey.png,stone
+td_world_stone_grey.png,grey stone
+td_world_swamp.png,swamp
+td_world_swamp_a1.png,swamp
+td_world_swamp_a2.png,swamp
+td_world_table.png,table
+td_world_table_left_a.png,table
+td_world_table_left_b.png,table
+td_world_table_middle_a.png,table 
+td_world_table_middle_b.png,table with paper 
+td_world_table_right_a.png,table and chair
+td_world_table_right_b.png,table with chair
+td_world_throne_evil.png,evil thorne
+td_world_throne_wood.png,wooden thorne
+td_world_throne_wood.png,thorne
+td_world_tombstone.png,tombstone
+td_world_tombstone_broken.png,tombstone broken
+td_world_torch_light1.png,torch
+td_world_torch_light1.png,lamp
+td_world_torch_light2.png,torch with light
+td_world_trap.png,trap
+td_world_trapdoor_closed.png,trapdoor
+td_world_trapdoor_closed.png,hidden door
+td_world_trapdoor_open2.png,trapdoor open
+td_world_urns_a.png,urns
+td_world_urns_b.png,urns
+td_world_urns_c.png,urn
+td_world_wall_cave_h_a.png,cave wall
+td_world_wall_cave_h_b.png,cave wall
+td_world_wall_cave_h_c.png,cave wall
+td_world_wall_cave_h_crack.png,cracked cave wall
+td_world_wall_cave_h_d.png,cave wall
+td_world_wall_cave_h_e.png,cave wall
+td_world_wall_cave_pool_empty.png,empty cave pool
+td_world_wall_cave_pool_full.png,full cave pool
+td_world_wall_cave_pool_full.png,full mud pool
+td_world_wall_cave_stair_down.png,cave stair down
+td_world_wall_cave_stair_up.png,cave stair up
+td_world_wall_cave_v_a.png,cave wall
+td_world_wall_cave_v_b.png,cave wall
+td_world_wall_cave_v_c.png,cave wall
+td_world_wall_cave_v_crack.png,cracked cave wall
+td_world_wall_cave_v_crack.png,cave floor
+td_world_wall_cave_v_d.png,cave wall
+td_world_wall_cave_v_e.png,cave wall
+td_world_wall_crypt_h_a.png,office wall
+td_world_wall_crypt_h_b.png,futuristic wall
+td_world_wall_crypt_h_c.png,futuristic wall
+td_world_wall_crypt_h_crack.png,cracked futuristic wall
+td_world_wall_crypt_h_d.png,crypt wall
+td_world_wall_crypt_h_e.png,crypt wall
+td_world_wall_crypt_pool_empty.png,futuristic pool empty
+td_world_wall_crypt_pool_full.png,futuristic pool full
+td_world_wall_crypt_pool_full.png,pool
+td_world_wall_crypt_stair_down.png,futuristic stair down
+td_world_wall_crypt_stair_up.png,futuristic stair up
+td_world_wall_crypt_v_a.png,futuristic wall
+td_world_wall_crypt_v_b.png,futuristic wall
+td_world_wall_crypt_v_c.png,futuristic wall
+td_world_wall_crypt_v_crack.png,cracked futuristic wall
+td_world_wall_crypt_v_d.png,futuristic wall
+td_world_wall_crypt_v_e.png,futuristic wall
+td_world_wall_sewer_h_a.png,sewer wall
+td_world_wall_sewer_h_b.png,sewer wall
+td_world_wall_sewer_h_c.png,sewer wall
+td_world_wall_sewer_h_crack.png,cracked sewer wall
+td_world_wall_sewer_h_d.png,sewer wall
+td_world_wall_sewer_h_e.png,sewer wall
+td_world_wall_sewer_pool_empty.png,sewer pool empty
+td_world_wall_sewer_pool_full.png,sewer pool full
+td_world_wall_sewer_pool_full.png,pool
+td_world_wall_sewer_stair_down.png,sewer stair down
+td_world_wall_sewer_stair_up.png,sewer stair up
+td_world_wall_sewer_v_a.png,mud wall
+td_world_wall_sewer_v_b.png,mud wall
+td_world_wall_sewer_v_c.png,mud wall
+td_world_wall_sewer_v_crack.png,cracked mud wall
+td_world_wall_sewer_v_d.png,mud wall
+td_world_wall_sewer_v_e.png,mud wall
+td_world_wall_stone_h_a.png,stone wall
+td_world_wall_stone_h_a.png,stone fence
+td_world_wall_stone_h_b.png,stone wall
+td_world_wall_stone_h_c.png,stone wall
+td_world_wall_stone_h_crack.png,cracked stone wall
+td_world_wall_stone_h_d.png,stone wall
+td_world_wall_stone_h_e.png,stone wall
+td_world_wall_stone_pool_empty.png,stone pool empty
+td_world_wall_stone_pool_full.png,stone pool full
+td_world_wall_stone_stair_down.png,stone stair down
+td_world_wall_stone_stair_up.png,stone stair up
+td_world_wall_stone_v_a.png,metal wall
+td_world_wall_stone_v_b.png,metal wall
+td_world_wall_stone_v_c.png,metal wall
+td_world_wall_stone_v_crack.png,cracked metal wall
+td_world_wall_stone_v_d.png,metal wall
+td_world_wall_stone_v_e.png,metal wall
+td_world_water_a1.png,water
+td_world_water_a1.png,Frozen water
+td_world_water_a2.png,water
+td_world_web_ne.png,web
+td_world_web_nw.png,web
+td_world_web_se.png,web
+td_world_web_sw.png,web
+tiny_dungeon_web.png,web
+td_items_amulet_gold.png,gold amulet
+td_items_amulet_magic.png,magice amulet
+td_items_amulet_silver.png,silver amulet
+td_items_arrow.png,arrow
+td_items_bandage.png,bandage
+td_items_bolt.png,bolt
+td_items_book_black.png,black book
+td_items_book_brown.png,brown book
+td_items_book_green.png,green book
+td_items_caltrops.png,caltrops
+td_items_caltrops.png,galtrops
+td_items_caltrops.png,cheval traps
+td_items_caltrops.png,galthraps
+td_items_cape_leather.png,leather cape
+td_items_cape_magic.png,magic cape
+td_items_cape_purple.png,neon light
+td_items_coins_copper.png,copper coins
+td_items_coins_gold.png,gold coins
+td_items_coins_silver.png,silver coins
+td_items_compass.png,compass
+td_items_cross.png,cross
+td_items_cross.png,ancient artifact
+td_items_crown_evil.png,evil crown
+td_items_crown_gold.png,gold crown
+td_items_crown_silver.png,silver crown
+td_items_crystal_empty.png,crystal
+td_items_crystal_full.png,glowing crystal
+td_items_darts.png,darts
+td_items_feather.png,feather
+td_items_flask_blue.png,blue flask
+td_items_flask_green.png,green flask
+td_items_flask_red.png,red flask
+td_items_gem_amethyst.png,amethyst gem
+td_items_gem_garnet.png,garnet gem
+td_items_gem_jade.png,gem judy
+td_items_gem_ruby.png,gem ruby
+td_items_gem_sapphire.png,gem sapphire
+td_items_hat_leather.png,leather hat
+td_items_hat_magic.png,magic hat
+td_items_hat_purple.png,purple hat
+td_items_heart_empty.png,empty heart
+td_items_heart_full.png,heart
+td_items_heart_full.png,full heart
+td_items_herb_gold.png,gold herb
+td_items_herb_green.png,herb
+td_items_herb_green.png,green herb
+td_items_herb_red.png,red herd
+td_items_key_gold.png,gold key
+td_items_key_magic.png,magic key
+td_items_leather_boot.png,leather boot
+td_items_leather_chest.png,leather chest wear
+td_items_leather_glove.png,leather glove
+td_items_leather_helm.png,leather helm
+td_items_leather_pant.png,leather pant
+td_items_magic_boot.png,magic boot
+td_items_magic_chest.png,megic chest wear
+td_items_magic_glove.png,magic glove
+td_items_magic_helm.png,megic helm
+td_items_magic_pant.png,megic pant
+td_items_map.png,map
+td_items_potion_black.png,black potion
+td_items_potion_blue.png,blue potion
+td_items_potion_green.png,green potion
+td_items_potion_red.png,red potion
+td_items_potion_yellow.png,yellow potion
+td_items_quiver.png,quiver
+td_items_ring_gold.png,gold ring
+td_items_ring_magic.png,magic ring
+td_items_ring_silver.png,silver ring
+td_items_rope.png,rope
+td_items_sack.png,sack
+td_items_scroll.png,scroll
+td_items_shield_magic.png,magic shield
+td_items_shield_steel.png,steel shield
+td_items_shield_wood.png,wood shield
+td_items_skull.png,skull
+td_items_skull_gold.png,gold skull
+td_items_skull_gold.png,lamp
+td_items_steel_boot.png,steel boot
+td_items_steel_chest.png,steel chest wear
+td_items_steel_glove.png,steel glove
+td_items_steel_helm.png,steel helm
+td_items_steel_pant.png,steel pant
+td_items_stone.png,stone
+td_items_token_copper.png,copper token
+td_items_token_gold.png,gold tokken
+td_items_token_silver.png,silver token
+td_items_torch1.png,torch
+td_items_torch2.png,torch
+td_items_turkey.png,tyrkey
+td_items_weapon_axe.png,weapon axe
+td_items_weapon_bow.png,weapon bow
+td_items_weapon_club.png,weapon club
+td_items_weapon_crossbow.png,weapon crossbow
+td_items_weapon_dagger.png,weapon dagger
+td_items_weapon_hammer.png,weapon hammer
+td_items_weapon_mace.png,weapon mace
+td_items_weapon_quarterstaff.png,weapon quarterstaff
+td_items_weapon_shortsword.png,weapon short sword
+td_items_weapon_sling.png,weapon sling
+td_items_weapon_staff.png,weapon staff
+td_items_weapon_sword.png,weapon sword
+tg_items_medkit_blue.png,blue medical kit
+tg_items_medkit_green.png,green medical kit
+tg_items_medkit_red.png,red medical kit
+tg_space_asteroid_b4.png,small astroid
+tg_space_asteroid_b4.png,small rock
+tg_space_asteroid_c2.png,big astroid
+tg_space_asteroid_c2.png,big rock
+tg_space_ship_alien_u.png,alien space ship
+tg_space_ship_human_u.png,human space ship
+tg_world_barrel.png,barrel
+tg_world_barrel_sludge.png,barrel with acid
+tg_world_bathroom_latrine_a.png,latrine
+tg_world_bathroom_latrine_a.png,flush
+tg_world_cage_closed_a.png,cage
+tg_world_chair.png,metal chair
+tg_world_chest_closed.png,metal chest
+tg_world_command_chair.png,red chair
+tg_world_door_lab_h_closed.png,lab door
+tg_world_door_lab_h_closed.png,office door
+tg_world_floor_carpet_d.png,carpet
+tg_world_floor_carpet_d.png,carpet with design
+tg_world_floor_carpet_e.png,carpet with small design
+tg_world_floor_hazard.png,hazard floor
+tg_world_floor_moss_d.png,moss with flowers
+tg_world_floor_moss_e.png,moss with slower
+tg_world_floor_moss_f.png,moss with flower
+tg_world_floor_panel_metal_a.png,metal floor
+tg_world_floor_panel_metal_b.png,metal floor
+tg_world_floor_panel_metal_c.png,metal floor
+tg_world_floor_panel_metal_c.png,metal panel
+tg_world_floor_panel_metal_grate.png,metal floor
+tg_world_floor_panel_metal_grate.png,metal grate
+tg_world_floor_panel_metal_grate.png,steel floor
+tg_world_floor_panel_steek_b.png,steel floor
+tg_world_floor_panel_steel_a.png,steel floor
+tg_world_floor_panel_steel_c.png,steel floor
+tg_world_floor_panel_steel_c.png,steel panel
+tg_world_floor_panel_steel_grate.png,steel floor
+tg_world_floor_panel_steel_grate.png,steel grate
+tg_world_floor_plate_blue.png,blue floor plate
+tg_world_floor_plate_blue.png,blue floor
+tg_world_floor_plate_grey.png,crystal floor
+tg_world_floor_plate_grey.png,grey floor plate
+tg_world_floor_plate_grey.png,grey floor 
+tg_world_floor_quad_checker_a.png,office floor
+tg_world_floor_quad_green_a.png,floor checkered green
+tg_world_floor_quad_green_a.png,floor green
+tg_world_floor_quad_grey_a.png,floor checkered grey
+tg_world_floor_quad_grey_a.png,floor grey
+tg_world_floor_quad_teal_a.png,floor checkered teal
+tg_world_floor_quad_teal_a.png,floor teal
+tg_world_floor_sand_f.png,sand
+tg_world_floor_sand_f.png,sand floor
+tg_world_floor_vines_a.png,vines floor
+tg_world_floor_vines_b.png,vines with flower floor
+tg_world_generator_on.png,generator
+tg_world_generator_on.png,machine
+tg_world_generator_on.png,machinery
+tg_world_grave_off.png,grave
+tg_world_oil_a2.png,oil on floor
+tg_world_pad_green.png,tech green pad
+tg_world_sewage_a1.png,sewage
+tg_world_sign_a.png,question mark sign
+tg_world_sign_b.png,sign pointing left
+tg_world_sign_c.png,sign pointing right
+tg_world_switch_off.png,switch off
+tg_world_switch_on.png,switch on
+tg_world_table_middle_a.png,metal table
+tg_world_table_middle_a.png,lab table
+tg_world_table_middle_b.png,computer
+tg_world_table_middle_b.png,laptop
+tg_world_tech_b.png,green tech light terminal
+tg_world_terminal_b.png,terminal
+tg_world_wall_lab_h_b.png,lab wall
+tg_world_wall_vines_v_a.png,wall with vines
+tg_world_wall_vines_v_b.png,wall with vines and flowers
