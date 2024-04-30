@@ -6,10 +6,10 @@ from PIL import Image
 import os
 import json
 import time
-from utils import map_to_list, load_image_dict
-from solvers import find_characters
+from .utils import map_to_list, load_image_dict
+from .solvers import find_characters
 import imageio
-from fixers import pad_rows_to_max_length
+from .fixers import pad_rows_to_max_length
 from PIL import Image, ImageDraw, ImageFont
 from rembg import remove
 

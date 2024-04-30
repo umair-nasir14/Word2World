@@ -1,7 +1,7 @@
 import os
 import json
 from dotenv import load_dotenv
-from config.config import Config
+from .configs import Config
 
 
 cfg = Config()
@@ -13,9 +13,6 @@ if "gpt" in cfg.model:
 
 else:
     raise NotImplementedError("Model not implemented yet!")
-
-
-
 
 
 class StoryWorld:
@@ -38,7 +35,7 @@ class StoryWorld:
             os.makedirs(cfg.save_dir)
 
         if "gpt" in cfg.model: 
-            from generators import OpenAIGenerator
+            from .generators import OpenAIGenerator
             generator = OpenAIGenerator(self.total_input_tokens, self.total_output_tokens)
         
         
@@ -128,9 +125,7 @@ class StoryWorld:
             print(f"$ spent on this gen = {spent_this_gen}")
             print(f"Total spent = {self.total_spent}")
 
-if __name__ == "__main__":
-    sw = StoryWorld()
-    sw.run()
+
        
 
 

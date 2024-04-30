@@ -1,6 +1,6 @@
-from config.config import Config
-from agent import StoryWorldEnv, LLMAgent
-from utils import (
+from storyworld import Config
+from storyworld import StoryWorldEnv, LLMAgent
+from storyworld.utils import (
     extract_between_ticks,
     create_colored_tilemap_image,
     create_legend_image,
@@ -15,9 +15,9 @@ from utils import (
     overlap_dict,
     find_most_similar_images
     )
-from fixers import remove_extra_special_chars
-from solvers import find_characters, parse_grid, find_important_tiles, EnhancedAStarWorldAgent, WorldState
-from generators import Evaluator, Generator
+from storyworld.fixers import remove_extra_special_chars
+from storyworld.solvers import find_characters, parse_grid, find_important_tiles, EnhancedAStarWorldAgent, WorldState
+from .generation_base import Evaluator, Generator
 
 
 import matplotlib.pyplot as plt
