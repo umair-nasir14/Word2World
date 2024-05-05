@@ -15,7 +15,7 @@ class Config:
     total_objectives = 8
 
     save_dir = f"outputs/OpenEnded/exp_{experiment_number}"
-    tile_data_dir = "data"
+    tile_data_dir = "storyworld/data"
 
 
 

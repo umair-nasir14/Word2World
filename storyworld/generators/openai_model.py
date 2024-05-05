@@ -45,7 +45,6 @@ class OpenAIEvaluator(Evaluator):
         eval_system_prompt = "You are an evaluator of a 2D tilemap world created from a story. You extract meaning from a given story. You are also provided by Python dictionary-like mapping of tiles and characters or alphabets. You evaluate based on how the tiles have been placed and if they match how the story has explained. For example characters should be placed once. If the protagonist and antagonist are placed together then it's a bad placement. If they are far apart then it is good. If the world looks aesthetically nice then you give good evaluation, otherwise bad. If the character tiles are not placed then it is bad. All tiles should be placed nicely. Paths should also be evaluated. Eventually each of the following aspect out of 100: Correct Walkable paths, Aesthetics, Placement of environment tiles, Placement of character tiles, Placement of objects that fulfill goals, and Adherence to story. Present the results as only Python dictionary and don't return it in a Python response."
         evaluation_prompt = f"Given the story:\n{story['choices'][0]['message']['content']}\nAnd the character mapping:{tile_map_dictionary}\nEvaluate the following 2D tilemap World:\n{map}. Adherence to story should be calculated based on the fact that the map adheres to story through the placement of tiles in the 2D tilemap world."
         done = False
-        euclidean_distance_score = 0
         while not done:
             try:
                 print(f"check#1 done = {done}")
@@ -60,33 +59,10 @@ class OpenAIEvaluator(Evaluator):
                 self.total_input_tokens.append(world_eval["usage"]["prompt_tokens"])
                 self.total_output_tokens.append(world_eval["usage"]["completion_tokens"])
                 
-                world_eval_dictionary = extract_dict(world_eval['choices'][0]['message']['content'])
+                world_eval_dictionary = extract_dict(world_eval['choices'][0]['message']['content'])    
+                world_eval_dictionary = self.tile_accuracy(map, world_eval_dictionary, important_tiles)
+                world_eval_dictionary = self.euclidean_distance(map, previous_maps, world_eval_dictionary)
 
-                characters = find_characters(map)
-                
-                total_characters = sum(1 for char in important_tiles if not char.isalpha())
-                
-                if len(characters) > 0:
-                    world_eval_dictionary["Accuracy_of_characters_placed"] = (len(characters)/total_characters) * 100
-                else:
-                    world_eval_dictionary["Accuracy_of_characters_placed"] = 0
-
-                if len(previous_maps) > 0:
-                    for previous_map in previous_maps:
-                        euclidean_distance_score += euclidean_distance(map, previous_map)
-                    euclidean_distance_score /= len(previous_maps)
-                else:
-                    euclidean_distance_score = 0
-
-                world_eval_dictionary["Average_euclidean_distance"] = euclidean_distance_score
-
-                important_tiles_found = find_important_tiles(map, important_tiles)
-            
-                if len(important_tiles_found) > 0:
-                    world_eval_dictionary["Accuracy_of_important_tiles_placed"] = (len(important_tiles_found)/len(important_tiles)) * 100
-                else:
-                    world_eval_dictionary["Accuracy_of_important_tiles_placed"] = 0
-                
                 print("Evaluation: \n", world_eval_dictionary, "\n")
     
                 done = True
