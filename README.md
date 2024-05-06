@@ -51,7 +51,6 @@ python main.py \
 ![world_2](https://github.com/umair-nasir14/StoryWorld/assets/68095790/6ccaa7e3-6573-4f20-b3a9-03e8992ffc9c)
 ![world_3](https://github.com/umair-nasir14/StoryWorld/assets/68095790/53e38643-d10a-4c16-a584-c0aa19116e60)
 ![world_4](https://github.com/umair-nasir14/StoryWorld/assets/68095790/fc8df4a5-63db-414f-96ca-a4094397ff9d)
-![world_5](https://github.com/umair-nasir14/StoryWorld/assets/68095790/a2210619-97c9-426e-8e36-af2342219d84)
 ![world_6](https://github.com/umair-nasir14/StoryWorld/assets/68095790/d92fa869-82de-4e97-bb77-2eb5fb7d04e2)
 ![world_7](https://github.com/umair-nasir14/StoryWorld/assets/68095790/751a753e-9e3d-41da-b146-fa852d0e7f1c)
 
