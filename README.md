@@ -35,7 +35,7 @@ python main.py \
 --max_story_paragraphs=5 \
 --total_objectives=8 \
 --rounds=3 \
---experiment_name="Your_Word2World" \
+--experiment_name="Your_World" \
 --save_dir="outputs"
 ```
 
