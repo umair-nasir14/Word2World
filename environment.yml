@@ -1,4 +1,4 @@
-name: storyworld
+name: word2world
 channels:
   - defaults
 dependencies:
