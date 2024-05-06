@@ -1,2 +1,3 @@
+![FLowchart of StoryWorld.](https://github.com/umair-nasir14/StoryWorld/blob/main/figures/Flowchart.pdf)
 # StoryWorld
-StoryWorld is an LLM-based PCG system that creates playable 2D world from Stories 
+This repository contains to code for StoryWorld: Generating Stories and Worlds through Large Language Models.
