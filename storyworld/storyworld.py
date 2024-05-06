@@ -1,22 +1,10 @@
 import os
 import json
 from dotenv import load_dotenv
-from .configs import Config
-
-
-cfg = Config()
-load_dotenv()
-
-
-if "gpt" in cfg.model: 
-    import openai
-
-else:
-    raise NotImplementedError("Model not implemented yet!")
-
+#from .configs import Config
 
 class StoryWorld:
-    def __init__(self) -> None:
+    def __init__(self):
         self.total_input_tokens = []
         self.total_output_tokens = []
         self.worlds_history = {}
@@ -27,7 +15,15 @@ class StoryWorld:
         self.prev_agent_reward = []
         self.total_spent = 0
 
-    def run(self):
+    def run(self, cfg):
+
+        load_dotenv()
+
+        if "gpt" in cfg.model: 
+            import openai
+
+        else:
+            raise NotImplementedError("Model not implemented yet!")
         
         
 
@@ -117,7 +113,7 @@ class StoryWorld:
                                                             "total_objectives": total_objectives
                                                         }}
             
-            with open(cfg.save_dir +f"/data_gen_{cfg.experiment_number}.json", 'w') as f:
+            with open(cfg.save_dir +f"/data_gen_{cfg.experiment_name}.json", 'w') as f:
                 json.dump(self.worlds_history, f)
 
             spent_this_gen = (sum(self.total_input_tokens)/1000)*0.01 + (sum(self.total_output_tokens)/1000)*0.03 

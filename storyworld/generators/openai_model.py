@@ -15,7 +15,7 @@ from storyworld.utils import (
     overlap_dict,
     find_most_similar_images
     )
-from storyworld.fixers import remove_extra_special_chars
+from storyworld.fixers import remove_extra_special_chars, pad_rows_to_max_length
 from storyworld.solvers import find_characters, parse_grid, find_important_tiles, EnhancedAStarWorldAgent, WorldState
 from .generation_base import Evaluator, Generator
 
@@ -415,13 +415,13 @@ class OpenAIGenerator(Generator):
 
 
                 evaluator = OpenAIEvaluator(self.total_input_tokens, self.total_output_tokens)
-                world_eval_dict = evaluator.evaluate_world(map=world_map_fixed_with_chars,
-                                                    tile_map_dictionary=used_char_dict_with_char,
-                                                    story=story,
-                                                    model=self.model,
-                                                    walkable_tiles=walkable_tiles_list,
-                                                    important_tiles=important_tiles_list,
-                                                    previous_maps=previous_map)
+                world_eval_dict, self.total_input_tokens, self.total_output_tokens = evaluator.evaluate_world(map=world_map_fixed_with_chars,
+                                                                                                              tile_map_dictionary=used_char_dict_with_char,
+                                                                                                              story=story,
+                                                                                                              model=self.model,
+                                                                                                              walkable_tiles=walkable_tiles_list,
+                                                                                                              important_tiles=important_tiles_list,
+                                                                                                              previous_maps=previous_map)
                 
 
                 llm_agent_reward, astar_path = self.action_generation(round,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
@@ -547,7 +547,7 @@ class OpenAIGenerator(Generator):
                 object_tiles_list = extract_list(object_tiles_list)
 
                 # ASTAR Search
-
+                world_map_fixed_with_chars = pad_rows_to_max_length(world_map_fixed_with_chars)
                 parsed_world_map = parse_grid(world_map_fixed_with_chars)
 
                 objective_tile_list = []
@@ -720,7 +720,7 @@ class OpenAIGenerator(Generator):
                     if episodes == total_episodes:
                         done = True
                 
-                    with imageio.get_writer(f'C:/Users/DELL/Projects/Research/Story-to-Game/story-to-game/outputs/{cfg.experiment_number}_{round}.mp4', fps=10) as video:
+                    with imageio.get_writer(f'{cfg.save_dir}_{round}.mp4', fps=10) as video:
                         for frame in frames:
                             video.append_data(frame)
 
