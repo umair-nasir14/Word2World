@@ -3,7 +3,7 @@ import json
 from dotenv import load_dotenv
 #from .configs import Config
 
-class StoryWorld:
+class Word2World:
     def __init__(self):
         self.total_input_tokens = []
         self.total_output_tokens = []

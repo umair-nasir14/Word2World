@@ -11,9 +11,9 @@ class Config:
     total_objectives = 8
     rounds = 3 # number of rounds to loop over
 
-    experiment_name = "Your_StoryWorld" 
+    experiment_name = "Your_word2world" 
     save_dir = f"outputs/{experiment_name}"
-    tile_data_dir = "storyworld/data"
+    tile_data_dir = "word2world/data"
 
 
 

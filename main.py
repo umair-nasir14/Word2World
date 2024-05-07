@@ -1,8 +1,8 @@
-from storyworld import StoryWorld
+from word2world import Word2World
 from dotenv import load_dotenv
 import argparse
 
-from storyworld import Config
+from word2world import Config
 
 
 def main():
@@ -14,7 +14,7 @@ def main():
     parser.add_argument('--max_story_paragraphs', type=int, help='Defaults to "5". Provide an int, which is the maximum number of paragraphs')
     parser.add_argument('--total_objectives', type=int, help='Dafualts to 8. Used to decide number of objectives in the story.')
     parser.add_argument('--rounds', type=str, help='Defaults to 3. Used to decide rounds of world generation.')
-    parser.add_argument('--experiment_name', type=str, help='Defaults to "Your_StoryWorld".')
+    parser.add_argument('--experiment_name', type=str, help='Defaults to "Your_word2world".')
     parser.add_argument('--save_dir', type=str, help='Defaults to "outputs/{--experiment_name}"')
 
     args = parser.parse_args()
@@ -36,8 +36,8 @@ def main():
     if args.save_dir:
         config.save_dir = args.save_dir
     
-    story_world = StoryWorld()
-    story_world.run(config)
+    world = Word2World()
+    world.run(config)
 
 if __name__ == "__main__":
     main()

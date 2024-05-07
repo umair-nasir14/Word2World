@@ -1,6 +1,6 @@
-from storyworld.utils import euclidean_distance
+from word2world.utils import euclidean_distance
 
-from storyworld.solvers import find_characters, find_important_tiles
+from word2world.solvers import find_characters, find_important_tiles
 
 class Evaluator:
     def __init__(self, model, total_input_tokens, total_output_tokens):

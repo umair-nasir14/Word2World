@@ -1,6 +1,6 @@
-from storyworld import Config
-from storyworld import StoryWorldEnv, LLMAgent
-from storyworld.utils import (
+from word2world import Config
+from word2world import Word2WorldEnv, LLMAgent
+from word2world.utils import (
     extract_between_ticks,
     create_colored_tilemap_image,
     create_legend_image,
@@ -15,8 +15,8 @@ from storyworld.utils import (
     overlap_dict,
     find_most_similar_images
     )
-from storyworld.fixers import remove_extra_special_chars, pad_rows_to_max_length
-from storyworld.solvers import find_characters, parse_grid, find_important_tiles, EnhancedAStarWorldAgent, WorldState
+from word2world.fixers import remove_extra_special_chars, pad_rows_to_max_length
+from word2world.solvers import find_characters, parse_grid, find_important_tiles, EnhancedAStarWorldAgent, WorldState
 from .generation_base import Evaluator, Generator
 
 
@@ -593,7 +593,7 @@ class OpenAIGenerator(Generator):
                 plt.savefig(save_dir + f'/world_legend_with_chars_{round}.png', format='png', dpi=150, bbox_inches='tight')
                 #plt.show()
 
-                env = StoryWorldEnv(walkable_tiles_list, tile_images_1st_layer, tile_images, world_map_fixed, world_map_fixed_with_chars, object_tiles_list, "#")
+                env = Word2WorldEnv(walkable_tiles_list, tile_images_1st_layer, tile_images, world_map_fixed, world_map_fixed_with_chars, object_tiles_list, "#")
                 agent = LLMAgent()
                 state = env.reset()
                 env_image = env.render(mode="image")

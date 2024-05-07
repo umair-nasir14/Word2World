@@ -13,9 +13,9 @@ from .fixers import pad_rows_to_max_length
 from PIL import Image, ImageDraw, ImageFont
 from rembg import remove
 
-class StoryWorldEnv(gym.Env):
+class Word2WorldEnv(gym.Env):
     def __init__(self, walkable_tiles,tiles_without_char,  tiles, str_map_without_chars, str_map, interactive_object_tiles, enemy_tiles):
-        super(StoryWorldEnv, self).__init__()
+        super(Word2WorldEnv, self).__init__()
         str_map = pad_rows_to_max_length(str_map)
         str_map_without_chars = pad_rows_to_max_length(str_map_without_chars)
         
