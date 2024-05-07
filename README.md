@@ -17,7 +17,7 @@ Clone the repo:
 Install the environment and activate it:
 
 ```
-cd word2world
+cd Word2World
 conda env create -f environment.yml
 conda activate word2world
 ```
