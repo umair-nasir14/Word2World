@@ -299,11 +299,22 @@ def list_of_lists_to_string(lists):
 
 def extract_dict(string_data):
     try:
-        # Strip out non-dictionary content
-        cleaned_data = re.sub(r"^\s*```python\s*|\s*```\s*$", "", string_data, flags=re.MULTILINE)
-        # Convert the cleaned string to a dictionary using literal_eval
-        mission_dict = ast.literal_eval(cleaned_data)
-        return mission_dict
+        # Search for the simplest dictionary pattern in the string
+        pattern = r'\{[^{}]*\}'
+        matches = re.findall(pattern, string_data)
+        if matches:
+            # Iterate over all matches to find the first valid dictionary
+            for match in matches:
+                try:
+                    mission_dict = ast.literal_eval(match)
+                    return mission_dict
+                except:
+                    continue
+            print("No valid dictionary found in the matches.")
+            return {}
+        else:
+            print("No dictionary-like pattern found in the string.")
+            return {}
     except ValueError as e:
         print(f"Error converting string to dictionary: {e}")
         return {}
