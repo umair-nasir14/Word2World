@@ -18,8 +18,15 @@ Install the environment and activate it:
 
 ```
 cd Word2World
+type > word2world/.env
 conda env create -f environment.yml
 conda activate word2world
+```
+
+Add your API key to the .env file created in word2world folder:
+
+```
+OPENAI_API_KEY="sk..."
 ```
 
 Run with default configs:
@@ -34,7 +41,7 @@ python main.py \
 --min_story_paragraphs=4 \
 --max_story_paragraphs=5 \
 --total_objectives=8 \
---rounds=3 \
+--rounds=1 \
 --experiment_name="Your_World" \
 --save_dir="outputs"
 ```
@@ -68,6 +75,11 @@ python word2world/play_game.py
 ![world_4](https://github.com/umair-nasir14/Word2World/assets/68095790/fc8df4a5-63db-414f-96ca-a4094397ff9d)
 ![world_6](https://github.com/umair-nasir14/Word2World/assets/68095790/d92fa869-82de-4e97-bb77-2eb5fb7d04e2)
 ![world_7](https://github.com/umair-nasir14/Word2World/assets/68095790/751a753e-9e3d-41da-b146-fa852d0e7f1c)
+
+### Note:
+
+- The most stable model is `"gpt-4-turbo-2024-04-09"`.
+- Currently only `OpenAI` models are supported.
 
 ### Cite:
 ```
