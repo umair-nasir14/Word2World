@@ -424,7 +424,7 @@ class OpenAIGenerator(Generator):
                                                                                                               previous_maps=previous_map)
                 
 
-                llm_agent_reward, astar_path = self.action_generation(round,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
+                llm_agent_reward, astar_path, objectives = self.action_generation(round,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
                         "char_color_map",walkable_tile_discriptions['choices'][0]['message']['content'],important_tile_discriptions['choices'][0]['message']['content'],goal_discriptions['choices'][0]['message']['content'], save_dir)
                 
                 #agent_reward = -1000
@@ -485,7 +485,7 @@ class OpenAIGenerator(Generator):
         color_tiles_img_with_char = ""
 
         return world_map_fixed, world_map_fixed_with_chars, world_eval_dict, used_char_dict, used_char_dict_with_char, char_color_map_with_char, \
-                color_tiles_img_with_char, story_paragraphs, total_objectives, good_feedback_check, bad_feedback_check, no_of_important_tiles, llm_agent_reward, astar_path
+                color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, no_of_important_tiles, llm_agent_reward, astar_path
 
 
     def action_generation(self, round,
@@ -736,5 +736,5 @@ class OpenAIGenerator(Generator):
             pass
 
 
-        return max(all_episodes_rewards), len(astar_path)
+        return max(all_episodes_rewards), len(astar_path), objective_tile_dict
     

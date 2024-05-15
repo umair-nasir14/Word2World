@@ -27,6 +27,48 @@
             "dark robed sorcerer": "#"
         },
         "goals": "The main goal for the protagonist, Tieran, is to obtain the mystical Bloom of Night in order to fulfill his mother's dying wish and rejuvenate his village.\n\n### Small Goals to Achieve the Main Goal:\n1. **Gather information about the Bloom of Night from ancient scrolls.**\n   - **Reward:** Gains crucial knowledge about the location and properties of the flower. (+10 points)\n   - **Penalty:** If not enough information is collected, Tieran may take a longer, more dangerous route. (-5 points)\n\n2. **Convince the village council to support his pursuit.**\n   - **Reward:** Gains supplies and potentially a companion for his journey. (+20 points)\n   - **Penalty:** Lack of support leads to reduced resources, making the journey tougher. (-10 points)\n\n3. **Learn the art of magical herbalism from Maela.**\n   - **Reward:** Acquires skills to use magical herbs, which can heal and protect him during his journey. (+30 points)\n   - **Penalty:** Lack of knowledge can lead to misusing herbs, causing detrimental effects. (-15 points)\n\n4. **Form alliances with creatures and spirits of the land.**\n   - **Reward:** Gains allies who assist in overcoming natural obstacles. (+25 points)\n   - **Penalty:** Without alliances, faces additional challenges and threats from creatures. (-20 points)\n\n5. **Navigate through the Whispering Woods without succumbing to illusions.**\n   - **Reward:** Successfully avoids traps and progresses faster. (+15 points)\n   - **Penalty:** Getting lost or injured in the woods delays progress and harms Tieran. (-10 points)\n\n6. **Cross the Great Eldorian River with the help of River Nymphs.**\n   - **Reward:** Safe passage and hydration supplies from the Nymphs. (+20 points)\n   - **Penalty:** If failed to ally with Nymphs, risks drowning or losing supplies in the river. (-15 points)\n\n7. **Climb the Frostbite Peaks to find the final clue to the bloom\u2019s location.**\n   - **Reward:** Discovers the exact location of the Bloom of Night, gaining a strategic advantage. (+40 points)\n   - **Penalty:** Slower ascent due to harsh conditions results in increased fatigue and resource depletion. (-20 points)\n\n8. **Defeat Vorath to secure the Bloom of Night in the Grove of Whispers.**\n   - **Reward:** Successfully secures the Bloom, ensuring the success of his quest and the future prosperity of his village. (+50 points)\n   - **Penalty:** If defeated by Vorath, fails the mission and risks the village\u2019s downfall. (-30 points)\n\nThese goals, alongside their respective rewards and penalties, create a structured pathway for Tieran\u2019s adventure and directly impact the game's narrative progression and player\u2019s strategic decisions.",
+        "objectives": {
+            "Gather information about the Bloom of Night from ancient scrolls": [
+                "f",
+                3,
+                12
+            ],
+            "Convince the village council to support his pursuit": [
+                "a",
+                1,
+                35
+            ],
+            "Learn the art of magical herbalism from Maela": [
+                "a",
+                4,
+                45
+            ],
+            "Form alliances with creatures and spirits of the land": [
+                "a",
+                14,
+                10
+            ],
+            "Navigate through the Whispering Woods without succumbing to illusions": [
+                "r",
+                12,
+                26
+            ],
+            "Cross the Great Eldorian River with the help of River Nymphs": [
+                "u",
+                17,
+                18
+            ],
+            "Climb the Frostbite Peaks to find the final clue to the bloom\u2019s location": [
+                "w",
+                6,
+                13
+            ],
+            "Defeat Vorath to secure the Bloom of Night in the Grove of Whispers": [
+                "#",
+                1,
+                33
+            ]
+        },
         "important_tiles": "['@', '#', 'l', 'n', 'p', 'q', 'r', 's', 'u', 'w', 'x', 'A', 'B', 'D', 'F']",
         "walkable_tiles": "['a','b','c','d','e','f','i', 'j','k','m','n','p','r','t','v''w',@','B','F','G','H']",
         "interactive_object_tiles": "['n', 'r', 'B', 'F', 'G']",

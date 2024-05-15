@@ -4,6 +4,8 @@ import sys
 import json
 import imageio
 import os
+import argparse
+
 
 from utils import map_to_list, find_most_similar_images
 from solvers import find_characters
@@ -21,13 +23,23 @@ CAMERA_WIDTH = 20
 CAMERA_HEIGHT = 16
 INFO_PANEL_HEIGHT = 4  # Number of tiles for the info panel
 
-# Create the display window
-game = "example_1"
-round_number = "round_0"
-game_dir = f"word2world\examples"
 
-with open(f'{game_dir}/{game}.json', 'r') as file:
-    data = json.load(file)
+parser = argparse.ArgumentParser(description="Process game inputs")
+parser.add_argument('--game_path', type=str, help="A path to JSON file of your game. Derfaults to 'word2world\examples\example_1.json'")
+args = parser.parse_args()
+
+if args.game_path:
+    if not os.path.exists(args.game_path):
+            raise ValueError(f"{args.game_path} does not exist. Please provide an existing path.")
+    with open(args.game_path, 'r') as file:
+        data = json.load(file)
+else:
+    game = "example_1"
+    round_number = "round_0"
+    game_dir = f"word2world\examples"
+
+    with open(f'{game_dir}/{game}.json', 'r') as file:
+        data = json.load(file)
 
 character_descriptions_dict = {}
 gen_story = data[round_number]["story"]
@@ -55,7 +67,7 @@ WIDTH = CAMERA_WIDTH * TILE_SIZE
 HEIGHT = (CAMERA_HEIGHT + INFO_PANEL_HEIGHT) * TILE_SIZE
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Grid Map Level")
+pygame.display.set_caption("Word2World Game")
 
 character_chars = find_characters(grid_str)
 
