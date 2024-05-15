@@ -51,7 +51,7 @@ To play the generated game:
 ```
 python word2world/play_game.py "path_to_game_data\game_data.json"
 ```
-where `game_data.json` is generated when the Word2World loop is finished and is saved to `\outputs`\game_data.json`. This can be modified in `configs` or as `--save_dir` arg.
+where `game_data.json` is generated when the Word2World loop is finished and is saved to `\outputs\game_data.json`. This can be modified in `configs` or as `--save_dir` arg.
 
 To play an example world:
 
