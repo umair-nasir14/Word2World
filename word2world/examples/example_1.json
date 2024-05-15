@@ -1,0 +1,80 @@
+{
+    "round_0": {
+        "story": "In the lush, verdant valleys of Eldoria, a land cloaked in ancient magic and eternal green, lived Tieran, a young gardener with a dream larger than the towering emerald trees: to discover the legendary Bloom of Night, a mystical flower said to bloom once every century under the silver glow of the full moon. Tieran\u2019s quest was driven by a promise made on his mother\u2019s last breath\u2014a vow to restore his village's vitality using the flower\u2019s rumored magical properties.\n\nTieran\u2019s first objective was to gather information about the Bloom of Night, a task that led him to pore over ancient scrolls in the village\u2019s decrepit library. With clues in hand, his second objective was to convince the village council to support his pursuit. Despite skepticism, his enthusiasm earned him minimal supplies and a reluctant blessing. Next, Tieran's objective was to learn the art of magical herbalism from the village's recluse healer, Maela, giving him knowledge essential for surviving the treacherous wilds of Eldoria.\n\nHowever, lurking in the shadows, a formidable antagonist stood between Tieran and his quest. Vorath, a sorcerer cast out from the village years ago, sought the Bloom of Night for his malevolent pursuits to seize control over Eldoria. Vorath's profound understanding of dark enchantments meant that Tieran\u2019s journey would be perilous. Armed with spell and malice, Vorath's objective was clear: thwart Tieran\u2019s quest to ensure no one could interfere with his own vile plans.\n\nTieran\u2019s objectives grew as dangers unfolded. He had to form alliances with creatures and spirits of the land. His fourth objective was to pass through the Whispering Woods without falling prey to its mind-bending illusions. The fifth was to cross the Great Eldorian River without being swept away by its fierce currents, aided by a pact with the River Nymphs. His sixth objective was to climb the treacherous Frostbite Peaks where the final clue to the bloom\u2019s location awaited.\n\nAs Tieran journeyed, Vorath sent minions and cast illusions to misdirect and discourage him. Tieran's seventh objective, therefore, became to dispel the mirages cast by Vorath and retain his focus on the path. As the full moon approached, and with Tieran nearing the destined grove, Vorath appeared, determined to finish the battle for the bloom himself.\n\nThe climax in the Grove of Whispers was where Tieran faced his eighth and final objective: defeat Vorath and secure the Bloom of Night. With newly discovered strength and the ancient magic of the land coursing through his veins, Tieran outmaneuvered Vorath, using his knowledge of herbalism to counteract the sorcerer's dark spells. As dawn broke, and with Vorath subdued by the very creatures he sought to dominate, Tieran plucked the Bloom under the fading light of the moon.\n\nTriumphant, Tieran returned to his village not just as a gardener but as a hero who had restored balance in Eldoria. His objectives achieved, and his mother's promise fulfilled, the village thrived under the mystical benefits of the Bloom of Night. For Tieran, the quest was not just for the bloom, but a journey of building courage and alliance in the face of insurmountable odds.",
+        "character_information": "**Tieran - The Protagonist Gardener**\n- **Appearance:** Tieran is a young, sprightly character with medium-length brown hair and bright green eyes, symbolizing his connection to the verdant land of Eldoria. He wears a simple leather tunic dyed in earthy tones, with dark green trousers and sturdy brown boots suited for trekking through various terrains. A utility belt with pouches for seeds and herbs circles his waist, and he carries a versatile, wooden-handled gardening tool that serves as both a hoe and a weapon.\n- **Sprite Details:** Animated to show lively walking, climbing, and swimming movements. Shows concentration while reading scrolls and excitement when talking about plants. Combat animations include swinging his gardening tool and casting basic herbal magic spells.\n\n**Vorath - The Antagonist Sorcerer**\n- **Appearance:** Vorath is imposing with a tall, lean frame, draped in a flowing black robe that shimmers with faint, sinister red symbols. His skin is pale, a stark contrast to his jet-black hair and dark, hollow eyes that gleam with malevolence. He wears an ornate silver amulet that glows ominously, signifying his mastery over dark magic.\n- **Sprite Details:** Vorath\u2019s animations include casting spells with dramatic flair, levitating slightly above the ground as he moves, and displaying expressions of anger and frustration. His combat animations show him conjuring dark energy and hurling sinister spells.\n\n**Maela - The Recluse Healer**\n- **Appearance:** Maela is an elderly woman with long, flowing white hair and gentle blue eyes that sparkle with wisdom. She wears a long, sage-colored robe embroidered with symbols of healing and nature. Around her neck hangs a necklace of dried herbs and crystals.\n- **Sprite Details:** Maela\u2019s sprite shows her mixing herbs, reading from ancient books, and teaching Tieran the art of magical herbalism. Her gestures are gentle, with a calming presence that soothes those around her.\n\n**River Nymphs**\n- **Appearance:** The River Nymphs are ethereal, semi-transparent figures with long, wavy aqua-colored hair that seems to flow with the water\u2019s current. Their garments are made of water lilies and rivergrass, giving them a delicate, otherworldly look.\n- **Sprite Details:** Their animations include graceful swimming, water manipulation, and aiding animations where they help Tieran cross the river. The sprites should illuminate slightly, enhancing their mystical nature.\n\n**Creatures of the Whispering Woods**\n- **Appearance:** These creatures vary widely but share common traits such as luminous eyes and camouflage-like skin that blends into the woodland environment. They range from small, fairy-like beings with wings to larger, more beastly figures with fur and antlers.\n- **Sprite Details:** Animations should include sneaking, playing, and interacting with Tieran. Some can perform trickery with illusions while others might demonstrate playful behaviors or assist Tieran in overcoming obstacles.\n\nThese descriptions offer a detailed visual guide to design distinctive sprites that align with the narrative and gameplay mechanics of the game, enhancing both the aesthetic appeal and the immersive experience of the setting and storyline.",
+        "tile_mapping": {
+            "Grass Tile": "a",
+            "Dirt Path Tile": "b",
+            "Tree Tile": "d",
+            "Flower Tile": "f",
+            "Rock Tile": "g",
+            "Water Tile": "h",
+            "Bridge Tile": "i",
+            "Magical Artifact Tiles": "n",
+            "Tree Canopy Tile": "p",
+            "Misty Fog Tile": "q",
+            "Illusory Object Tiles": "r",
+            "Rapid Water Tile": "s",
+            "River Bank Tile": "t",
+            "Nymph's Waterfall Tile": "u",
+            "Submersed Rock Tile": "v",
+            "Snow Tile": "w",
+            "Ice Tile": "x",
+            "Enchanted Flower Tile": "B",
+            "Trap Tile": "F",
+            "Portal Tile": "G",
+            "young gardener with green cloak": "@",
+            "dark robed sorcerer": "#"
+        },
+        "goals": "The main goal for the protagonist, Tieran, is to obtain the mystical Bloom of Night in order to fulfill his mother's dying wish and rejuvenate his village.\n\n### Small Goals to Achieve the Main Goal:\n1. **Gather information about the Bloom of Night from ancient scrolls.**\n   - **Reward:** Gains crucial knowledge about the location and properties of the flower. (+10 points)\n   - **Penalty:** If not enough information is collected, Tieran may take a longer, more dangerous route. (-5 points)\n\n2. **Convince the village council to support his pursuit.**\n   - **Reward:** Gains supplies and potentially a companion for his journey. (+20 points)\n   - **Penalty:** Lack of support leads to reduced resources, making the journey tougher. (-10 points)\n\n3. **Learn the art of magical herbalism from Maela.**\n   - **Reward:** Acquires skills to use magical herbs, which can heal and protect him during his journey. (+30 points)\n   - **Penalty:** Lack of knowledge can lead to misusing herbs, causing detrimental effects. (-15 points)\n\n4. **Form alliances with creatures and spirits of the land.**\n   - **Reward:** Gains allies who assist in overcoming natural obstacles. (+25 points)\n   - **Penalty:** Without alliances, faces additional challenges and threats from creatures. (-20 points)\n\n5. **Navigate through the Whispering Woods without succumbing to illusions.**\n   - **Reward:** Successfully avoids traps and progresses faster. (+15 points)\n   - **Penalty:** Getting lost or injured in the woods delays progress and harms Tieran. (-10 points)\n\n6. **Cross the Great Eldorian River with the help of River Nymphs.**\n   - **Reward:** Safe passage and hydration supplies from the Nymphs. (+20 points)\n   - **Penalty:** If failed to ally with Nymphs, risks drowning or losing supplies in the river. (-15 points)\n\n7. **Climb the Frostbite Peaks to find the final clue to the bloom\u2019s location.**\n   - **Reward:** Discovers the exact location of the Bloom of Night, gaining a strategic advantage. (+40 points)\n   - **Penalty:** Slower ascent due to harsh conditions results in increased fatigue and resource depletion. (-20 points)\n\n8. **Defeat Vorath to secure the Bloom of Night in the Grove of Whispers.**\n   - **Reward:** Successfully secures the Bloom, ensuring the success of his quest and the future prosperity of his village. (+50 points)\n   - **Penalty:** If defeated by Vorath, fails the mission and risks the village\u2019s downfall. (-30 points)\n\nThese goals, alongside their respective rewards and penalties, create a structured pathway for Tieran\u2019s adventure and directly impact the game's narrative progression and player\u2019s strategic decisions.",
+        "important_tiles": "['@', '#', 'l', 'n', 'p', 'q', 'r', 's', 'u', 'w', 'x', 'A', 'B', 'D', 'F']",
+        "walkable_tiles": "['a','b','c','d','e','f','i', 'j','k','m','n','p','r','t','v''w',@','B','F','G','H']",
+        "interactive_object_tiles": "['n', 'r', 'B', 'F', 'G']",
+        "world_1st_layer": {
+            "world": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naappppaaapppaaappppppaaapppppaaaaaddddddddaa\naaaqqqaasaaaaafffqqqfffaaaaasaaaadddddddggda\naaapppaapppppffaiifpppppppfaiidaaaaaggggggga\ntttaaaaappffppiiiiippffppppttttaaaaagggbbbgga\naaaaaappffppiwwwiippffpppisaaaaaaaggbbbfffbg\naaaapppppppiwhxiwiippaiiippqaaaaaaagbbbbbggg\naaaappffpppiwhhxhwiippppppppaaaaaaaggbbbggga\ntttaaafppffpiwwwwwiipffpppptttaaaaaaggggggga\naaapffppffpppppggggppiaiiiiisaaaaaaddgggggda\naaaappppppppppaaaaaadbiiiiipqaaaaaddffggggga\naaaapppffppppggggggggdbbpwbppaaaaaddffbgggga\naaaaaffffpppppaaaaaaddbbnrbppppppppddffbgggga\ntttaaaaaiiisggggggggddbbbwbppppppffddgggggga\naaaaaaaaaiiiihhhhhhhddbbbbppppppppffggggggga\ntttaffffffaiiiiuhhhhhddbbbbppppppfffgggggggga\naaaffffpppiiiiuhhhhhddbbbbppppppppfgggggggga\naaapffpppppiiiiihhhhhddbbbbppppffppffggggdgg\naaaaaaaffpppppavhhhhddbbbbppppffppffgdddggda\ntaaaaaaaaaaaaiiiihhhdddggggppffppppffggdddgg\naaapppffaafffaiiiiiipddddgggppppppppppggggda\naaappppppppppiiiiiipppppppaaaaaaaaddddddggg\naaaaaaaaaaapffpppppppppppppppppppdddddddddgg\naaaaaaaaaaaffffpppppppppfdddddaaaffaaaaaddd\naaaaaaaaaaaaaaaaaaaaaaaffffaaaaaffffaaaaaff\ntttaaaaaaaaaaaaaaaaafffffaaaaffffaaaaaffaaff\naaaaaaffaaaaaaaaaffaffffaaafffaaaffaaaaaaaff",
+            "tiles": {
+                "Grass Tile": "a",
+                "Dirt Path Tile": "b",
+                "Tree Tile": "d",
+                "Flower Tile": "f",
+                "Rock Tile": "g",
+                "Water Tile": "h",
+                "Bridge Tile": "i",
+                "Magical Artifact Tiles": "n",
+                "Tree Canopy Tile": "p",
+                "Misty Fog Tile": "q",
+                "Illusory Object Tiles": "r",
+                "Rapid Water Tile": "s",
+                "River Bank Tile": "t",
+                "Nymph's Waterfall Tile": "u",
+                "Submersed Rock Tile": "v",
+                "Snow Tile": "w",
+                "Ice Tile": "x"
+            }
+        },
+        "world": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\naappppaaapppaaappppppaaapppppaaaaaddddddddaa\naaaqqqaasaaaaafffqqqfffaaaaasaaaadddddddggda\naaapppaapppppffaiifpppppppfaiidaaaaaggggggga\ntttaaaaappffppiiiiippffppppttttaaaaagggbbbgga\naaaaaappffppiwwwiippffpppisaaaaaaaggbbbfffbg\naaaapppppppiwhxiwiippaiiippqaaaaaaagbbbbbggg\naaaappffpppiwhhxhwiippppppppaaaaaaaggbbbggga\ntttaaafppffpiwwwwwiipffpppptttaaaaaaggggggga\naaapffppffpppppggggppiaiiiiisaaaaaaddgggggda\naaaappppppppppaaaaaadbiiiiipqaaaaaddffggggga\naaaapppffppppggggggggdbbpwbppaaaaaddffbgggga\naaaaaffffpppppaaaaaaddbbnrbpp@ppppddffbgggga\ntttaaaaaiiisggggggggddbbbwbppppppffddgggggga\naaaaaaaaaiiiihhhhhhhddbbbbppppppppffggggggga\ntttaffffffaiiiiuhhhhhddbbbbppppppfffgggggggga\naaaffffpppiiiiuhhhhhddbbbBFppppppppfgggggggga\naaapffpppppiiiiihhhhhddbbbbGppffppffggggdggg\naaaaaaaffpppppavhhhhddbbbbppppffppffgdddggda\ntaaaaaaaaaaaaiiiihhhdddggggppffppppffggdddgg\naaapppffaafffaiiiiiipddddgggppppppppppggggda\naaappppppppppiiiiiipppppppaaaaaaaaddddddggg\naaaaaaaaaaapffpppppppppppppppppppdddddddddgg\naaaaaaaaaaaffffpppppppppfdddddaaaffaaaaaddd\naaaaaaaaaaaaaaaaaaaaaaaffffaaaaaffffaaaaaff\ntttaaaaaaa#aaaaaaaaafffffaaaaffffaaaaaffaaff\naaaaaaffaaaaaaaaaffaffffaaafffaaaffaaaaaaaff",
+        "evaluations": {
+            "Correct Walkable paths": 75,
+            "Aesthetics": 80,
+            "Placement of environment tiles": 85,
+            "Placement of character tiles": 70,
+            "Placement of objects that fulfill goals": 65,
+            "Adherence to story": 90,
+            "Accuracy_of_characters_placed": 50.0,
+            "Average_euclidean_distance": 0,
+            "Accuracy_of_important_tiles_placed": 73.33333333333333,
+            "agent_reward": -50,
+            "astar_path": 0
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [
+                5,
+                6
+            ],
+            "total_objectives": 8
+        }
+    }
+}

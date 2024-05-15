@@ -3,7 +3,7 @@ from dataclasses import dataclass
 @dataclass
 class Config:
     """
-    A configuration class for StoryWorrld.
+    A configuration class for Word2World.
     """
 
     model = "gpt-4-turbo-2024-04-09"
