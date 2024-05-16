@@ -83,6 +83,11 @@ python word2world/play_game.py
 
 ### Cite:
 ```
-
+@article{nasir2024word2world,
+  title={Word2World: Generating Stories and Worlds through Large Language Models},
+  author={Nasir, Muhammad U and James, Steven and Togelius, Julian},
+  journal={arXiv preprint arXiv:2405.06686},
+  year={2024}
+}
 ```
 
