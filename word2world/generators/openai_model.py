@@ -431,44 +431,7 @@ class OpenAIGenerator(Generator):
                 world_eval_dict["agent_reward"] = llm_agent_reward
                 world_eval_dict["astar_path"] = astar_path
 
-                good_feedback_prompt = f"Also, the following is a more detailed feedback of how much you improved in the last generation:\n Your last generation improved the following evaluation metrics, and so you are doing great:\n"
-                bad_feedback_prompt = f"\nYour last generation did not improve the following evaluation metrics, and so you need to improce it by being more careful about it:\n"
-                good_feedback_check = 0
-                bad_feedback_check = 0
-
-                if round > 0:
-                    for key, value in world_eval_dict.items():
-                        print(f"world_eval_dict: {key}, {value}")
-                        print(f"previous_eval[len(previous_eval) - 1][key]: {previous_eval[len(previous_eval) - 1][key]}")
-
-                        if key == "astar_path" and world_eval_dict[key] == 0:
-                            bad_feedback_check +=2
-
-                        if int(world_eval_dict[key]) > int(previous_eval[len(previous_eval) - 1][key]):
-                            if key == "agent_reward":
-                                good_feedback_check += 2
-                            else:
-                                good_feedback_check += 1
-                            good_feedback_prompt += f"- {key}\n"
-                            
-                        else:
-                            if key == "agent_reward":
-                                bad_feedback_check += 1
-                            else:
-                                bad_feedback_check += 1
-                            bad_feedback_prompt += f"- {key}\n"
-                            
-                
-                    if good_feedback_check == 0:
-                        good_feedback_prompt = ""
-                    if bad_feedback_check == 0:
-                        bad_feedback_prompt = ""
-                    
-                    if good_feedback_check >= bad_feedback_check:
-                        no_of_important_tiles += 1
-                        story_paragraphs[0] += 1
-                        story_paragraphs[1] += 1
-                        total_objectives += 1
+                story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt = self.feedback_checks(world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles)
                     
                 done = True
 
