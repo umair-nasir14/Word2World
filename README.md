@@ -2,7 +2,7 @@
 
 ![image](https://github.com/umair-nasir14/Word2World/assets/68095790/c7e5af2e-a948-4eda-9e9c-4c0e0f0f2f46)
 
-This repository contains to code for Word2World: Generating Stories and Worlds through Large Language Models.
+This repository contains to code for [https://arxiv.org/abs/2405.06686](Word2World: Generating Stories and Worlds through Large Language Models).
 
 ### Abstract:
 
