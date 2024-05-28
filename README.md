@@ -80,6 +80,7 @@ python word2world/play_game.py
 
 - The most stable model is `"gpt-4-turbo-2024-04-09"`.
 - Currently only `OpenAI` models are supported.
+- OS supported: `Windows`
 
 ### Cite:
 ```
