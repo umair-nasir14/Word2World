@@ -35,12 +35,12 @@ if args.game_path:
         data = json.load(file)
 else:
     game = "example_1"
-    round_number = "round_0"
-    game_dir = f"word2world\examples"
+    game_dir = os.path.join(f"word2world", "examples")
 
     with open(f'{game_dir}/{game}.json', 'r') as file:
         data = json.load(file)
 
+round_number = "round_0"
 character_descriptions_dict = {}
 gen_story = data[round_number]["story"]
 grid_str = data[round_number]["world"]
