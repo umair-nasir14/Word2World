@@ -2,7 +2,7 @@
 
 ![image](https://github.com/umair-nasir14/Word2World/assets/68095790/c7e5af2e-a948-4eda-9e9c-4c0e0f0f2f46)
 
-This repository contains to code for Word2World: Generating Stories and Worlds through Large Language Models.
+This repository contains to code for [Word2World: Generating Stories and Worlds through Large Language Models](https://arxiv.org/abs/2405.06686).
 
 ### Abstract:
 
@@ -80,9 +80,15 @@ python word2world/play_game.py
 
 - The most stable model is `"gpt-4-turbo-2024-04-09"`.
 - Currently only `OpenAI` models are supported.
+- OS supported: `Windows`
 
 ### Cite:
 ```
-
+@article{nasir2024word2world,
+  title={Word2World: Generating Stories and Worlds through Large Language Models},
+  author={Nasir, Muhammad U and James, Steven and Togelius, Julian},
+  journal={arXiv preprint arXiv:2405.06686},
+  year={2024}
+}
 ```
 

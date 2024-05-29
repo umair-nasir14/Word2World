@@ -57,11 +57,11 @@ class Word2World:
                                                                                                         goal_prompt)
         #important_tiles_dict = find_elements_in_dict(tile_map_dict, important_tiles_list)
         #char_color_map, color_tiles_img = create_color_tile_map(tile_map_dict)
-        for round in range(cfg.rounds):
-            print(f"ROUND # {round}\n")
+        for rounds in range(cfg.rounds):
+            print(f"ROUND # {rounds}\n")
             world_map_fixed, world_map_fixed_with_chars, world_eval_dict, tileset_used_orig, tileset_used_dict, \
             char_color_map, color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, \
-            no_of_important_tiles, agent_reward, astar_path= generator.world_generation(round,
+            no_of_important_tiles, agent_reward, astar_path= generator.world_generation(rounds,
                                                                                         self.previous_story,
                                                                                         cfg.story_paragraphs,
                                                                                         cfg.total_objectives,
@@ -96,7 +96,7 @@ class Word2World:
             self.previous_eval.append(world_eval_dict)
             self.prev_agent_reward.append(agent_reward)
 
-            self.worlds_history[f"round_{round}"] = {"story": story['choices'][0]['message']['content'],
+            self.worlds_history[f"round_{rounds}"] = {"story": story['choices'][0]['message']['content'],
                                                         "character_information": character_discriptions['choices'][0]['message']['content'],
                                                         "tile_mapping": tileset_used_dict,
                                                         "goals": goal_discriptions['choices'][0]['message']['content'],
