@@ -84,9 +84,10 @@ python word2world/play_game.py
 
 ### To-dos:
 
-- [ ] Add support for Anthropic
-- [ ] Add support for Groq
-- [ ] Clean Code for easy integrations of new platforms, e.g. huggingface
+- [ ] Add support for Anthropic.
+- [ ] Add support for Groq.
+- [ ] Add support for Linux.
+- [ ] Clean Code for easy integrations of new platforms, e.g. huggingface.
 
 ### Cite:
 ```
