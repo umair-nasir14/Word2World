@@ -82,6 +82,12 @@ python word2world/play_game.py
 - Currently only `OpenAI` models are supported.
 - OS supported: `Windows`
 
+### To-dos:
+
+- [ ] Add support for Anthropic
+- [ ] Add support for Groq
+- [ ] Clean Code for easy integrations of new platforms, e.g. huggingface
+
 ### Cite:
 ```
 @article{nasir2024word2world,
