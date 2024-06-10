@@ -80,17 +80,18 @@ class Generator:
     def action_generation(self):
         raise NotImplementedError("This method should be overridden by subclasses")
     
-    def feedback_checks(self, round, world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles):
+
+    def feedback_checks(self, rounds, world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles):
         
         good_feedback_prompt = f"Also, the following is a more detailed feedback of how much you improved in the last generation:\n Your last generation improved the following evaluation metrics, and so you are doing great:\n"
         bad_feedback_prompt = f"\nYour last generation did not improve the following evaluation metrics, and so you need to improve it by being more careful about it:\n"
         good_feedback_check = 0
         bad_feedback_check = 0
 
-        if round > 0:
+        if rounds > 0:
             for key, value in world_eval_dict.items():
-                print(f"world_eval_dict: {key}, {value}")
-                print(f"previous_eval[len(previous_eval) - 1][key]: {previous_eval[len(previous_eval) - 1][key]}")
+                print(f"This round eval: {key}, {value}")
+                print(f"Previous round eval: {previous_eval[len(previous_eval) - 1][key]}")
 
                 if key == "astar_path" and world_eval_dict[key] == 0:
                     bad_feedback_check +=2
@@ -121,7 +122,7 @@ class Generator:
                 story_paragraphs[1] += 1
                 total_objectives += 1
 
-            return story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt
+        return story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt
 
     
 

@@ -2,11 +2,11 @@
 
 ![image](https://github.com/umair-nasir14/Word2World/assets/68095790/c7e5af2e-a948-4eda-9e9c-4c0e0f0f2f46)
 
-This repository contains to code for Word2World: Generating Stories and Worlds through Large Language Models.
+This repository contains to code for [Word2World: Generating Stories and Worlds through Large Language Models](https://arxiv.org/abs/2405.06686).
 
 ### Abstract:
 
-Large Language Models (LLMs) have proven their worth across a diverse spectrum of disciplines. LLMs have shown great potential in Procedural Content Generation (PCG) as well, but directly generating a level through a pre-trained LLM is still challenging. This work introduces \texttt{Word2World}, a system that enables LLMs to procedurally design playable games through stories, without any task-specific fine-tuning. \texttt{Word2World} leverages the abilities of LLMs to create diverse content and extract information. Combining these abilities, LLMs can create a story for the game, design narrative, and place tiles in appropriate places to create coherent worlds and playable games. We test \texttt{Word2World} with different LLMs and perform a thorough ablation study to validate each step.
+Large Language Models (LLMs) have proven their worth across a diverse spectrum of disciplines. LLMs have shown great potential in Procedural Content Generation (PCG) as well, but directly generating a level through a pre-trained LLM is still challenging. This work introduces `Word2World`, a system that enables LLMs to procedurally design playable games through stories, without any task-specific fine-tuning. `Word2World` leverages the abilities of LLMs to create diverse content and extract information. Combining these abilities, LLMs can create a story for the game, design narrative, and place tiles in appropriate places to create coherent worlds and playable games. We test `Word2World` with different LLMs and perform a thorough ablation study to validate each step.
 
 ### Usage:
 
@@ -80,6 +80,14 @@ python word2world/play_game.py
 
 - The most stable model is `"gpt-4-turbo-2024-04-09"`.
 - Currently only `OpenAI` models are supported.
+- OS supported: `Windows`
+
+### To-dos:
+
+- [ ] Add support for Anthropic.
+- [ ] Add support for Groq.
+- [ ] Add support for Linux.
+- [ ] Clean Code for easy integrations of new platforms, e.g. huggingface.
 
 ### Cite:
 ```

@@ -1,0 +1,229 @@
+{
+    "round_0": {
+        "story": "On the wind-swept moors of Elstane, an unforgiving grey expanse dotted with whisper-thin grasses that shifted in the chill air, stood the tiny village of Moorvale, ringed by rough-hewn stone cottages. In its very heart lived Elara, a skilled weaver whose tapestries captured both the beauty and the desolation of her surroundings. Elara possessed a deep-seated desire to bring warmth and color, not only to her fabrics but to the lives of the villagers, who struggled under the reign of the tyrannical Lord Crewe. \n\nElara's journey began the day she decided that Moorvale needed freedom to foster creativity and joy, not oppression under Crewe's harsh taxes and incessant demands. Her objectives crystallized: acquire rare, vibrant dyes unseen in Moorvale to invigorate her tapestries; weave the Legendary Tapestry of Eldynn, believed to inspire hope and resilience among its viewers; build a secret loom room, invisible to Crewe\u2019s watchful eyes; and gather a covert symposium of artists and craftspeople to spread creativity and innovation. She also aimed to train apprentices to ensure the continuity of craftsmanship, negotiate trade routes for essential materials bypassing Creacheck gates, and finally, to reveal Crewe's misdeeds to the king, seeking his intervention.\n\nLord Crewe, ever suspicious and wary of rebellion, perceived Elara\u2019s more frequent journeys and unusual requests for materials as a threat. His objective was singular and driven by a deep-seated fear of losing control: to quash what he believed was an emerging uprising before it could take root. With spies shadowing Elara and strict checks imposed on all goods entering Moorvale, Crewe planned to find and destroy Elara's loom room, thus breaking the spirit of the village's newfound hope.\n\nAs tales of a beautiful tapestry that could gleam in all the colors of the dawn began to circulate, the villagers' spirits rose; they saw in each fiber the possibility of a life beyond their grey existence. However, Crewe grew ever more ruthless, confiscating supplies and imprisoning those he suspected of aiding Elara. Unbeknownst to him, each act of tyranny only wove his image darker into the fabric of the Legendary Tapestry of Eldynn, which Elara had completed beneath the cloak of night in her hidden loom room.\n\nThe climax arrived during the annual Festival of the Elders, when Elara unveiled her tapestry before the entire village and Crewe\u2019s spies. The vivid hues and intricate details illustrating Creapeoplehip\u2019s oppression were undeniable. Shocked by the turn of events, Crewe attempted to seize the tapestry, but the showing of the tapestry had summoned the attention of the king's envoy, secretly amongst the crowd. Witnessing the stirrings of rebellion and moved by the tapestry\u2019s narrative, the envoy intervened, ultimately leading to a peaceful negotiation. Crewe was removed from power, and the King, recognizing the village's potential through Elary\u2019s art, decreed Moorvale a free artistic haven.\n\nIn the newly vibrant Moorvale, as Elara trained her apprentices, the Legendary Tapestry of Eldynn was displayed in the village center, a reminder of the power of resilience and beauty as instruments of change.",
+        "character_information": "Certainly! Here's a description of each key character from the story which can help in generating sprites for a 2D game:\n\n1. **Elara, the Weaver**\n   - **Appearance**: Elara has long, flowing silver hair often tied back with a strip of colorful fabric, symbolizing her love for weaving. She wears a rustic, yet elegantly embroidered dress that reaches her ankles, dyed in shades of deep green and violet. Around her neck, a simple locket glimmers\u2014a treasured keepsake.\n   - **Attributes**: Her movements are graceful and deliberate, indicative of someone who works meticulously with her hands. There's a softness to her expression, which hardens into determination when facing adversity.\n   - **Tools/Weapon**: She carries a weaver\u2019s shuttle, ornately carved with ancient symbols, which doubles as her tool and symbolic weapon of resilience.\n\n2. **Lord Crewe**\n   - **Appearance**: Lord Crewe is tall, with a stern and imposing presence. His attire is regal but austere: a dark cloak sweeps behind him and he dons a high-collared, deep burgundy tunic, symbolizing his authority and the fear he instills. His hair is jet black and slicked back, and his eyes, sharp and cold, miss nothing.\n   - **Attributes**: His stance is rigid, always appearing as if he\u2019s on the brink of issuing a command. His expression is often scornful or smirking, giving him a menacing aura.\n   - **Tools/Weapon**: Lord Crewe wields a heavy scepter, topped with a dark gem that is rumored to be a source of his power to suppress and control.\n\n3. **The King's Envoy**\n   - **Appearance**: The envoy wears a medium-length royal blue coat with silver embroidery depicting the royal crest, signaling his authoritative connection to the king. He is of medium build, with an intelligible, wise face, and wears spectacles. His hair is neatly trimmed, and he sports a meticulously groomed beard.\n   - **Attributes**: He moves with a diplomatic grace and carries an aura of serene command. His gestures are calculated and eloquent, befitting a diplomat.\n   - **Tools/Weapon**: He carries a scroll case at all times, which contains messages and decrees from the king.\n\n4. **Villagers**\n   - **Appearance**: The villagers are diverse in appearance but wear simple, earth-toned clothes, reflecting their humble lifestyles. They have hopeful eyes and various tools related to their trades\u2014like smith hammers, cooking utensils, or farming scythes.\n   - **Attributes**: They show varying degrees of weariness and hope, moving with a rhythm that syncs with their daily hard work.\n   - **Tools/Weapon**: Each villager can carry a tool specific to their trade, which symbolizes their individual skills and contributions to the village\u2019s economy.\n\nThese sprites would need to express various emotions and actions like walking, working, or interacting with objects, allowing for a dynamic and engaging game environment where each character's personality and role are clearly recognizable.",
+        "tile_mapping": {
+            "Dark green grass": "b",
+            "Faded green/yellow path": "c",
+            "Grey stone path": "d",
+            "Moss-covered stone": "e",
+            "Dry moor": "g",
+            "Rippled water": "m",
+            "Muddy water edge": "n",
+            "Flowing stream water": "o",
+            "Pebbled stream bed": "p",
+            "Sparse moorland tree": "q",
+            "Gorse bush": "s",
+            "Bramble patch": "t",
+            "Wildflowers": "u",
+            "Loom workstation": "G",
+            "skillful weaver with vibrant tapestries": "@",
+            "tyrannical lord with oppressive rule": "#"
+        },
+        "goals": "The main goal for the protagonist, Elara, in the story is to transform the village of Moorvale into a flourishing artistic haven, free from the oppressive rule of Lord Crewe.\n\n### Small Goals to Achieve the Main Goal:\n1. **Acquire Rare, Vibrant Dyes**:\n   - Reward: Unlock new colors for tapestries, enhancing the aesthetic value. (+10 points)\n   - Penalty: Failure to obtain dyes results in muted tapestry colors, dampening morale. (-5 points)\n\n2. **Weave the Legendary Tapestry of Eldynn**:\n   - Reward: Inspire hope and resilience among villagers, increasing communal support. (+20 points)\n   - Penalty: Incomplete tapestry delays gathering support, allowing Crewe to strengthen his hold. (-10 points)\n\n3. **Build a Secret Loom Room**:\n   - Reward: Secure a location to work undetected. (+15 points)\n   - Penalty: Discovery by Crewe\u2019s spies leads to sabotage. (-15 points)\n\n4. **Gather a Covert Symposium of Artists**:\n   - Reward: Amplify creative output and ideas, leading to innovative projects. (+15 points)\n   - Penalty: Failure to convene diminishes collaborative efforts. (-10 points)\n\n5. **Train Apprentices**: \n   - Reward: Ensures continuity and growth in craftsmanship, expanding village capabilities. (+10 points)\n   - Penalty: Lack of skilled apprentices slows down project progress. (-8 points)\n\n6. **Negotiate Secret Trade Routes**:\n   - Reward: Secure essential materials without interception by Crewe\u2019s forces. (+12 points)\n   - Penalty: Intercepted goods lead to a resource crunch. (-12 points)\n\n7. **Expose Crewe's Misdeeds to the King**:\n   - Reward: Leads to a peaceful resolution with royal intervention, achieving the main goal. (+30 points)\n   - Penalty: Inability to communicate with the King leaves the village under Crewe\u2019s rule. (-20 points)\n\n8. **Defeat Lord Crease**: \n   - Reward: Liberation of Moorvale, securing a prosperous future for all villagers. (+50 points)\n   - Penalty: Failure not directly penalized since this forms part of the climax. (0 points)\n\nThese structured rewards and penalties make the narrative progression in the game both challenging and rewarding, offering players a clear reflection of their actions' impact on Moorvale's fate.",
+        "objectives": {
+            "Acquire Rare, Vibrant Dyes": [
+                "g",
+                25,
+                15
+            ],
+            "Weave the Legendary Tapestry of Eldynn": [
+                "G",
+                26,
+                13
+            ],
+            "Build a Secret Loom Room": [
+                "G",
+                26,
+                13
+            ],
+            "Gather a Covert Symposium of Artists": [
+                "q",
+                12,
+                15
+            ],
+            "Train Apprentices": [
+                "u",
+                19,
+                21
+            ],
+            "Negotiate Secret Trade Routes": [
+                "p",
+                11,
+                18
+            ],
+            "Expose Crewe's Misdeeds to the King": [
+                "#",
+                21,
+                20
+            ],
+            "Defeat Lord Crewe": [
+                "#",
+                21,
+                20
+            ]
+        },
+        "important_tiles": "['@', '#', 'G', 'L', 'K', 'D', 'E', 'F', 'H', 'I', 'J', 'B', 'W', 'C', 'M']",
+        "walkable_tiles": "[\n    'a',  # Light green grass\n    'b',  # Dark green grass\n    'c',  # Faded green/yellow path\n    'd',  # Grey stone path\n    'e',  # Moss-covered stone\n    'f',  # Heather bloom moor\n    'g',  # Dry moor\n    'h',  # Mud patch\n    'm',  # Rippled water\n    'o',  # Flowing stream water\n    'p',  # Pebbled stream bed\n    'q',  # Sparse moorland tree\n    'r',  # Tree clumps\n    's',  # Gorse bush\n    't',  # Bramble patch\n    'u',  # Wildflowers\n    'v',  # Low moorland grasses\n    'B',  # Village square cobblestone\n    'D',  # Market stall\n    'Y',  # Spring blossoms\n    'Z',  # Summer sun-drenched\n    '0'   # Autumn leaves\n]",
+        "interactive_object_tiles": "['N', 'O', 'P', 'E', 'G', 'D', 'U', 'V', 'W']",
+        "world_1st_layer": {
+            "world": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbccccccccccccccccccb\nbbbbbcccccccddddddddddeeeeecccccbb\nbbccccdddddccddddddddddeeccccbbbb\nccdddddddddddmmmddddddddeedddccbb\ncddddmmmmmmddmmnooddmmmdmmddddccb\ndddddmmmmmmodddddodddmmdddddddddcc\ncdddmdddddddnoddddddddmmmmmmdddddc\ncdmmmmmmdddddmmddddddmmmmmdddddddc\nddddmdddmmmmmmmddddddmddddmmddddd\nbmmmmmmmmmmmmmmmmmmmmmmmmmdddddcc\nbbmmmmmmmmmpppppppppppppddddddbcc\ncbbmmmppppqqqqqqqqqqppppddddddbcc\nbbbbpppppppqqqqqqqqqqppppdddddbcb\ncbppppppppppppqpppppppppppddddbcc\nbpppppppppppppppppppppppppddddbbc\nbbpppppppsssssspppppppppppdddccbb\ndbppppppsssssssppppppppppppddccbbb\nddppppppssssssspppppppppppppcccbbb\ndddpppppsssssssuuuuutppppppccbbbb\nbbddpppppppppppuuuuutppppppccbbbb\nbbbdddpppppppguuuutpppppppcccbbbb\nbbbbddddpppppguuuuddppppppccbbbbbb\nbcccdddddppppggguuddddpppccbbbbbbb\nbcdddddddppppgggggggddddddcccbbbbb\nbcddddeeddpppgggggggddddddcccccccc",
+            "tiles": {
+                "Dark green grass": "b",
+                "Faded green/yellow path": "c",
+                "Grey stone path": "d",
+                "Moss-covered stone": "e",
+                "Dry moor": "g",
+                "Rippled water": "m",
+                "Muddy water edge": "n",
+                "Flowing stream water": "o",
+                "Pebbled stream bed": "p",
+                "Sparse moorland tree": "q",
+                "Gorse bush": "s",
+                "Bramble patch": "t",
+                "Wildflowers": "u"
+            }
+        },
+        "world": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbccccccccccccccccccb\nbbbbbcccccccddddddddddeeeeecccccbb\nbbccccdddddccddddddddddeeccccbbbb\nccdddddddddddmmmddddddddeedddccbb\ncddddmmmmmmddmmnooddmmmdmmddddccb\ndddddmmmmmmodddddodddmmdddddddddcc\ncdddmdddddddnoddddddddmmmmmmdddddc\ncdmmmmmmdddddmmddddddmmmmmdddddddc\nddddmdddmmmmmmmddddddmddddmmddddd\nbmmmmmmmmmmmmmmmmmmmmmmmmmdddddcc\nbbmmmmmmmmmpppppppppppppddddddbcc\ncbbmmmppppqqqqqqqqqqppppddddddbcc\nbbbbpppppppqqqqqqqqqqppppdddddbcb\ncbppppppppppppqpppppppppppddddbcc\nbpppppppppppppppppppppppppddddbbc\nbbpppppppsssssspppppppppppdddccbb\ndbppppppsssssssppppppppppppddccbbb\nddppppppssssssspppppppppppppcccbbb\ndddpppppsssssssuuuuutppppppccbbbb\nbbddpppppppppppuu@uutppppppccbbbb\nbbbdddpppppppguu#utpppppppcccbbbb\nbbbbddddpppppguuuuddppppppccbbbbbb\nbcccdddddppppggguuddddpppccbbbbbbb\nbcdddddddppppgggggggddddddcccbbbbb\nbcddddeeddpppGggggggddddddcccccccc",
+        "evaluations": {
+            "Correct Walkable paths": 85,
+            "Aesthetics": 90,
+            "Placement of environment tiles": 95,
+            "Placement of character tiles": 60,
+            "Placement of objects that fulfill goals": 75,
+            "Adherence to story": 80,
+            "Accuracy_of_characters_placed": 100.0,
+            "Accuracy_of_important_tiles_placed": 20.0,
+            "Average_euclidean_distance": 0,
+            "agent_reward": -75,
+            "astar_path": 0
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [
+                4,
+                5
+            ],
+            "total_objectives": 8
+        }
+    },
+    "round_1": {
+        "story": "On the wind-swept moors of Elstane, an unforgiving grey expanse dotted with whisper-thin grasses that shifted in the chill air, stood the tiny village of Moorvale, ringed by rough-hewn stone cottages. In its very heart lived Elara, a skilled weaver whose tapestries captured both the beauty and the desolation of her surroundings. Elara possessed a deep-seated desire to bring warmth and color, not only to her fabrics but to the lives of the villagers, who struggled under the reign of the tyrannical Lord Crewe. \n\nElara's journey began the day she decided that Moorvale needed freedom to foster creativity and joy, not oppression under Crewe's harsh taxes and incessant demands. Her objectives crystallized: acquire rare, vibrant dyes unseen in Moorvale to invigorate her tapestries; weave the Legendary Tapestry of Eldynn, believed to inspire hope and resilience among its viewers; build a secret loom room, invisible to Crewe\u2019s watchful eyes; and gather a covert symposium of artists and craftspeople to spread creativity and innovation. She also aimed to train apprentices to ensure the continuity of craftsmanship, negotiate trade routes for essential materials bypassing Creacheck gates, and finally, to reveal Crewe's misdeeds to the king, seeking his intervention.\n\nLord Crewe, ever suspicious and wary of rebellion, perceived Elara\u2019s more frequent journeys and unusual requests for materials as a threat. His objective was singular and driven by a deep-seated fear of losing control: to quash what he believed was an emerging uprising before it could take root. With spies shadowing Elara and strict checks imposed on all goods entering Moorvale, Crewe planned to find and destroy Elara's loom room, thus breaking the spirit of the village's newfound hope.\n\nAs tales of a beautiful tapestry that could gleam in all the colors of the dawn began to circulate, the villagers' spirits rose; they saw in each fiber the possibility of a life beyond their grey existence. However, Crewe grew ever more ruthless, confiscating supplies and imprisoning those he suspected of aiding Elara. Unbeknownst to him, each act of tyranny only wove his image darker into the fabric of the Legendary Tapestry of Eldynn, which Elara had completed beneath the cloak of night in her hidden loom room.\n\nThe climax arrived during the annual Festival of the Elders, when Elara unveiled her tapestry before the entire village and Crewe\u2019s spies. The vivid hues and intricate details illustrating Creapeoplehip\u2019s oppression were undeniable. Shocked by the turn of events, Crewe attempted to seize the tapestry, but the showing of the tapestry had summoned the attention of the king's envoy, secretly amongst the crowd. Witnessing the stirrings of rebellion and moved by the tapestry\u2019s narrative, the envoy intervened, ultimately leading to a peaceful negotiation. Crewe was removed from power, and the King, recognizing the village's potential through Elary\u2019s art, decreed Moorvale a free artistic haven.\n\nIn the newly vibrant Moorvale, as Elara trained her apprentices, the Legendary Tapestry of Eldynn was displayed in the village center, a reminder of the power of resilience and beauty as instruments of change.",
+        "character_information": "Certainly! Here's a description of each key character from the story which can help in generating sprites for a 2D game:\n\n1. **Elara, the Weaver**\n   - **Appearance**: Elara has long, flowing silver hair often tied back with a strip of colorful fabric, symbolizing her love for weaving. She wears a rustic, yet elegantly embroidered dress that reaches her ankles, dyed in shades of deep green and violet. Around her neck, a simple locket glimmers\u2014a treasured keepsake.\n   - **Attributes**: Her movements are graceful and deliberate, indicative of someone who works meticulously with her hands. There's a softness to her expression, which hardens into determination when facing adversity.\n   - **Tools/Weapon**: She carries a weaver\u2019s shuttle, ornately carved with ancient symbols, which doubles as her tool and symbolic weapon of resilience.\n\n2. **Lord Crewe**\n   - **Appearance**: Lord Crewe is tall, with a stern and imposing presence. His attire is regal but austere: a dark cloak sweeps behind him and he dons a high-collared, deep burgundy tunic, symbolizing his authority and the fear he instills. His hair is jet black and slicked back, and his eyes, sharp and cold, miss nothing.\n   - **Attributes**: His stance is rigid, always appearing as if he\u2019s on the brink of issuing a command. His expression is often scornful or smirking, giving him a menacing aura.\n   - **Tools/Weapon**: Lord Crewe wields a heavy scepter, topped with a dark gem that is rumored to be a source of his power to suppress and control.\n\n3. **The King's Envoy**\n   - **Appearance**: The envoy wears a medium-length royal blue coat with silver embroidery depicting the royal crest, signaling his authoritative connection to the king. He is of medium build, with an intelligible, wise face, and wears spectacles. His hair is neatly trimmed, and he sports a meticulously groomed beard.\n   - **Attributes**: He moves with a diplomatic grace and carries an aura of serene command. His gestures are calculated and eloquent, befitting a diplomat.\n   - **Tools/Weapon**: He carries a scroll case at all times, which contains messages and decrees from the king.\n\n4. **Villagers**\n   - **Appearance**: The villagers are diverse in appearance but wear simple, earth-toned clothes, reflecting their humble lifestyles. They have hopeful eyes and various tools related to their trades\u2014like smith hammers, cooking utensils, or farming scythes.\n   - **Attributes**: They show varying degrees of weariness and hope, moving with a rhythm that syncs with their daily hard work.\n   - **Tools/Weapon**: Each villager can carry a tool specific to their trade, which symbolizes their individual skills and contributions to the village\u2019s economy.\n\nThese sprites would need to express various emotions and actions like walking, working, or interacting with objects, allowing for a dynamic and engaging game environment where each character's personality and role are clearly recognizable.",
+        "tile_mapping": {
+            "Light green grass": "a",
+            "Dark green grass": "b",
+            "Faded green/yellow path": "c",
+            "Grey stone path": "d",
+            "Dry moor": "g",
+            "Rippled water": "m",
+            "Pebbled stream bed": "p",
+            "Sparse moorland tree": "q",
+            "Tree clumps": "r",
+            "Gorse bush": "s",
+            "Bramble patch": "t",
+            "Wildflowers": "u",
+            "Stone wall cottage": "w",
+            "Market stall": "D",
+            "Secret door": "E",
+            "Stone room interior": "F",
+            "Loom workstation": "G",
+            "Dark roofing": "J",
+            "Blacksmith forge": "K",
+            "Weaver\u2019s shop": "L",
+            "Herbalist stand": "M",
+            "Fireplace": "S",
+            "Pottery": "V",
+            "Royal throne": "W",
+            "skillful weaver with vibrant tapestries": "@",
+            "tyrannical lord with oppressive rule": "#"
+        },
+        "goals": "The main goal for the protagonist, Elara, in the story is to transform the village of Moorvale into a flourishing artistic haven, free from the oppressive rule of Lord Crewe.\n\n### Small Goals to Achieve the Main Goal:\n1. **Acquire Rare, Vibrant Dyes**:\n   - Reward: Unlock new colors for tapestries, enhancing the aesthetic value. (+10 points)\n   - Penalty: Failure to obtain dyes results in muted tapestry colors, dampening morale. (-5 points)\n\n2. **Weave the Legendary Tapestry of Eldynn**:\n   - Reward: Inspire hope and resilience among villagers, increasing communal support. (+20 points)\n   - Penalty: Incomplete tapestry delays gathering support, allowing Crewe to strengthen his hold. (-10 points)\n\n3. **Build a Secret Loom Room**:\n   - Reward: Secure a location to work undetected. (+15 points)\n   - Penalty: Discovery by Crewe\u2019s spies leads to sabotage. (-15 points)\n\n4. **Gather a Covert Symposium of Artists**:\n   - Reward: Amplify creative output and ideas, leading to innovative projects. (+15 points)\n   - Penalty: Failure to convene diminishes collaborative efforts. (-10 points)\n\n5. **Train Apprentices**: \n   - Reward: Ensures continuity and growth in craftsmanship, expanding village capabilities. (+10 points)\n   - Penalty: Lack of skilled apprentices slows down project progress. (-8 points)\n\n6. **Negotiate Secret Trade Routes**:\n   - Reward: Secure essential materials without interception by Crewe\u2019s forces. (+12 points)\n   - Penalty: Intercepted goods lead to a resource crunch. (-12 points)\n\n7. **Expose Crewe's Misdeeds to the King**:\n   - Reward: Leads to a peaceful resolution with royal intervention, achieving the main goal. (+30 points)\n   - Penalty: Inability to communicate with the King leaves the village under Crewe\u2019s rule. (-20 points)\n\n8. **Defeat Lord Crease**: \n   - Reward: Liberation of Moorvale, securing a prosperous future for all villagers. (+50 points)\n   - Penalty: Failure not directly penalized since this forms part of the climax. (0 points)\n\nThese structured rewards and penalties make the narrative progression in the game both challenging and rewarding, offering players a clear reflection of their actions' impact on Moorvale's fate.",
+        "objectives": {
+            "Acquire Rare, Vibrant Dyes": [
+                "D",
+                14,
+                10
+            ],
+            "Weave the Legendary Tapestry of Eldynn": [
+                "L",
+                7,
+                3
+            ],
+            "Build a Secret Loom Room": [
+                "E",
+                18,
+                2
+            ],
+            "Gather a Covert Symposium of Artists": [
+                "M",
+                14,
+                6
+            ],
+            "Train Apprentices": [
+                "F",
+                16,
+                18
+            ],
+            "Negotiate Secret Trade Routes": [
+                "c",
+                2,
+                17
+            ],
+            "Expose Crewe's Misdeeds to the King": [
+                "W",
+                20,
+                8
+            ],
+            "Defeat Lord Crewe": [
+                "#",
+                6,
+                29
+            ]
+        },
+        "important_tiles": "['@', '#', 'G', 'L', 'K', 'D', 'E', 'F', 'H', 'I', 'J', 'B', 'W', 'C', 'M']",
+        "walkable_tiles": "[\n    'a',  # Light green grass\n    'b',  # Dark green grass\n    'c',  # Faded green/yellow path\n    'd',  # Grey stone path\n    'e',  # Moss-covered stone\n    'f',  # Heather bloom moor\n    'g',  # Dry moor\n    'h',  # Mud patch\n    'm',  # Rippled water\n    'o',  # Flowing stream water\n    'p',  # Pebbled stream bed\n    'q',  # Sparse moorland tree\n    'r',  # Tree clumps\n    's',  # Gorse bush\n    't',  # Bramble patch\n    'u',  # Wildflowers\n    'v',  # Low moorland grasses\n    'B',  # Village square cobblestone\n    'D',  # Market stall\n    'Y',  # Spring blossoms\n    'Z',  # Summer sun-drenched\n    '0'   # Autumn leaves\n]",
+        "interactive_object_tiles": "['N', 'O', 'P', 'E', 'G', 'D', 'U', 'V', 'W']",
+        "world_1st_layer": {
+            "world": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbcccccccccccccbbbbbbbbb\nbbbccccccddbddddddddddddddddddddccbbbbbb\nbbccdddddmmmmddddddddddddddddddddddccbb\ncdddddmmmmmmmmmdddddddddmmmmmmmmmmddccc\ncddddmmmmmmmmddmddddddddmmmmmmmmmmdddcc\ncdddmmmmmddddmmmmmmmmdmmmmmmmmmmmmddddc\nddddmmmmddddmmmmmddddddddddddmmmmmmdddc\nbdddmddddddmmmmdddddmmmmmmmmmmmmddddddc\nbddddmmmmmmmmddmmmmmmmmmmmmmmmmdddddddc\nddddmmmmmmmmmmmmmmmmmmddddddmmmmddddddc\nbddmmmmpppppppppppppppppppppppdddddddcc\nbbmmpppppppppqppppqqqqqqqqqqpppdddddbcc\nbbbppppppppppppppppppqqqqqqqqpppddbbccc\nbbpppppppppppppsppppppppppppppppddccbbc\nbppppppssssspppppppppppppppsppppdddbbbc\ncbbbpppsssssspppppppppppppppppppddccbbb\nbbbppppppsssspppppppppppuuuuutppddccbbb\nddbppppppppppppputuuuuuuuuuuutpppcccbbb\nbbdbpppppppppppppuutttttttutppppcccbbbb\nbbbbbddpppppppppuuuttttttttppppcccbbbbb\nbbbbbddddpppppppuutuutttpppppppcccbbbbb\nbbbbdddddpppppggggguuttpppppppccccbbbbb\nbbccddddddppppgggggggddddddpcccbbbbbbbb\nbccdddddddppppggggggggddddddccccccccccc",
+            "tiles": {
+                "Dark green grass": "b",
+                "Faded green/yellow path": "c",
+                "Grey stone path": "d",
+                "Dry moor": "g",
+                "Rippled water": "m",
+                "Pebbled stream bed": "p",
+                "Sparse moorland tree": "q",
+                "Gorse bush": "s",
+                "Bramble patch": "t",
+                "Wildflowers": "u"
+            }
+        },
+        "world": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\nbbbbbbbbbbbbbbbbbcccccccccccccbbbbbbbbb\nbbbccccccddbddddddddddddddddddddccbbbbbb\nbbcc@dddmmmmddddddddddddddddddddddccbb\ncdddddmmmmmmmmmdddddddddmmmmmmmmmmddccc\ncddddmmmmmmmmddmddddddddmmmm#mmmmdddcc\ncdddmmmmmddddmmmmmmmmdmmmmmmmmmmmmddddc\nddddmmLmddmmmmmmddddGddddddddmmmmmmdddc\nbdddmddddddmmmmdddddmmmmmmmmmmmmddddddc\nbddddmmmmmmmmddmmKmmmmmmmmmmmmmmdddddddc\nddddmmmmmmmmmmmmmmmmmmddddddmmmmddddddc\nbddmmmmpppppppppppppppppppppppdddddddcc\nbbmmpppppppppqppppqqqqqqqqqqpppdddddbcc\nbbbppppppppppppppppppqqqqqqqqpppddbbccc\nbbppppppMDpppppsppppppppppppppppddccbbc\nbppppppsssssppDpppppppppppppsppppdddbbbc\ncbbbpppssssssppppppppppDFppppttpppddccbbb\nbbbppppppssssppppVFpppppuuuuutppddccbbb\nddbpppEpppppppptutuuuuuuuuuuutpppcccbbb\nbbbbppppppppppppuuFttttttutppppcccbbbb\nbbbbbddppWppppppuuuttttttttppppcccbbbbb\nbbbbbddddpppppppuutuutttppwarpppcccbbbbb\nbbbbbddddpJpppggggguuttpppppppccccbbbbb\nbbccdddddSdppppgggggggddddddpcccbbbbbbbb\nbccdddddddppppggggggggddddddccccccccccc",
+        "evaluations": {
+            "Correct Walkable paths": 80,
+            "Aesthetics": 70,
+            "Placement of environment tiles": 85,
+            "Placement of character tiles": 60,
+            "Placement of objects that fulfill goals": 75,
+            "Adherence to story": 90,
+            "Accuracy_of_characters_placed": 100.0,
+            "Accuracy_of_important_tiles_placed": 73.33333333333333,
+            "Average_euclidean_distance": 704.9581547865093,
+            "agent_reward": -300,
+            "astar_path": 32
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [
+                4,
+                5
+            ],
+            "total_objectives": 8
+        }
+    }
+}

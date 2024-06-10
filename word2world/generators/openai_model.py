@@ -288,7 +288,7 @@ class OpenAIGenerator(Generator):
 
         return object_tiles_list, object_tile_discriptions, object_tile_discriptions
 
-    def world_generation(self, round, previous_story, story_paragraphs, total_objectives, previous_tile_map, previous_map, previous_eval, story, story_prompt, character_discriptions, character_discriptions_dict, character_prompt, tileset_discriptions, tileset_prompt, tile_map_dict, tileset_map_discriptions, tileset_map_prompt, goal_discriptions, goal_prompt, important_tiles_list, important_tile_discriptions, important_tile_prompt, walkable_tiles_list, walkable_tile_discriptions, walkable_tile_prompt, save_dir):
+    def world_generation(self, rounds, previous_story, story_paragraphs, total_objectives, previous_tile_map, previous_map, previous_eval, story, story_prompt, character_discriptions, character_discriptions_dict, character_prompt, tileset_discriptions, tileset_prompt, tile_map_dict, tileset_map_discriptions, tileset_map_prompt, goal_discriptions, goal_prompt, important_tiles_list, important_tile_discriptions, important_tile_prompt, walkable_tiles_list, walkable_tile_discriptions, walkable_tile_prompt, save_dir):
         print(f"Generating World...")
         NO_OF_EXCEPTIONS_2 = 0
         no_of_important_tiles = 15
@@ -297,7 +297,7 @@ class OpenAIGenerator(Generator):
         bad_feedback_prompt = ""
         good_feedback_check = 0
         bad_feedback_check = 0
-        if round == 0 or history_to_keep > 0:
+        if rounds == 0 or history_to_keep > 0:
             world_system_prompt = "You are a 2D game designer that is profficient in designing tile-based maps. Designing any size of the tile-based map is not a problem for you. This is your first round of generation. You are given the goals to achieve and a list of important tiles to place. Consider them to make the world. Do not place the protagonist, the antagonist and the interactive objects of the story right now. Only create the world right now. Also, consider goals that you extracted earlier and generate while keeping them in context."    
             world_prompt = f"Using the following tile to character mapping:\n{tile_map_dict}\nCreate an entire world on a tile-based grid. Do not create things that would neew more than one tile. For example, a house or a building needs more than one tile to be made. Also, following characters are important to place:\n{important_tiles_list}\n and walkable tiles:\n{walkable_tiles_list}\n. Use {no_of_important_tiles} important tiles to create the world. Do not place the protagonist, the antagonist and the interactive objects of the story right now. Only create the world right now. Create it is a string format with three backticks to start and end with (```) and not in a list format."
         else:
@@ -403,15 +403,15 @@ class OpenAIGenerator(Generator):
                 char_color_map_with_char = get_image_color_tile_mapping(char_color_map_with_char_dict)
 
                 print(f"char_color_map: {char_color_map_with_char_dict}")
-                colored_tilemap_img_with_char = create_colored_tilemap_image(world_map_fixed_with_chars, char_color_map_with_char_dict)
-                plt.imshow(colored_tilemap_img_with_char)
-                plt.axis('off')
-                plt.savefig(save_dir + f'/world_color_map_with_chars_{round}.png', format='png', dpi=150, bbox_inches='tight')
-                plt.show()
+                #colored_tilemap_img_with_char = create_colored_tilemap_image(world_map_fixed_with_chars, char_color_map_with_char_dict)
+                #plt.imshow(colored_tilemap_img_with_char)
+                #plt.axis('off')
+                #plt.savefig(save_dir + f'/world_color_map_with_chars_{rounds}.png', format='png', dpi=150, bbox_inches='tight')
+                #plt.show()
                 
                 world_legend = create_legend_image(char_color_map_with_char_dict, used_char_dict_with_char)
-                world_legend.savefig(save_dir + f'/world_color_legend_with_chars_{round}.png', format='png', dpi=150, bbox_inches='tight')
-                plt.show()
+                world_legend.savefig(save_dir + f'/world_color_legend_with_chars_{rounds}.png', format='png', dpi=150, bbox_inches='tight')
+                #plt.show()
 
 
                 evaluator = OpenAIEvaluator(self.total_input_tokens, self.total_output_tokens)
@@ -424,14 +424,15 @@ class OpenAIGenerator(Generator):
                                                                                                               previous_maps=previous_map)
                 
 
-                llm_agent_reward, astar_path, objectives = self.action_generation(round,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
+                llm_agent_reward, astar_path, objectives = self.action_generation(rounds,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
                         "char_color_map",walkable_tile_discriptions['choices'][0]['message']['content'],important_tile_discriptions['choices'][0]['message']['content'],goal_discriptions['choices'][0]['message']['content'], save_dir)
                 
                 #agent_reward = -1000
                 world_eval_dict["agent_reward"] = llm_agent_reward
                 world_eval_dict["astar_path"] = astar_path
 
-                story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt = self.feedback_checks(round, world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles)
+
+                story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt = self.feedback_checks(rounds, world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles)
                     
                 done = True
 
@@ -551,10 +552,11 @@ class OpenAIGenerator(Generator):
                 tile_images_1st_layer = overlap_dict(tile_images, tileset_used_dict_1st_layer)
 
                 legend = create_legend(tile_images,tileset_used_dict)
-                plt.imshow(legend)
-                plt.axis('off')
-                plt.savefig(save_dir + f'/world_legend_with_chars_{round}.png', format='png', dpi=150, bbox_inches='tight')
+                #plt.imshow(legend)
+                #plt.axis('off')
+                #plt.savefig(save_dir + f'/world_legend_with_chars_{round}.png', format='png', dpi=150, bbox_inches='tight')
                 #plt.show()
+                legend.save(save_dir + f'/world_legend_with_chars_{round}.png', 'PNG')
 
                 env = Word2WorldEnv(walkable_tiles_list, tile_images_1st_layer, tile_images, world_map_fixed, world_map_fixed_with_chars, object_tiles_list, "#")
                 agent = LLMAgent()
