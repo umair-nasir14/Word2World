@@ -80,6 +80,7 @@ class Generator:
     def action_generation(self):
         raise NotImplementedError("This method should be overridden by subclasses")
     
+
     def feedback_checks(self, rounds, world_eval_dict, previous_eval, story_paragraphs, total_objectives, no_of_important_tiles):
         
         good_feedback_prompt = f"Also, the following is a more detailed feedback of how much you improved in the last generation:\n Your last generation improved the following evaluation metrics, and so you are doing great:\n"
