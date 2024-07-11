@@ -42,8 +42,8 @@ class OpenAIEvaluator(Evaluator):
     def evaluate_world(self, map, tile_map_dictionary, story, model, walkable_tiles, important_tiles, previous_maps):
         print(f"Evaluating World...")    
         no_of_exceptios = 0
-        eval_system_prompt = "You are an evaluator of a 2D tilemap world created from a story. You extract meaning from a given story. You are also provided by Python dictionary-like mapping of tiles and characters or alphabets. You evaluate based on how the tiles have been placed and if they match how the story has explained. For example characters should be placed once. If the protagonist and antagonist are placed together then it's a bad placement. If they are far apart then it is good. If the world looks aesthetically nice then you give good evaluation, otherwise bad. If the character tiles are not placed then it is bad. All tiles should be placed nicely. Paths should also be evaluated. Eventually each of the following aspect out of 100: Correct Walkable paths, Aesthetics, Placement of environment tiles, Placement of character tiles, Placement of objects that fulfill goals, and Adherence to story. Present the results as only Python dictionary and don't return it in a Python response."
-        evaluation_prompt = f"Given the story:\n{story['choices'][0]['message']['content']}\nAnd the character mapping:{tile_map_dictionary}\nEvaluate the following 2D tilemap World:\n{map}. Adherence to story should be calculated based on the fact that the map adheres to story through the placement of tiles in the 2D tilemap world."
+        eval_system_prompt = "You are an evaluator of a 2D tilemap world created from a story. You extract meaning from a given story. You are also provided by Python dictionary-like mapping of tiles and characters or alphabets. You evaluate based on how the tiles have been placed and if they match how the story has explained. Your result being 'No' is not a bad thing, but it actually gives a good insight."
+        evaluation_prompt = f"Given the story, tiles used to create the 2D map, and the 2D map, suggest whether the 2D tilemap world is coherent to the story. The story is as follows:\n{story['choices'][0]['message']['content']}\nThe tile mapping:{tile_map_dictionary}\nThe 2D tilemap world:\n{map}\n Check for all the tiles mentioned in the tile mapping being in the 2D tilemap world. Strictly return only 'Yes' or 'No' in your answer."
         done = False
         while not done:
             try:
@@ -206,7 +206,7 @@ class OpenAIGenerator(Generator):
 
     def extract_important_tiles(self, story, story_prompt, character_discriptions, character_prompt, tileset_discriptions, tileset_prompt, tile_map_dict, tileset_map_discriptions, tileset_map_prompt, goal_discriptions, goal_prompt):
         print("Extracting important tiles..")
-        important_tile_prompt = f"Conseidering the above goals that you extracted from the story and the following tileset\n{tile_map_dict}\n create a Python list of the 15 most important characters of the tiles that should be placed in the 2D tilemap world. Remember, Protagonist, antagonist and non-player characters, if there are any, in the story will always be an important tiles. Only return the important tiles."
+        important_tile_prompt = f"Considering the above goals that you extracted from the story and the following tileset\n{tile_map_dict}\n create a Python list of the 15 most important characters of the tiles that should be placed in the 2D tilemap world. Remember, Protagonist, antagonist and non-player characters, if there are any, in the story will always be an important tiles. Only return the important tiles."
         important_tile_discriptions = openai.ChatCompletion.create(model=self.model, messages=[
                                                                                 {"role": "user", "content": story_prompt},
                                                                                 {"role": "assistant", "content": story['choices'][0]['message']['content']},
@@ -234,7 +234,7 @@ class OpenAIGenerator(Generator):
 
     def extract_walkable_tiles(self, story, story_prompt, character_discriptions, character_prompt, tileset_discriptions, tileset_prompt, tile_map_dict, tileset_map_discriptions, tileset_map_prompt, goal_discriptions, goal_prompt):
         print("Extracting walkable tiles..")
-        walkable_tile_prompt = f"Conseidering the above goals that you extracted from the story and the following tileset\n{tile_map_dict}\n create a Python list of the walkable tiles in the 2D tilemap world. Only return the walkable tiles."
+        walkable_tile_prompt = f"Considering the above goals that you extracted from the story and the following tileset\n{tile_map_dict}\n create a Python list of the walkable tiles in the 2D tilemap world. Only return the walkable tiles."
         walkable_tile_discriptions = openai.ChatCompletion.create(model=self.model, messages=[
                                                                                 {"role": "user", "content": story_prompt},
                                                                                 {"role": "assistant", "content": story['choices'][0]['message']['content']},
