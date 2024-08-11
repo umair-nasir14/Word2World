@@ -121,6 +121,7 @@ class Generator:
                 story_paragraphs[0] += 1
                 story_paragraphs[1] += 1
                 total_objectives += 1
+        # TODO: Clean code!
 
         return story_paragraphs, total_objectives, no_of_important_tiles, bad_feedback_prompt, good_feedback_prompt
 
