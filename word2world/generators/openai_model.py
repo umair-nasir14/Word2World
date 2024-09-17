@@ -301,7 +301,6 @@ class OpenAIGenerator(Generator):
             world_system_prompt = "You are a 2D game designer that is profficient in designing tile-based maps. Designing any size of the tile-based map is not a problem for you. This is your first round of generation. You are given the goals to achieve and a list of important tiles to place. Consider them to make the world. Do not place the protagonist, the antagonist and the interactive objects of the story right now. Only create the world right now. Also, consider goals that you extracted earlier and generate while keeping them in context."    
             world_prompt = f"Using the following tile to character mapping:\n{tile_map_dict}\nCreate an entire world on a tile-based grid. Do not create things that would neew more than one tile. For example, a house or a building needs more than one tile to be made. Also, following characters are important to place:\n{important_tiles_list}\n and walkable tiles:\n{walkable_tiles_list}\n. Use {no_of_important_tiles} important tiles to create the world. Do not place the protagonist, the antagonist and the interactive objects of the story right now. Only create the world right now. Create it is a string format with three backticks to start and end with (```) and not in a list format."
         else:
-            
             if len(previous_map) > history_to_keep:
                 previous_map = previous_map[-history_to_keep:]
                 previous_story = previous_story[-history_to_keep:]
