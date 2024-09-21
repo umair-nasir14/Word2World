@@ -291,25 +291,75 @@ def euclidean_distance(a, b):
 def map_to_list(str_map):
     return str_map.splitlines()
 
-def extract_list(string_list):
-    return ast.literal_eval(string_list)
+def extract_list(string_data):
+    try:
+        # Search for the list pattern in the string, including those within ```json and ```python blocks
+        pattern = r'```(?:json|python)?\s*(\[.*?\])\s*```|(\[.*?\])'
+        matches = re.findall(pattern, string_data, re.DOTALL)
+        if matches:
+            # Flatten the matches and filter out empty strings
+            matches = [match[0] or match[1] for match in matches if match[0] or match[1]]
+            # Iterate over all matches to find the first valid list
+            for match in matches:
+                try:
+                    # Try to parse as Python list
+                    extracted_list = ast.literal_eval(match)
+                    if isinstance(extracted_list, list):
+                        return extracted_list
+                except (ValueError, SyntaxError):
+                    try:
+                        # Try to parse as JSON list
+                        extracted_list = json.loads(match)
+                        if isinstance(extracted_list, list):
+                            return extracted_list
+                    except json.JSONDecodeError:
+                        continue
+            print("No valid list found in the matches.")
+            return []
+        else:
+            print("No list-like pattern found in the string.")
+            return []
+    except ValueError as e:
+        print(f"Error converting string to list: {e}")
+        return []
+    except SyntaxError as e:
+        print(f"Syntax error in the string: {e}")
+        return []
 
 def list_of_lists_to_string(lists):
     return '\n'.join([''.join(sublist) for sublist in lists])
 
 def extract_dict(string_data):
     try:
-        # Search for the simplest dictionary pattern in the string
-        pattern = r'\{[^{}]*\}'
-        matches = re.findall(pattern, string_data)
+        # Search for the dictionary pattern in the string, including those within ```json and ```python blocks
+        pattern = r'```(?:json|python)?\s*(\{.*?\})\s*```|(\{.*?\})'
+        matches = re.findall(pattern, string_data, re.DOTALL)
         if matches:
+            # Flatten the matches and filter out empty strings
+            matches = [match[0] or match[1] for match in matches if match[0] or match[1]]
             # Iterate over all matches to find the first valid dictionary
             for match in matches:
                 try:
+                    # Try to parse as Python dictionary
                     mission_dict = ast.literal_eval(match)
-                    return mission_dict
-                except:
-                    continue
+                    if isinstance(mission_dict, dict):
+                        # Add single quotes to string values
+                        for key, value in mission_dict.items():
+                            if isinstance(value, str):
+                                mission_dict[key] = f"{value}"
+                        return mission_dict
+                except (ValueError, SyntaxError):
+                    try:
+                        # Try to parse as JSON dictionary
+                        mission_dict = json.loads(match)
+                        if isinstance(mission_dict, dict):
+                            # Add single quotes to string values
+                            for key, value in mission_dict.items():
+                                if isinstance(value, str):
+                                    mission_dict[key] = f"'{value}'"
+                            return mission_dict
+                    except json.JSONDecodeError:
+                        continue
             print("No valid dictionary found in the matches.")
             return {}
         else:

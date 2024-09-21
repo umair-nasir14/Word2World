@@ -31,6 +31,8 @@ import pandas as pd
 from PIL import Image
 import openai
 import traceback
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 
 cfg = Config()
 
@@ -349,11 +351,9 @@ class OpenAIGenerator(Generator):
                 world_map_fixed = remove_extra_special_chars(world_map_raw)
                
                 print(world_map_fixed)
-
                 used_char_dict = extract_present_elements(world_map_fixed, tile_map_dict)
-
+                
                 world_with_characters_prompt = f"Now that you have created the following world map:\n{world_map_fixed}\n Place only the protagonist, the antagonist and the interactive objects of the story. Do not change anything in the world, just place only the protagonist, the antagonist and the interactive objects in the world."
-
                 world_with_characters_discriptions = openai.ChatCompletion.create(model=self.model, messages=[
                                                                                         {"role": "user", "content": story_prompt},
                                                                                         {"role": "assistant", "content": story['choices'][0]['message']['content']},
@@ -389,34 +389,11 @@ class OpenAIGenerator(Generator):
                 world_map_raw_with_chars = world_map_raw_with_chars.replace(' ', '').replace('"', '')
                 world_map_fixed_with_chars = remove_extra_special_chars(world_map_raw_with_chars)
                 print(world_map_fixed_with_chars)
-                
-                used_char_dict_with_char = extract_present_elements(world_map_fixed_with_chars, tile_map_dict)
-
-                color_code_prompt = f"Take the following Python dictionary:\n{used_char_dict_with_char}\n and create another dictionary that has Keys as the values of the dictionary above and values as appropriate hexadecimal color codes. For example, grass will have green hexadecimal color code. Stricty return only a Python dictionary. Do not return it in a Python response"
-
-                color_code_discriptions = openai.ChatCompletion.create(model=self.model, messages=[
-                                                                                        {"role": "user", "content": color_code_prompt},
-                                                                                        ], 
-                                                                                        temperature = 1)
-
-                char_color_map_with_char_dict = extract_dict(color_code_discriptions['choices'][0]['message']['content'])
-                char_color_map_with_char = get_image_color_tile_mapping(char_color_map_with_char_dict)
-
-                print(f"char_color_map: {char_color_map_with_char_dict}")
-                #colored_tilemap_img_with_char = create_colored_tilemap_image(world_map_fixed_with_chars, char_color_map_with_char_dict)
-                #plt.imshow(colored_tilemap_img_with_char)
-                #plt.axis('off')
-                #plt.savefig(save_dir + f'/world_color_map_with_chars_{rounds}.png', format='png', dpi=150, bbox_inches='tight')
-                #plt.show()
-                
-                world_legend = create_legend_image(char_color_map_with_char_dict, used_char_dict_with_char)
-                world_legend.savefig(save_dir + f'/world_color_legend_with_chars_{rounds}.png', format='png', dpi=150, bbox_inches='tight')
-                #plt.show()
 
 
                 evaluator = OpenAIEvaluator(self.total_input_tokens, self.total_output_tokens)
                 world_eval_dict, self.total_input_tokens, self.total_output_tokens = evaluator.evaluate_world(map=world_map_fixed_with_chars,
-                                                                                                              tile_map_dictionary=used_char_dict_with_char,
+                                                                                                              tile_map_dictionary=tile_map_dict,
                                                                                                               story=story,
                                                                                                               model=self.model,
                                                                                                               walkable_tiles=walkable_tiles_list,
@@ -424,10 +401,10 @@ class OpenAIGenerator(Generator):
                                                                                                               previous_maps=previous_map)
                 
 
-                llm_agent_reward, astar_path, objectives = self.action_generation(rounds,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,used_char_dict_with_char,"color_tiles_img_with_char",
+                llm_agent_reward, astar_path, objectives = self.action_generation(rounds,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,tile_map_dict,"color_tiles_img_with_char",
                         "char_color_map",walkable_tile_discriptions['choices'][0]['message']['content'],important_tile_discriptions['choices'][0]['message']['content'],goal_discriptions['choices'][0]['message']['content'], save_dir)
                 
-                #agent_reward = -1000
+                
                 world_eval_dict["agent_reward"] = llm_agent_reward
                 world_eval_dict["astar_path"] = astar_path
 
@@ -448,7 +425,7 @@ class OpenAIGenerator(Generator):
 
         color_tiles_img_with_char = ""
 
-        return world_map_fixed, world_map_fixed_with_chars, world_eval_dict, used_char_dict, used_char_dict_with_char, char_color_map_with_char, \
+        return world_map_fixed, world_map_fixed_with_chars, world_eval_dict, used_char_dict, tile_map_dict, color_tiles_img_with_char, \
                 color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, no_of_important_tiles, llm_agent_reward, astar_path
 
 
@@ -700,6 +677,8 @@ class OpenAIGenerator(Generator):
                 except_done = True
             pass
 
-
+        if len(all_episodes_rewards) == 0:
+            all_episodes_rewards.append(0)
+        
         return max(all_episodes_rewards), len(astar_path), objective_tile_dict
     
