@@ -6,7 +6,8 @@ class Config:
     A configuration class for Word2World.
     """
 
-    model = "gpt-4-turbo-2024-04-09"
+    #model = "gpt-4-turbo-2024-04-09"
+    model = 'gpt-4o-mini'
     story_paragraphs = [4, 5]
     total_objectives = 8
     rounds = 2 # number of rounds to loop over
