@@ -16,7 +16,6 @@ def main():
     parser.add_argument('--rounds', type=str, help='Defaults to 3. Used to decide rounds of world generation.')
     parser.add_argument('--experiment_name', type=str, help='Defaults to "Your_word2world".')
     parser.add_argument('--save_dir', type=str, help='Defaults to "outputs/{--experiment_name}"')
-
     args = parser.parse_args()
 
     if args.model:

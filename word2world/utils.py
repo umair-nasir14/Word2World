@@ -60,7 +60,6 @@ def grid_to_csv(grid, output_file_path):
 def dict_to_txt_file(dictionary, file_path):
     """
     Write the key-value pairs of a dictionary to a text file.
-
     :param dictionary: dict, the dictionary to write to the file
     :param file_path: str, the path to the text file where the dictionary will be written
     """

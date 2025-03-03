@@ -124,7 +124,7 @@ dependencies:
     - sympy==1.12
     - tifffile==2024.2.12
     - tokenizers==0.15.2
-    - torch==2.2.1+cu118
+    - torch==2.2.1
     - tornado==6.3.3
     - tqdm==4.66.1
     - traitlets==5.12.0
