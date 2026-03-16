@@ -1,0 +1,4 @@
+streamlit
+Pillow
+numpy
+tqdm
