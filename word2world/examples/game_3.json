@@ -1,7 +1,7 @@
 {
     "round_0": {
-        "story": "On the volcanic archipelago of Tala'kai, where black sand beaches met turquoise lagoons and the great volcano Mau'ahi rumbled with ancient power, lived Lani, a young spirit dancer and keeper of her island's sacred traditions. For generations, the spirit dancers of Tala'kai had performed the Tide Dance at each equinox to maintain the balance between the fire spirits of the volcano and the water spirits of the sea. But when Lani's grandmother\u2014the last elder dancer\u2014passed away before teaching her the final movements of the dance, the balance began to fracture. Earthquakes shook the islands, the lagoons boiled, and fishermen reported seeing a monstrous figure of living magma rising from Mau'ahi's crater: Molokhai, a fire demon freed by the broken ritual.\n\nLani's first objective was to recover the Dance Codex from the Coral Library, a submerged archive built by her ancestors in the reef caves beneath the main island. Her second objective was to master the first three movements of the Tide Dance at the Moonstone Terrace, a sacred platform where the dance had been performed for centuries. Her third was to seek out the Tidecaller hermit on the remote Windward Isle, an outcast shaman who knew fragments of the lost dance movements.\n\nMolokhai, once sealed beneath Mau'ahi by the very dance Lani sought to restore, was determined to never be imprisoned again. The demon commanded legions of lava golems and fire serpents, and his burning presence caused the volcano to grow more unstable by the day. His objective was to shatter the Moonstone Terrace and destroy every trace of the Tide Dance before any mortal could complete the sealing ritual again.\n\nLani's journey took her across the scattered islands of the archipelago. Her fourth objective was to navigate the Boiling Strait, a channel of superheated water between the main island and the outer ring, using traditional wayfinding techniques her grandmother had taught her. Her fifth was to retrieve a Spirit Pearl from the Abyssal Grotto, an underwater cave where bioluminescent creatures guarded treasures left by the sea spirits. Her sixth objective was to rally the scattered island clans at the Council Stones, convincing them to unite against Molokhai's growing threat.\n\nAs Lani pieced together the dance, Molokhai's forces attacked the outer islands. Her seventh objective was to defend the Moonstone Terrace from a wave of lava golems, using spirit water drawn from the Sacred Pool to create barriers that cooled and hardened the magma creatures.\n\nThe climax came during the equinox, with Mau'ahi erupting and Molokhai descending from the crater in a river of fire. Lani's eighth and final objective was to perform the complete Tide Dance on the Moonstone Terrace while the island clans held back Molokhai's army. As Lani moved through the ancient steps, the sea itself responded\u2014waves rose in spiraling patterns that mirrored her dance, crashing against the lava flows. With the final movement, a colossal tide surged over the volcano, meeting Molokhai's fire in a cataclysmic collision of steam and stone. The demon was sealed once more beneath cooled obsidian, and the islands fell quiet. Lani stood on the terrace as rain fell for the first time in months, the new guardian of Tala'kai's eternal balance.",
-        "character_information": "**Lani - The Protagonist Spirit Dancer**\n- **Appearance:** A young woman with deep brown skin, long black hair woven with shells and small coral beads, and dark eyes that reflect firelight with an amber warmth. She wears a traditional dancer's wrap of woven tapa cloth dyed in ocean blue and sunset orange patterns, with bare feet adorned with ankle shells that chime when she moves. Her arms bear spiraling tattoos in dark blue ink that represent the tide patterns\u2014these glow faintly when she channels spirit energy.\n- **Sprite Details:** Animated with fluid, dance-like movement even when walking\u2014every step has grace and rhythm. Dance animations show increasingly complex choreography as she masters new movements. Combat shows her projecting water arcs and creating tidal shields through dance gestures.\n\n**Molokhai - The Antagonist Fire Demon**\n- **Appearance:** A massive humanoid figure standing twenty feet tall, composed entirely of semi-cooled magma with veins of glowing orange-red lava running through a black basalt body. His face is a crude mask of cooling rock with two furnace-bright eyes and a mouth that opens to reveal an interior of pure flame. Volcanic gases vent from fissures across his shoulders and back, and each step leaves molten footprints.\n- **Sprite Details:** Heavy, ground-shaking movement that leaves fire trails. Animations include roaring gouts of flame, hurling magma boulders, and spreading lava across the ground. His body pulses brighter during powerful attacks.\n\n**The Tidecaller Hermit**\n- **Appearance:** An elderly man with weathered dark skin covered in faded green tattoos of sea creatures, a long white beard tangled with seaweed and small shells, and clouded grey-green eyes. He wears only a worn sarong and carries a staff made from a narwhal tusk entwined with living coral.\n- **Sprite Details:** Slow, deliberate movements with unexpected moments of dance-like fluidity. Animations include drawing tide patterns in sand, summoning small water spouts, and teaching dance steps by demonstration.\n\n**Lava Golems**\n- **Appearance:** Squat, powerful humanoid figures about seven feet tall, made of rough black volcanic rock with glowing magma seeping through cracks in their bodies. Their eyes are simple bright orange embers, and they have oversized fists of hardened basalt.\n- **Sprite Details:** Slow, stomping movement that cracks the ground. Attack by slamming fists and throwing chunks of molten rock. When defeated, they crack apart and cool into harmless stone.\n\n**Island Clan Warriors**\n- **Appearance:** Athletic men and women with brown skin and traditional warrior tattoos, wearing woven armor reinforced with shark teeth and coral plates. They carry weapons of hardwood and obsidian\u2014spears, clubs, and throwing discs.\n- **Sprite Details:** Quick, coordinated group movements. Animations include war dances, spear throwing, and shield formations using large wooden shields painted with clan symbols.",
+        "story": "On the volcanic archipelago of Tala'kai, where black sand beaches met turquoise lagoons and the great volcano Mau'ahi rumbled with ancient power, lived Lani, a young spirit dancer and keeper of her island's sacred traditions. For generations, the spirit dancers of Tala'kai had performed the Tide Dance at each equinox to maintain the balance between the fire spirits of the volcano and the water spirits of the sea. But when Lani's grandmother—the last elder dancer—passed away before teaching her the final movements of the dance, the balance began to fracture. Earthquakes shook the islands, the lagoons boiled, and fishermen reported seeing a monstrous figure of living magma rising from Mau'ahi's crater: Molokhai, a fire demon freed by the broken ritual.\n\nLani's first objective was to recover the Dance Codex from the Coral Library, a submerged archive built by her ancestors in the reef caves beneath the main island. Her second objective was to master the first three movements of the Tide Dance at the Moonstone Terrace, a sacred platform where the dance had been performed for centuries. Her third was to seek out the Tidecaller hermit on the remote Windward Isle, an outcast shaman who knew fragments of the lost dance movements.\n\nMolokhai, once sealed beneath Mau'ahi by the very dance Lani sought to restore, was determined to never be imprisoned again. The demon commanded legions of lava golems and fire serpents, and his burning presence caused the volcano to grow more unstable by the day. His objective was to shatter the Moonstone Terrace and destroy every trace of the Tide Dance before any mortal could complete the sealing ritual again.\n\nLani's journey took her across the scattered islands of the archipelago. Her fourth objective was to navigate the Boiling Strait, a channel of superheated water between the main island and the outer ring, using traditional wayfinding techniques her grandmother had taught her. Her fifth was to retrieve a Spirit Pearl from the Abyssal Grotto, an underwater cave where bioluminescent creatures guarded treasures left by the sea spirits. Her sixth objective was to rally the scattered island clans at the Council Stones, convincing them to unite against Molokhai's growing threat.\n\nAs Lani pieced together the dance, Molokhai's forces attacked the outer islands. Her seventh objective was to defend the Moonstone Terrace from a wave of lava golems, using spirit water drawn from the Sacred Pool to create barriers that cooled and hardened the magma creatures.\n\nThe climax came during the equinox, with Mau'ahi erupting and Molokhai descending from the crater in a river of fire. Lani's eighth and final objective was to perform the complete Tide Dance on the Moonstone Terrace while the island clans held back Molokhai's army. As Lani moved through the ancient steps, the sea itself responded—waves rose in spiraling patterns that mirrored her dance, crashing against the lava flows. With the final movement, a colossal tide surged over the volcano, meeting Molokhai's fire in a cataclysmic collision of steam and stone. The demon was sealed once more beneath cooled obsidian, and the islands fell quiet. Lani stood on the terrace as rain fell for the first time in months, the new guardian of Tala'kai's eternal balance.",
+        "character_information": "**Lani - The Protagonist Spirit Dancer**\n- **Appearance:** A young woman with deep brown skin, long black hair woven with shells and small coral beads, and dark eyes that reflect firelight with an amber warmth. She wears a traditional dancer's wrap of woven tapa cloth dyed in ocean blue and sunset orange patterns, with bare feet adorned with ankle shells that chime when she moves. Her arms bear spiraling tattoos in dark blue ink that represent the tide patterns—these glow faintly when she channels spirit energy.\n- **Sprite Details:** Animated with fluid, dance-like movement even when walking—every step has grace and rhythm. Dance animations show increasingly complex choreography as she masters new movements. Combat shows her projecting water arcs and creating tidal shields through dance gestures.\n\n**Molokhai - The Antagonist Fire Demon**\n- **Appearance:** A massive humanoid figure standing twenty feet tall, composed entirely of semi-cooled magma with veins of glowing orange-red lava running through a black basalt body. His face is a crude mask of cooling rock with two furnace-bright eyes and a mouth that opens to reveal an interior of pure flame. Volcanic gases vent from fissures across his shoulders and back, and each step leaves molten footprints.\n- **Sprite Details:** Heavy, ground-shaking movement that leaves fire trails. Animations include roaring gouts of flame, hurling magma boulders, and spreading lava across the ground. His body pulses brighter during powerful attacks.\n\n**The Tidecaller Hermit**\n- **Appearance:** An elderly man with weathered dark skin covered in faded green tattoos of sea creatures, a long white beard tangled with seaweed and small shells, and clouded grey-green eyes. He wears only a worn sarong and carries a staff made from a narwhal tusk entwined with living coral.\n- **Sprite Details:** Slow, deliberate movements with unexpected moments of dance-like fluidity. Animations include drawing tide patterns in sand, summoning small water spouts, and teaching dance steps by demonstration.\n\n**Lava Golems**\n- **Appearance:** Squat, powerful humanoid figures about seven feet tall, made of rough black volcanic rock with glowing magma seeping through cracks in their bodies. Their eyes are simple bright orange embers, and they have oversized fists of hardened basalt.\n- **Sprite Details:** Slow, stomping movement that cracks the ground. Attack by slamming fists and throwing chunks of molten rock. When defeated, they crack apart and cool into harmless stone.\n\n**Island Clan Warriors**\n- **Appearance:** Athletic men and women with brown skin and traditional warrior tattoos, wearing woven armor reinforced with shark teeth and coral plates. They carry weapons of hardwood and obsidian—spears, clubs, and throwing discs.\n- **Sprite Details:** Quick, coordinated group movements. Animations include war dances, spear throwing, and shield formations using large wooden shields painted with clan symbols.",
         "tile_mapping": {
             "Deep ocean": "w",
             "Shallow lagoon": "s",
@@ -29,14 +29,46 @@
         },
         "goals": "The main goal for the protagonist, Lani, is to learn and perform the complete Tide Dance to seal the fire demon Molokhai back beneath the volcano and restore balance to the Tala'kai archipelago.\n\n### Small Goals to Achieve the Main Goal:\n1. **Recover the Dance Codex from the Coral Library.**\n   - Reward: Gains written instructions for the dance movements and their spiritual meanings. (+10 points)\n   - Penalty: Without the codex, Lani must rely on fragmented oral tradition. (-5 points)\n\n2. **Master the first three movements at the Moonstone Terrace.**\n   - Reward: Channels basic tide energy, proving she can complete the full dance. (+15 points)\n   - Penalty: Without mastery, later movements will fail and the sealing will be incomplete. (-10 points)\n\n3. **Find the Tidecaller hermit on Windward Isle.**\n   - Reward: Learns the lost middle movements of the dance. (+20 points)\n   - Penalty: The dance remains incomplete, guaranteeing failure against Molokhai. (-15 points)\n\n4. **Navigate the Boiling Strait.**\n   - Reward: Reaches the outer islands safely with no burns or boat damage. (+15 points)\n   - Penalty: Severe burns and a damaged vessel slow progress dangerously. (-10 points)\n\n5. **Retrieve a Spirit Pearl from the Abyssal Grotto.**\n   - Reward: The pearl amplifies spirit energy, making the dance powerful enough to seal a demon. (+25 points)\n   - Penalty: Without amplification, the dance's power may be insufficient. (-20 points)\n\n6. **Rally the island clans at the Council Stones.**\n   - Reward: United clans provide warriors to defend the terrace during the ritual. (+20 points)\n   - Penalty: Fighting alone against Molokhai's army while dancing is impossible. (-15 points)\n\n7. **Defend the Moonstone Terrace from lava golems.**\n   - Reward: Terrace remains intact and ready for the equinox ritual. (+25 points)\n   - Penalty: Damaged terrace weakens the ritual's power. (-20 points)\n\n8. **Perform the Tide Dance and seal Molokhai.**\n   - Reward: Molokhai is sealed, balance restored, Lani becomes guardian. (+50 points)\n   - Penalty: Eruption destroys Tala'kai and Molokhai is unleashed on the world. (-30 points)",
         "objectives": {
-            "Recover the Dance Codex": ["D", 15, 8],
-            "Master movements at the Moonstone Terrace": ["M", 7, 16],
-            "Find the Tidecaller hermit": ["h", 4, 30],
-            "Navigate the Boiling Strait": ["s", 10, 18],
-            "Retrieve Spirit Pearl from the Grotto": ["P", 16, 6],
-            "Rally the island clans at the Council Stones": ["C", 9, 5],
-            "Defend the Moonstone Terrace": ["F", 8, 16],
-            "Perform the Tide Dance and seal Molokhai": ["#", 20, 17]
+            "Recover the Dance Codex": [
+                "D",
+                15,
+                8
+            ],
+            "Master movements at the Moonstone Terrace": [
+                "M",
+                7,
+                16
+            ],
+            "Find the Tidecaller hermit": [
+                "h",
+                4,
+                30
+            ],
+            "Navigate the Boiling Strait": [
+                "s",
+                10,
+                18
+            ],
+            "Retrieve Spirit Pearl from the Grotto": [
+                "P",
+                16,
+                6
+            ],
+            "Rally the island clans at the Council Stones": [
+                "C",
+                9,
+                5
+            ],
+            "Defend the Moonstone Terrace": [
+                "F",
+                8,
+                16
+            ],
+            "Perform the Tide Dance and seal Molokhai": [
+                "#",
+                20,
+                17
+            ]
         },
         "important_tiles": "['@', '#', 'M', 'C', 'S', 'P', 'D', 'F', 'k', 'l', 'm', 'v', 'e', 'h', 'j']",
         "walkable_tiles": "['w', 's', 'b', 'g', 'r', 'd', 'j', 'p', 'f', 'e', 'v', 'k', '@', 'F', 'M']",
@@ -74,8 +106,36 @@
             "good_feedback_check": 0,
             "bad_feedback_check": 0,
             "no_of_important_tiles": 15,
-            "story_paragraphs": [5, 6],
+            "story_paragraphs": [
+                5,
+                6
+            ],
             "total_objectives": 8
+        },
+        "sprite_mapping": {
+            "w": "world_tileset_data/td_items_steel_pant.png",
+            "s": "world_tileset_data/td_items_potion_yellow.png",
+            "b": "world_tileset_data/td_items_book_black.png",
+            "g": "world_tileset_data/td_world_floor_grass_a.png",
+            "j": "world_tileset_data/td_items_steel_glove.png",
+            "p": "world_tileset_data/td_world_shrub_b.png",
+            "r": "world_tileset_data/td_world_floor_dirt_b.png",
+            "v": "world_tileset_data/tg_space_asteroid_c2.png",
+            "l": "world_tileset_data/td_world_lava.png",
+            "m": "world_tileset_data/td_world_wall_crypt_pool_full.png",
+            "e": "world_tileset_data/tg_world_floor_quad_green_a.png",
+            "d": "world_tileset_data/tg_world_floor_sand_f.png",
+            "f": "world_tileset_data/td_world_wall_stone_h_a.png",
+            "h": "world_tileset_data/td_world_wall_stone_v_a.png",
+            "k": "world_tileset_data/td_world_torch_light1.png",
+            "M": "world_tileset_data/td_world_wall_stone_h_a.png",
+            "C": "world_tileset_data/td_world_floor_cobble_c.png",
+            "S": "world_tileset_data/td_world_wall_crypt_pool_full.png",
+            "P": "world_tileset_data/td_world_blood_d.png",
+            "D": "world_tileset_data/td_world_floor_cobble_c.png",
+            "F": "world_tileset_data/td_world_lava.png",
+            "@": "character_sprite_data/tile_112_48.png",
+            "#": "character_sprite_data/td_monsters_demon_d1.png"
         }
     }
 }

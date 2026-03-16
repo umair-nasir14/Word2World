@@ -315,6 +315,7 @@ class OpenAIGenerator(Generator):
             world_system_prompt = f"You are a 2D game designer that is profficient in designing tile-based maps. Designing any size of the tile-based map is not a problem for you. This is the generation number {round} for you and you will be provided by previous generation results. Improve evaluation scores in each generation. Previous evaluation scores will be provided to you. You are given the goals to achieve and a list of important tiles to place. Additionally you are given 2D tile-maps and stories that were create before for you to make a better map. Consider them to make the world. Do not place the protagonist, the antagonist and the important objects of the story right now. Only create the world right now. Also, consider goals that you extracted earlier and generate while keeping them in context."    
             world_prompt = f"Using the following tile to character mapping:\n{tile_map_dict}\nCreate an entire world on a tile-based grid. Do not create things that would neew more than one tile. For example, a house or a building needs more than one tile to be made. Also, following characters are important to place:\n{important_tiles_list}\n and walkable tiles:\n{walkable_tiles_list}\n Use {no_of_important_tiles} important tiles to create the world. Do not place the protagonist, the antagonist and the important objects of the story right now. Only create the world right now. Create it is a string format with three backticks to start and end with (```) and not in a list format. {history}"
         done = False
+        sprite_filenames = {}
         while not done:
             try:
                 world_discriptions = openai.ChatCompletion.create(model=self.model, messages=[
@@ -401,7 +402,7 @@ class OpenAIGenerator(Generator):
                                                                                                               previous_maps=previous_map)
                 
 
-                llm_agent_reward, astar_path, objectives = self.action_generation(rounds,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,tile_map_dict,"color_tiles_img_with_char",
+                llm_agent_reward, astar_path, objectives, sprite_filenames = self.action_generation(rounds,story['choices'][0]['message']['content'],"protagonist","antagonist", character_discriptions_dict,world_map_fixed,world_map_fixed_with_chars,used_char_dict,tile_map_dict,"color_tiles_img_with_char",
                         "char_color_map",walkable_tile_discriptions['choices'][0]['message']['content'],important_tile_discriptions['choices'][0]['message']['content'],goal_discriptions['choices'][0]['message']['content'], save_dir)
                 
                 
@@ -426,7 +427,7 @@ class OpenAIGenerator(Generator):
         color_tiles_img_with_char = ""
 
         return world_map_fixed, world_map_fixed_with_chars, world_eval_dict, used_char_dict, tile_map_dict, color_tiles_img_with_char, \
-                color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, no_of_important_tiles, llm_agent_reward, astar_path
+                color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, no_of_important_tiles, llm_agent_reward, astar_path, sprite_filenames
 
 
     def action_generation(self, round,
@@ -454,6 +455,7 @@ class OpenAIGenerator(Generator):
         total_episodes = 1
         episodes = 0
         all_episodes_rewards = []
+        sprite_filenames = {}
         try:
             while not except_done:
                 
@@ -524,7 +526,7 @@ class OpenAIGenerator(Generator):
                 tileset_used_dict[character_discriptions_dict["Protagonist"]] = "@"
                 tileset_used_dict[character_discriptions_dict["Antagonist"]] = "#"
                 print("Retrieving images.")
-                tile_images,_s= find_most_similar_images(tileset_used_dict,cfg.tile_data_dir)
+                tile_images, _s, sprite_filenames = find_most_similar_images(tileset_used_dict,cfg.tile_data_dir)
                 print("Images Retrieved.")
                 tile_images_1st_layer = overlap_dict(tile_images, tileset_used_dict_1st_layer)
 
@@ -680,5 +682,5 @@ class OpenAIGenerator(Generator):
         if len(all_episodes_rewards) == 0:
             all_episodes_rewards.append(0)
         
-        return max(all_episodes_rewards), len(astar_path), objective_tile_dict
+        return max(all_episodes_rewards), len(astar_path), objective_tile_dict, sprite_filenames
     

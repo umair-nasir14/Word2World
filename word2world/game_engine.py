@@ -1,6 +1,8 @@
 import ast
+import csv
 import hashlib
 import json
+from difflib import SequenceMatcher
 from functools import lru_cache
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
@@ -119,6 +121,73 @@ def load_tileset_images(tile_mapping: Dict[str, str], tile_data_dir: str) -> Dic
     return _load_tileset_images_cached(tuple(sorted(tile_mapping.items())), tile_data_dir)
 
 
+def _read_metadata_csv(csv_path: Path) -> List[Tuple[str, str]]:
+    if not csv_path.exists():
+        return []
+    entries: List[Tuple[str, str]] = []
+    with open(csv_path, "r", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            entries.append((row["filename"].strip(), row["description"].strip()))
+    return entries
+
+
+@lru_cache(maxsize=2)
+def _cached_metadata(tile_data_dir: str) -> Tuple[List[Tuple[str, str]], List[Tuple[str, str]]]:
+    base = Path(tile_data_dir)
+    world = _read_metadata_csv(base / "world_tileset_data" / "metadata.csv")
+    chars = _read_metadata_csv(base / "character_sprite_data" / "metadata.csv")
+    return world, chars
+
+
+def _text_similarity(a: str, b: str) -> float:
+    a_lower, b_lower = a.lower(), b.lower()
+    a_words = set(a_lower.split())
+    b_words = set(b_lower.split())
+    if not a_words or not b_words:
+        return 0.0
+    overlap = len(a_words & b_words) / max(len(a_words), len(b_words))
+    seq = SequenceMatcher(None, a_lower, b_lower).ratio()
+    return 0.5 * overlap + 0.5 * seq
+
+
+def resolve_sprites_by_text_match(tile_mapping: Dict[str, str], tile_data_dir: str) -> Dict[str, str]:
+    """Match tile descriptions to sprite filenames using lightweight text similarity."""
+    world_entries, char_entries = _cached_metadata(tile_data_dir)
+    if not world_entries and not char_entries:
+        return {}
+
+    filenames: Dict[str, str] = {}
+    for desc, tile_char in tile_mapping.items():
+        entries = char_entries if not tile_char.isalpha() else world_entries
+        subfolder = "character_sprite_data" if not tile_char.isalpha() else "world_tileset_data"
+
+        best_score = -1.0
+        best_filename = None
+        for filename, entry_desc in entries:
+            score = _text_similarity(desc, entry_desc)
+            if score > best_score:
+                best_score = score
+                best_filename = filename
+
+        if best_filename:
+            filenames[tile_char] = f"{subfolder}/{best_filename}"
+    return filenames
+
+
+def _load_sprites_from_filenames(sprite_filenames: Dict[str, str], tile_data_dir: str) -> Dict[str, Image.Image]:
+    """Load sprite images from a pre-computed {tile_char: relative_path} mapping."""
+    base = Path(tile_data_dir)
+    images: Dict[str, Image.Image] = {}
+    for tile_char, rel_path in sprite_filenames.items():
+        full_path = base / rel_path
+        if full_path.exists():
+            try:
+                images[tile_char] = Image.open(full_path).convert("RGBA")
+            except Exception:
+                pass
+    return images
+
+
 def _fallback_color_for_char(tile_char: str) -> Tuple[int, int, int]:
     digest = hashlib.md5(tile_char.encode("utf-8")).hexdigest()
     rgb_hex = f"#{digest[:6]}"
@@ -183,7 +252,15 @@ class Word2WorldGame:
             self.round_data.get("interactive_object_tiles", []), allowed_chars
         )
 
-        self.tileset = load_tileset_images(self.tile_mapping, tile_data_dir)
+        sprite_mapping = self.round_data.get("sprite_mapping")
+        if sprite_mapping:
+            self.tileset = _load_sprites_from_filenames(sprite_mapping, tile_data_dir)
+        elif _asset_files_exist(tile_data_dir):
+            resolved = resolve_sprites_by_text_match(self.tile_mapping, tile_data_dir)
+            self.tileset = _load_sprites_from_filenames(resolved, tile_data_dir) if resolved else {}
+        else:
+            self.tileset = load_tileset_images(self.tile_mapping, tile_data_dir)
+
         self.default_walkable_tile = _most_common_walkable_tile(self.grid_first_layer, self.walkables)
 
         world_text = _rows_to_text(self.grid_world)

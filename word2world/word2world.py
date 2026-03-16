@@ -61,7 +61,7 @@ class Word2World:
             print(f"ROUND # {rounds}\n")
             world_map_fixed, world_map_fixed_with_chars, world_eval_dict, tileset_used_orig, tileset_used_dict, \
             char_color_map, color_tiles_img_with_char, story_paragraphs, objectives, total_objectives, good_feedback_check, bad_feedback_check, \
-            no_of_important_tiles, agent_reward, astar_path= generator.world_generation(rounds,
+            no_of_important_tiles, agent_reward, astar_path, sprite_filenames = generator.world_generation(rounds,
                                                                                         self.previous_story,
                                                                                         cfg.story_paragraphs,
                                                                                         cfg.total_objectives,
@@ -99,6 +99,7 @@ class Word2World:
             self.worlds_history[f"round_{rounds}"] = {"story": story['choices'][0]['message']['content'],
                                                         "character_information": character_discriptions['choices'][0]['message']['content'],
                                                         "tile_mapping": tileset_used_dict,
+                                                        "sprite_mapping": sprite_filenames,
                                                         "goals": goal_discriptions['choices'][0]['message']['content'],
                                                         "objectives": objectives,
                                                         "important_tiles": important_tile_discriptions['choices'][0]['message']['content'],

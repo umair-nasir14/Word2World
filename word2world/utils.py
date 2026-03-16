@@ -509,60 +509,48 @@ def find_most_similar_images(dictionary, csv_path):
     csv_path (str): Path to the CSV file containing image filenames and descriptions.
 
     Returns:
-    Tuple[Dict[str, Image.Image], Dict[str, int]]: A tuple containing two dictionaries,
-        one with the tiles and corresponding Image objects, and the other with tiles and similarity scores.
+    Tuple[Dict[str, Image.Image], Dict[str, int], Dict[str, str]]: A tuple containing
+        images mapped to tiles, similarity scores, and sprite filenames (tile_char -> relative_path).
     """
-    # Load the CSV file
     folder = f'{csv_path}/world_tileset_data'
     folder_char = f'{csv_path}/character_sprite_data'
     data = pd.read_csv(f"{folder}/metadata.csv")
     data_char = pd.read_csv(f"{folder_char}/metadata.csv")
-    # Initialize dictionaries for image objects and similarity scores
     images = {}
     similarity_scores = {}
+    sprite_filenames = {}
 
-    # Iterate over the dictionary to find the most similar image for each tile
     for desc, tile in dictionary.items():
         if not tile.isalpha():
             max_similarity = 0
             selected_image = None
-
-            # Compare each description with the descriptions in the CSV
-            #for _, row in data.iterrows():
-            #    similarity = bert_similarity(desc, row['description'])
-            #    if similarity >= max_similarity:
-            #        max_similarity = similarity
-            #        selected_image = row['filename']
 
             similarities = bert_batch_similarity([desc] * len(list(data_char['description'])), list(data_char['description']))
             max_similarity = max(similarities)
             max_index = similarities.index(max_similarity)
             selected_image = data_char.iloc[max_index]['filename']
 
-            # Load the image and store it along with the similarity score
             if selected_image:
-                #image_path = os.path.join(os.path.dirname(csv_path), selected_image)
                 image_path = f"{folder_char}/{selected_image}"
                 images[tile] = Image.open(image_path).convert("RGBA")
                 similarity_scores[tile] = max_similarity
+                sprite_filenames[tile] = f"character_sprite_data/{selected_image}"
         else:
             max_similarity = 0
             selected_image = None
 
-            # Compare each description with the descriptions in the CSV
             similarities = bert_batch_similarity([desc] * len(list(data['description'])), list(data['description']))
             max_similarity = max(similarities)
             max_index = similarities.index(max_similarity)
             selected_image = data.iloc[max_index]['filename']
 
-            # Load the image and store it along with the similarity score
             if selected_image:
-                #image_path = os.path.join(os.path.dirname(csv_path), selected_image)
                 image_path = f"{folder}/{selected_image}"
                 images[tile] = Image.open(image_path).convert("RGBA")
                 similarity_scores[tile] = max_similarity
+                sprite_filenames[tile] = f"world_tileset_data/{selected_image}"
 
-    return images, similarity_scores
+    return images, similarity_scores, sprite_filenames
 
 def find_most_similar_images_gpt(dictionary, csv_path, openai_function, model):
     """

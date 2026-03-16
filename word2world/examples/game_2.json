@@ -1,7 +1,7 @@
 {
     "round_0": {
-        "story": "Beneath the blazing sun of the Khemaran Desert, where golden dunes stretched endlessly and the air shimmered with heat, lived Kira, a young archaeologist haunted by her father's unfinished work. He had spent decades searching for the lost Temple of Solara, said to contain the Sun Scepter\u2014a relic of immense power that once brought prosperity to the desert kingdoms. His journal, filled with cryptic notes and half-drawn maps, was all Kira had left of him. She swore to complete his quest and prove his theories were more than the ravings of a madman.\n\nKira's first objective was to decipher her father's journal at the Grand Library of Ashara, a crumbling repository of ancient knowledge guarded by scholars. With fragments of a map assembled, her second objective was to resupply at the Dustwind Bazaar, bartering for water skins, climbing gear, and a sun compass. Her third objective was to seek out Nabil, a blind desert navigator who could read the sand patterns and guide her through the treacherous Shifting Sands\u2014a region where dunes moved like living creatures.\n\nBut Kira was not alone in her pursuit. Sethar, a fanatical cultist who believed himself the reincarnation of Khemara's last pharaoh, sought the Sun Scepter to crown himself ruler of the desert. Sethar commanded a network of tomb raiders and sand wraiths\u2014spectral guardians he had bound to his will through forbidden rituals. His objective was clear: reach the Temple of Solara first and claim the scepter, eliminating anyone who stood in his way.\n\nKira's journey led her across perilous terrain. Her fourth objective was to navigate the Shifting Sands without being swallowed by the ever-moving dunes. Her fifth objective was to find the hidden Oasis of Mirrors, a legendary water source that also served as a gateway through the desert's most impassable region. Sixth, she had to decode the Sphinx Riddle carved into the ancient waystone that marked the temple's outer boundary.\n\nAs she drew closer, Sethar's forces intensified their pursuit. Kira's seventh objective was to survive an ambush in the Canyon of Echoes, where Sethar's raiders cornered her among the narrow rock walls. Using her knowledge of ancient traps described in her father's journal, she turned the canyon's own mechanisms against her pursuers.\n\nThe climax came at the Temple of Solara itself. Kira's eighth and final objective was to navigate the temple's deadly trials\u2014rooms of shifting sand, corridors of blinding light, and a final confrontation with Sethar in the Scepter Chamber. Drawing on everything she had learned, Kira outwitted Sethar by activating the temple's ancient guardian constructs, which recognized the journal's seal as belonging to a true seeker. Sethar, consumed by his own greed, was sealed within the temple's depths. Kira emerged into the sunlight clutching the Sun Scepter, ready to restore her father's legacy and bring renewed life to the parched desert kingdoms.",
-        "character_information": "**Kira - The Protagonist Archaeologist**\n- **Appearance:** A young woman in her early twenties with sun-darkened skin, short-cropped black hair kept under a tan desert headwrap, and sharp amber eyes. She wears a fitted sand-colored leather vest over a white linen shirt, khaki trousers tucked into tall boots, and a utility belt heavy with tools\u2014brushes, picks, and a canteen. A weathered satchel containing her father's journal hangs at her side.\n- **Sprite Details:** Animated with confident strides across sand, careful climbing motions, and focused examination poses when studying artifacts. Combat animations show her wielding a short bronze khopesh and throwing flash-powder bombs.\n\n**Sethar - The Antagonist Cultist**\n- **Appearance:** A gaunt, tall man draped in layered black and gold robes adorned with hieroglyphic patterns. His head is shaved, and his eyes are lined with dark kohl that extends into angular patterns across his cheekbones. A golden scarab pendant pulses with an eerie amber glow at his throat. His fingers are adorned with heavy rings inscribed with ancient curses.\n- **Sprite Details:** Moves with unsettling grace, seeming to glide over sand. Animations include summoning sand wraiths with outstretched arms, casting binding spells, and expressions of zealous fury. Combat shows him wielding a curved ritual dagger and conjuring sandstorms.\n\n**Nabil - The Blind Navigator**\n- **Appearance:** An elderly man with deeply weathered brown skin, a white cloth wrapped around his sightless eyes, and a long grey beard braided with small bone beads. He wears loose indigo robes and carries a tall ironwood staff that he uses to read vibrations in the sand.\n- **Sprite Details:** Walks with measured, deliberate steps, staff always tapping ahead. Gestures show him sensing wind direction and sand movement. Teaching animations where he guides Kira's hand to feel sand patterns.\n\n**Sand Wraiths**\n- **Appearance:** Semi-transparent humanoid figures made of swirling sand and shadow, with hollow glowing amber eyes. Their forms constantly shift between solid and particulate, trailing wisps of sand behind them.\n- **Sprite Details:** Float above ground, leaving sand trails. Attack with extending sand-tendrils and engulfing clouds. Dissipate when defeated in bursts of golden particles.",
+        "story": "Beneath the blazing sun of the Khemaran Desert, where golden dunes stretched endlessly and the air shimmered with heat, lived Kira, a young archaeologist haunted by her father's unfinished work. He had spent decades searching for the lost Temple of Solara, said to contain the Sun Scepter—a relic of immense power that once brought prosperity to the desert kingdoms. His journal, filled with cryptic notes and half-drawn maps, was all Kira had left of him. She swore to complete his quest and prove his theories were more than the ravings of a madman.\n\nKira's first objective was to decipher her father's journal at the Grand Library of Ashara, a crumbling repository of ancient knowledge guarded by scholars. With fragments of a map assembled, her second objective was to resupply at the Dustwind Bazaar, bartering for water skins, climbing gear, and a sun compass. Her third objective was to seek out Nabil, a blind desert navigator who could read the sand patterns and guide her through the treacherous Shifting Sands—a region where dunes moved like living creatures.\n\nBut Kira was not alone in her pursuit. Sethar, a fanatical cultist who believed himself the reincarnation of Khemara's last pharaoh, sought the Sun Scepter to crown himself ruler of the desert. Sethar commanded a network of tomb raiders and sand wraiths—spectral guardians he had bound to his will through forbidden rituals. His objective was clear: reach the Temple of Solara first and claim the scepter, eliminating anyone who stood in his way.\n\nKira's journey led her across perilous terrain. Her fourth objective was to navigate the Shifting Sands without being swallowed by the ever-moving dunes. Her fifth objective was to find the hidden Oasis of Mirrors, a legendary water source that also served as a gateway through the desert's most impassable region. Sixth, she had to decode the Sphinx Riddle carved into the ancient waystone that marked the temple's outer boundary.\n\nAs she drew closer, Sethar's forces intensified their pursuit. Kira's seventh objective was to survive an ambush in the Canyon of Echoes, where Sethar's raiders cornered her among the narrow rock walls. Using her knowledge of ancient traps described in her father's journal, she turned the canyon's own mechanisms against her pursuers.\n\nThe climax came at the Temple of Solara itself. Kira's eighth and final objective was to navigate the temple's deadly trials—rooms of shifting sand, corridors of blinding light, and a final confrontation with Sethar in the Scepter Chamber. Drawing on everything she had learned, Kira outwitted Sethar by activating the temple's ancient guardian constructs, which recognized the journal's seal as belonging to a true seeker. Sethar, consumed by his own greed, was sealed within the temple's depths. Kira emerged into the sunlight clutching the Sun Scepter, ready to restore her father's legacy and bring renewed life to the parched desert kingdoms.",
+        "character_information": "**Kira - The Protagonist Archaeologist**\n- **Appearance:** A young woman in her early twenties with sun-darkened skin, short-cropped black hair kept under a tan desert headwrap, and sharp amber eyes. She wears a fitted sand-colored leather vest over a white linen shirt, khaki trousers tucked into tall boots, and a utility belt heavy with tools—brushes, picks, and a canteen. A weathered satchel containing her father's journal hangs at her side.\n- **Sprite Details:** Animated with confident strides across sand, careful climbing motions, and focused examination poses when studying artifacts. Combat animations show her wielding a short bronze khopesh and throwing flash-powder bombs.\n\n**Sethar - The Antagonist Cultist**\n- **Appearance:** A gaunt, tall man draped in layered black and gold robes adorned with hieroglyphic patterns. His head is shaved, and his eyes are lined with dark kohl that extends into angular patterns across his cheekbones. A golden scarab pendant pulses with an eerie amber glow at his throat. His fingers are adorned with heavy rings inscribed with ancient curses.\n- **Sprite Details:** Moves with unsettling grace, seeming to glide over sand. Animations include summoning sand wraiths with outstretched arms, casting binding spells, and expressions of zealous fury. Combat shows him wielding a curved ritual dagger and conjuring sandstorms.\n\n**Nabil - The Blind Navigator**\n- **Appearance:** An elderly man with deeply weathered brown skin, a white cloth wrapped around his sightless eyes, and a long grey beard braided with small bone beads. He wears loose indigo robes and carries a tall ironwood staff that he uses to read vibrations in the sand.\n- **Sprite Details:** Walks with measured, deliberate steps, staff always tapping ahead. Gestures show him sensing wind direction and sand movement. Teaching animations where he guides Kira's hand to feel sand patterns.\n\n**Sand Wraiths**\n- **Appearance:** Semi-transparent humanoid figures made of swirling sand and shadow, with hollow glowing amber eyes. Their forms constantly shift between solid and particulate, trailing wisps of sand behind them.\n- **Sprite Details:** Float above ground, leaving sand trails. Attack with extending sand-tendrils and engulfing clouds. Dissipate when defeated in bursts of golden particles.",
         "tile_mapping": {
             "Sand": "s",
             "Golden dune": "g",
@@ -26,16 +26,48 @@
             "young archaeologist with satchel": "@",
             "gold-robed cultist priest": "#"
         },
-        "goals": "The main goal for the protagonist, Kira, is to find the lost Temple of Solara and retrieve the Sun Scepter to honor her father's legacy and restore prosperity to the desert kingdoms.\n\n### Small Goals to Achieve the Main Goal:\n1. **Decipher father's journal at the Grand Library of Ashara.**\n   - Reward: Assembles a partial map revealing the temple's region. (+10 points)\n   - Penalty: Without the map, Kira wanders into dead-end canyons. (-5 points)\n\n2. **Resupply at the Dustwind Bazaar.**\n   - Reward: Gains essential gear\u2014water, climbing tools, sun compass. (+15 points)\n   - Penalty: Insufficient supplies lead to dehydration and slower travel. (-10 points)\n\n3. **Find and recruit Nabil, the blind desert navigator.**\n   - Reward: Gains safe passage through the Shifting Sands. (+20 points)\n   - Penalty: Without a guide, risk of being swallowed by moving dunes. (-15 points)\n\n4. **Navigate the Shifting Sands.**\n   - Reward: Reaches the inner desert safely with supplies intact. (+15 points)\n   - Penalty: Loses equipment and health to sand traps. (-10 points)\n\n5. **Find the hidden Oasis of Mirrors.**\n   - Reward: Replenishes water and discovers a shortcut through mirage barriers. (+20 points)\n   - Penalty: Dehydration and disorientation from mirages. (-15 points)\n\n6. **Decode the Sphinx Riddle at the ancient waystone.**\n   - Reward: Unlocks the path to the Temple of Solara's entrance. (+25 points)\n   - Penalty: Triggering the wrong answer activates stone guardians. (-20 points)\n\n7. **Survive the ambush in the Canyon of Echoes.**\n   - Reward: Defeats Sethar's raiders and gains their supply cache. (+20 points)\n   - Penalty: Injury and loss of critical journal pages. (-15 points)\n\n8. **Navigate the Temple of Solara and defeat Sethar.**\n   - Reward: Claims the Sun Scepter and seals Sethar within the temple. (+50 points)\n   - Penalty: Failure means the scepter falls into Sethar's hands. (-30 points)",
+        "goals": "The main goal for the protagonist, Kira, is to find the lost Temple of Solara and retrieve the Sun Scepter to honor her father's legacy and restore prosperity to the desert kingdoms.\n\n### Small Goals to Achieve the Main Goal:\n1. **Decipher father's journal at the Grand Library of Ashara.**\n   - Reward: Assembles a partial map revealing the temple's region. (+10 points)\n   - Penalty: Without the map, Kira wanders into dead-end canyons. (-5 points)\n\n2. **Resupply at the Dustwind Bazaar.**\n   - Reward: Gains essential gear—water, climbing tools, sun compass. (+15 points)\n   - Penalty: Insufficient supplies lead to dehydration and slower travel. (-10 points)\n\n3. **Find and recruit Nabil, the blind desert navigator.**\n   - Reward: Gains safe passage through the Shifting Sands. (+20 points)\n   - Penalty: Without a guide, risk of being swallowed by moving dunes. (-15 points)\n\n4. **Navigate the Shifting Sands.**\n   - Reward: Reaches the inner desert safely with supplies intact. (+15 points)\n   - Penalty: Loses equipment and health to sand traps. (-10 points)\n\n5. **Find the hidden Oasis of Mirrors.**\n   - Reward: Replenishes water and discovers a shortcut through mirage barriers. (+20 points)\n   - Penalty: Dehydration and disorientation from mirages. (-15 points)\n\n6. **Decode the Sphinx Riddle at the ancient waystone.**\n   - Reward: Unlocks the path to the Temple of Solara's entrance. (+25 points)\n   - Penalty: Triggering the wrong answer activates stone guardians. (-20 points)\n\n7. **Survive the ambush in the Canyon of Echoes.**\n   - Reward: Defeats Sethar's raiders and gains their supply cache. (+20 points)\n   - Penalty: Injury and loss of critical journal pages. (-15 points)\n\n8. **Navigate the Temple of Solara and defeat Sethar.**\n   - Reward: Claims the Sun Scepter and seals Sethar within the temple. (+50 points)\n   - Penalty: Failure means the scepter falls into Sethar's hands. (-30 points)",
         "objectives": {
-            "Decipher father's journal at the Grand Library": ["Q", 2, 5],
-            "Resupply at the Dustwind Bazaar": ["m", 3, 24],
-            "Find and recruit Nabil the navigator": ["v", 5, 4],
-            "Navigate the Shifting Sands": ["g", 8, 15],
-            "Find the hidden Oasis of Mirrors": ["o", 6, 26],
-            "Decode the Sphinx Riddle": ["S", 11, 15],
-            "Survive the ambush in the Canyon of Echoes": ["n", 13, 10],
-            "Navigate the Temple and defeat Sethar": ["#", 18, 15]
+            "Decipher father's journal at the Grand Library": [
+                "Q",
+                2,
+                5
+            ],
+            "Resupply at the Dustwind Bazaar": [
+                "m",
+                3,
+                24
+            ],
+            "Find and recruit Nabil the navigator": [
+                "v",
+                5,
+                4
+            ],
+            "Navigate the Shifting Sands": [
+                "g",
+                8,
+                15
+            ],
+            "Find the hidden Oasis of Mirrors": [
+                "o",
+                6,
+                26
+            ],
+            "Decode the Sphinx Riddle": [
+                "S",
+                11,
+                15
+            ],
+            "Survive the ambush in the Canyon of Echoes": [
+                "n",
+                13,
+                10
+            ],
+            "Navigate the Temple and defeat Sethar": [
+                "#",
+                18,
+                15
+            ]
         },
         "important_tiles": "['@', '#', 'Q', 'S', 'A', 'T', 'F', 'P', 'W', 'c', 'k', 'n', 'm', 'o', 'p']",
         "walkable_tiles": "['s', 'g', 'r', 'v', 't', 'k', 'b', 'o', 'p', 'n', 'm', '@', 'F', 'W', 'Q']",
@@ -74,8 +106,35 @@
             "good_feedback_check": 0,
             "bad_feedback_check": 0,
             "no_of_important_tiles": 15,
-            "story_paragraphs": [5, 6],
+            "story_paragraphs": [
+                5,
+                6
+            ],
             "total_objectives": 8
+        },
+        "sprite_mapping": {
+            "s": "world_tileset_data/tg_world_floor_sand_f.png",
+            "g": "world_tileset_data/td_world_throne_wood.png",
+            "r": "world_tileset_data/td_world_door_stone_h_closed.png",
+            "o": "world_tileset_data/td_world_water_a1.png",
+            "p": "world_tileset_data/td_world_shrub_b.png",
+            "v": "world_tileset_data/td_world_wall_cave_stair_down.png",
+            "h": "world_tileset_data/td_world_wall_stone_h_a.png",
+            "t": "world_tileset_data/tg_world_floor_panel_metal_grate.png",
+            "c": "world_tileset_data/td_items_compass.png",
+            "k": "world_tileset_data/tg_world_floor_plate_grey.png",
+            "n": "world_tileset_data/tg_space_asteroid_b4.png",
+            "b": "world_tileset_data/td_world_slab_right.png",
+            "m": "world_tileset_data/td_world_statue_winged.png",
+            "W": "world_tileset_data/td_world_house_wall.png",
+            "Q": "world_tileset_data/td_items_scroll.png",
+            "S": "world_tileset_data/td_world_statue_tentacle.png",
+            "A": "world_tileset_data/td_world_bones_b.png",
+            "T": "world_tileset_data/tg_world_chest_closed.png",
+            "F": "world_tileset_data/td_world_trap.png",
+            "P": "world_tileset_data/td_items_leather_chest.png",
+            "@": "character_sprite_data/tile_128_112.png",
+            "#": "character_sprite_data/tile_128_0.png"
         }
     }
 }
