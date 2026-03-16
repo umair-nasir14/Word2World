@@ -174,7 +174,7 @@ def make_example_page(example_path: Path):
         source_id = f"example:{file_stem}:{file_digest}"
 
         st.title(f"Word2World: {file_stem}")
-        st.caption("Play a generated round in the browser.")
+        #st.caption("Play a generated round in the browser.")
 
         with st.sidebar:
             st.header("Rounds")
