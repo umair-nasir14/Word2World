@@ -49,7 +49,7 @@ python main.py \
 To play the generated game:
 
 ```
-python word2world/play_game.py "path_to_game_data\game_data.json"
+python word2world/play_game.py --game_path "path_to_game_data\game_data.json"
 ```
 where `game_data.json` is generated when the Word2World loop is finished and is saved to `\outputs\game_data.json`. This can be modified in `configs` or as `--save_dir` arg.
 
@@ -58,6 +58,20 @@ To play an example world:
 ```
 python word2world/play_game.py
 ```
+
+To play a specific generated round with the desktop runner:
+
+```
+python word2world/play_game.py --game_path "path_to_game_data\game_data.json" --round_number "round_1"
+```
+
+To play in the browser with Streamlit:
+
+```
+streamlit run streamlit_app.py
+```
+
+The Streamlit app lists every available round from every JSON file in `word2world/examples` in the left sidebar, using labels like `example_1 - round_0`, and lets you play the selected round with button-based controls.
 
 ### Results:
 

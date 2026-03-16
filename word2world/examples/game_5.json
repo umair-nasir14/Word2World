@@ -1,0 +1,81 @@
+{
+    "round_0": {
+        "story": "In the frozen reaches of Nordhaven, where the aurora borealis painted the sky in ribbons of green and violet above endless snowfields, lived Sigrid, a young runecaster and the last apprentice of the vanished Runekeeper Order. When her village of Frostmere began suffering an unnatural eternal winter\u2014crops frozen mid-harvest, rivers locked solid even in what should have been summer\u2014Sigrid discovered that the ancient Heartstone, a relic that balanced the seasons, had been shattered. The fragments were scattered across the frozen wilderness, and only by reassembling them could she restore the natural order.\n\nSigrid's first objective was to consult the Rune Archives beneath Frostmere's longhouse, ancient texts that described the Heartstone and its creation. Her second objective was to forge a Rune Compass at the village smithy\u2014a device attuned to the Heartstone fragments that could sense their location through magical resonance. Her third was to cross the Whiteout Plains, a featureless expanse of snow where blizzards could strike without warning, to reach the Evergreen Sanctuary where the first fragment was hidden.\n\nBehind the unnatural winter stood Thrymgar, a frost giant shaman who had deliberately shattered the Heartstone. Thrymgar believed that eternal winter was the natural state of the world and that warmth was a corruption. From his fortress carved into the peak of Mount Rimefang, he commanded ice elementals and winter wolves to guard each fragment location. His objective was to ensure the Heartstone remained broken forever, and to freeze any mortal foolish enough to try restoring it.\n\nSigrid's journey grew more perilous with each fragment recovered. Her fourth objective was to find the fragment hidden in the Glacial Labyrinth, a maze of ice caves where the walls shifted and reformed. Her fifth was to earn the trust of the Snow Elk herders\u2014nomadic people who roamed the tundra and guarded the third fragment as a sacred relic. Her sixth objective was to navigate the Shattered Lake, a vast frozen body of water riddled with thin ice and submerged ruins, where the fourth fragment rested in an underwater temple.\n\nWith each fragment Sigrid recovered, Thrymgar's fury intensified. Her seventh objective was to survive an assault by his elite ice elementals in the Howling Pass, the only route to Mount Rimefang. Using rune magic she had mastered along her journey, Sigrid carved protective wards into the very stone of the pass.\n\nThe climax came at the summit of Mount Rimefang, inside Thrymgar's frozen throne room. Sigrid's eighth and final objective was to reassemble the Heartstone while fending off Thrymgar's most powerful frost magic. As each fragment clicked into place, warmth radiated outward, weakening the giant. With the final piece restored, the Heartstone erupted in golden light, shattering Thrymgar's ice armor and banishing his eternal winter. Spring returned to Nordhaven, and Sigrid became the new Runekeeper, guardian of the seasons' balance.",
+        "character_information": "**Sigrid - The Protagonist Runecaster**\n- **Appearance:** A sturdy young woman with pale skin, ice-blue eyes, and platinum blonde hair woven into two thick braids that frame her face. She wears a heavy fur-lined cloak of deep blue over layered wool and leather armor inscribed with glowing runic patterns. Her boots are reinforced with iron studs for gripping ice, and she carries a gnarled rowan staff topped with a softly glowing runestone.\n- **Sprite Details:** Animated with careful footwork on icy terrain, staff-planting for stability, and rune-casting gestures where symbols glow in the air. Combat shows her projecting runic shields, launching fire runes, and channeling energy through her staff.\n\n**Thrymgar - The Antagonist Frost Giant Shaman**\n- **Appearance:** A towering figure three times the height of a human, with blue-grey skin covered in frost patterns that look like natural tattoos. His eyes glow a piercing white, and his breath comes in visible clouds of freezing mist. He wears armor made from glacial ice and the bones of great beasts, and carries a massive staff of frozen ironwood crowned with a jagged ice crystal.\n- **Sprite Details:** Slow, thunderous movements that shake the ground. Animations include summoning blizzards with sweeping arm gestures, stomping to create ice spikes, and roaring challenges. Combat shows him swinging his staff and conjuring walls of ice.\n\n**Snow Elk Herders**\n- **Appearance:** Hardy nomadic people bundled in layered furs and reindeer hides, with wind-burned faces and kind, cautious eyes. They wear antler-horn headdresses that denote rank and carry long herding staves decorated with colorful woven bands.\n- **Sprite Details:** Move in groups with their elk herds. Animations include tending animals, offering warm drinks, and cautious greeting gestures. Some demonstrate tracking skills by reading snow patterns.\n\n**Ice Elementals**\n- **Appearance:** Humanoid constructs of solid ice, translucent with a blue-white glow at their core. Their forms are angular and crystalline, with sharp edges serving as natural weapons. Each has a rune of binding carved into its chest by Thrymgar.\n- **Sprite Details:** Glide over ice surfaces with grinding sounds. Attack by extending ice-blade arms and projecting frost shards. Shatter into fragments when defeated, the binding rune flickering out.",
+        "tile_mapping": {
+            "Snow": "s",
+            "Ice": "i",
+            "Frozen lake": "f",
+            "Pine tree": "p",
+            "Rocky ground": "r",
+            "Mountain stone": "m",
+            "Grey boulder": "g",
+            "Bare tundra": "b",
+            "Cave floor": "c",
+            "Dark cave": "k",
+            "Warm campfire": "w",
+            "Wooden cabin wall": "l",
+            "Hot spring": "h",
+            "Snowdrift": "v",
+            "Evergreen bush": "e",
+            "Runic stone": "R",
+            "Heartstone altar": "A",
+            "Forge anvil": "G",
+            "Hunting lodge": "H",
+            "Ice throne": "T",
+            "Fragment pedestal": "P",
+            "Trap rune": "F",
+            "young runecaster with glowing staff": "@",
+            "towering frost giant shaman": "#"
+        },
+        "goals": "The main goal for the protagonist, Sigrid, is to reassemble the shattered Heartstone and end the unnatural eternal winter threatening her homeland of Nordhaven.\n\n### Small Goals to Achieve the Main Goal:\n1. **Consult the Rune Archives beneath Frostmere.**\n   - Reward: Learns the Heartstone's history and the location clues for each fragment. (+10 points)\n   - Penalty: Without knowledge, Sigrid searches blindly and wastes precious time. (-5 points)\n\n2. **Forge a Rune Compass at the village smithy.**\n   - Reward: Gains a magical device that detects Heartstone fragments. (+15 points)\n   - Penalty: Searching without the compass makes finding fragments nearly impossible. (-10 points)\n\n3. **Cross the Whiteout Plains to the Evergreen Sanctuary.**\n   - Reward: Recovers the first Heartstone fragment. (+20 points)\n   - Penalty: Blizzard exposure causes frostbite and depletes supplies. (-15 points)\n\n4. **Navigate the Glacial Labyrinth for the second fragment.**\n   - Reward: Second fragment recovered; labyrinth knowledge aids future ice navigation. (+20 points)\n   - Penalty: Getting lost in shifting ice wastes days and health. (-15 points)\n\n5. **Earn the trust of the Snow Elk herders.**\n   - Reward: Herders gift the third fragment and provide warm shelter and supplies. (+25 points)\n   - Penalty: Distrust means no fragment and possible hostile encounter. (-20 points)\n\n6. **Retrieve the fragment from the Shattered Lake ruins.**\n   - Reward: Fourth fragment secured from the underwater temple. (+25 points)\n   - Penalty: Thin ice breaks, risking hypothermia and loss of equipment. (-20 points)\n\n7. **Survive the ice elemental assault in the Howling Pass.**\n   - Reward: Clears the path to Mount Rimefang with no casualties. (+20 points)\n   - Penalty: Injuries and lost companions weaken the final assault. (-15 points)\n\n8. **Reassemble the Heartstone and defeat Thrymgar.**\n   - Reward: Eternal winter ends, Nordhaven is saved, Sigrid becomes Runekeeper. (+50 points)\n   - Penalty: Failure means permanent winter and Thrymgar's dominion. (-30 points)",
+        "objectives": {
+            "Consult the Rune Archives": ["R", 2, 6],
+            "Forge a Rune Compass": ["G", 3, 10],
+            "Cross the Whiteout Plains to Evergreen Sanctuary": ["P", 6, 26],
+            "Navigate the Glacial Labyrinth": ["P", 12, 4],
+            "Earn the trust of the Snow Elk herders": ["H", 10, 20],
+            "Retrieve fragment from the Shattered Lake": ["P", 14, 15],
+            "Survive ice elemental assault in Howling Pass": ["F", 17, 14],
+            "Reassemble the Heartstone and defeat Thrymgar": ["#", 20, 15]
+        },
+        "important_tiles": "['@', '#', 'R', 'A', 'G', 'H', 'T', 'P', 'F', 'w', 'h', 'f', 'k', 'c', 'i']",
+        "walkable_tiles": "['s', 'i', 'b', 'r', 'c', 'k', 'p', 'e', 'f', 'v', 'h', '@', 'F', 'R', 'w']",
+        "interactive_object_tiles": "['R', 'A', 'G', 'H', 'T', 'P', 'F']",
+        "world_1st_layer": {
+            "world": "sssssssssssssssssssssssssssssssss\nslllllssssssssssssssssssssppppss\nsllllsssssssssssssssssssspppppss\nsllllssssssssssssssssssssppppps\nsssssssssvvvsssssvvvssssssppppss\nsssssssssvvvssssssvvvsssssssssss\nbbbbbbbsssssssssssssssssseeeeess\nssssssssssssssssssssssssseeeess\nssssfffffffffffsssssssssssssssss\nssssffffffffffffsssssssssssssss\nssssfffffffffffffssssssssssssss\nssssfffffffffffffssssssrrrssss\nssssfffffffffffsssssssssrrrrrrr\nssssssssssssssssssssssssrrssss\nsssssssssssssffffsssssrrrssssss\nmmmmmmmmmrrrrssssssrrrmmmmmmmm\nmmmmmmmmrrrrrssssrrrrmmmmmmmmmm\nmmmmmmmrrrsssssssrrrmmmmmmmmmmm\nmmmmmmrrrssssssssssrrmmmmmmmmm\nmmmmmrrssssssssssssssrrmmmmmmm\nmmmmrrssssssssssssssssrrmmmmmmm\nmmmrrssssssssssssssssssrmmmmmm\nmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+            "tiles": {
+                "Snow": "s",
+                "Ice": "i",
+                "Frozen lake": "f",
+                "Pine tree": "p",
+                "Rocky ground": "r",
+                "Mountain stone": "m",
+                "Bare tundra": "b",
+                "Snowdrift": "v",
+                "Evergreen bush": "e"
+            }
+        },
+        "world": "sssssssssssssssssssssssssssssssss\nslllllssssssssssssssssssssppppss\ns@lRllssssGsssssssssssssspppppss\nsllllssssssssssssssssssssppppps\nsssssssssvvvsssssvvvssssssppppss\nsssssssssvvvssssssvvvsssssssssss\nbbbbbbbsssssssssssssssssssPeeess\nwssssssssssssssssssssssssseeeess\nssssfffffffffffsssssssssssssssss\nssssffffffffffffsssssssssssssss\nssssfffffffffffffssssssHsssssss\nssssfffffffffffffssssssrrrssss\nssssffPfffffffsssssssssssrrrrrrr\nssssssssssssssssssssssssrrssss\nssssssssssssssfPffsssssrrrssssss\nmmmmmmmmmrrrrssssssrrrmmmmmmmm\nmmmmmmmmrrrrrssssrrrrmmmmmmmmmm\nmmmmmmmrrrssFssssrrrmmmmmmmmmmm\nmmmmmmrrrssssssssssrrmmmmmmmmm\nmmmmmrrssssssssssssssrrmmmmmmm\nmmmmrrsssssssssAss#sssrrmmmmmmm\nmmmrrssssssssssTssssssssrmmmmmm\nmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm",
+        "evaluations": {
+            "Correct Walkable paths": 80,
+            "Aesthetics": 85,
+            "Placement of environment tiles": 85,
+            "Placement of character tiles": 75,
+            "Placement of objects that fulfill goals": 80,
+            "Adherence to story": 95,
+            "Accuracy_of_characters_placed": 100.0,
+            "Accuracy_of_important_tiles_placed": 73.33,
+            "Average_euclidean_distance": 0,
+            "agent_reward": -20,
+            "astar_path": 0
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [5, 6],
+            "total_objectives": 8
+        }
+    }
+}

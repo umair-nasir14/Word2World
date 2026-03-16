@@ -1,0 +1,84 @@
+{
+    "round_0": {
+        "story": "On the salt-sprayed docks of Port Vellara, where creaking ships lined the harbor and the cries of gulls mixed with the shouts of merchants, lived Coral, a young cartographer's apprentice with an extraordinary gift: she could read ocean currents the way others read books. When her mentor, the famed mapmaker Captain Aldric, vanished on an expedition to chart the legendary Maelstrom Archipelago, all that returned was his sea chest\u2014containing an unfinished chart marked with a single cryptic note: \"The Compass of Tides lies where the sea remembers.\"\n\nCoral's first objective was to study Aldric's unfinished charts in the Harbormaster's Archive, piecing together the route he had planned. Her second objective was to secure a seaworthy vessel and recruit a small crew willing to sail into waters most considered cursed. Her third was to learn the ancient art of celestial navigation from Old Maren, a retired sailor who had once glimpsed the Archipelago and barely survived.\n\nUnknown to Coral, Captain Blackthorn\u2014the most feared pirate lord of the Shattered Seas\u2014had intercepted fragments of Aldric's research. Blackthorn coveted the Compass of Tides, an artifact said to grant its bearer dominion over ocean currents, making them unstoppable at sea. With a fleet of black-sailed warships and a crew of cutthroats, Blackthorn's objective was to follow Coral's trail and seize the Compass the moment it was found.\n\nCoral's journey took her through increasingly dangerous waters. Her fourth objective was to navigate the Fog Bank of Whispers, a perpetual mist where phantom ships lured sailors onto hidden reefs. Her fifth was to make landfall on Thornback Isle, a volcanic island surrounded by razor-sharp coral formations, where the first waypoint marker was hidden. Her sixth objective was to dive into the Sunken Grotto beneath the isle to retrieve a crystal key needed to unlock the Compass's resting place.\n\nBlackthorn's fleet was never far behind. Coral's seventh objective was to outmaneuver his flagship, the Crimson Maw, in a harrowing chase through the Needle Straits\u2014a channel so narrow that only the most skilled navigator could thread through its rocky pillars without being dashed to pieces.\n\nThe climax unfolded on the Isle of Tides, the heart of the Maelstrom Archipelago, where the sea itself seemed alive. Coral's eighth and final objective was to reach the Tideheart Shrine at the island's center, solve the ancient navigation puzzle that guarded the Compass, and claim it before Blackthorn. In the final confrontation, Coral used the Compass's power to turn the island's whirlpool defenses against Blackthorn's fleet, scattering his ships across the sea. Blackthorn himself was swept into the maelstrom, and Coral sailed home to Port Vellara as the greatest navigator the Shattered Seas had ever known.",
+        "character_information": "**Coral - The Protagonist Cartographer**\n- **Appearance:** A lean young woman with sun-bleached auburn hair pulled into a practical braid, weathered tan skin, and bright seafoam-green eyes that always seem to be watching the horizon. She wears a fitted navy-blue sailor's coat over a white tunic, dark brown breeches, and tall seaboots. A brass spyglass hangs from her belt alongside a waterproof map case. Her hands are perpetually ink-stained from charting.\n- **Sprite Details:** Animated with confident seafaring movements\u2014steady balance on rolling decks, nimble climbing of rigging, and careful plotting over spread charts. Combat shows her wielding a cutlass and throwing weighted net snares.\n\n**Captain Blackthorn - The Antagonist Pirate Lord**\n- **Appearance:** A broad-shouldered, imposing figure with a scarred face, a black leather eyepatch over his left eye, and a wild mane of dark hair streaked with grey. He wears a long crimson captain's coat with tarnished gold buttons over black armor plate. A massive serrated boarding sword is strapped across his back, and his remaining eye gleams with cruel intelligence.\n- **Sprite Details:** Moves with predatory confidence. Animations include barking orders, scanning the horizon with menace, and explosive combat sequences with his oversized blade. Shows expressions of calculating fury.\n\n**Old Maren - The Retired Sailor**\n- **Appearance:** A small, wiry woman in her seventies with deeply lined dark brown skin, close-cropped silver hair, and milky eyes that still hold a spark of adventure. She wears a faded blue fisherman's sweater and carries a knotted rope that she uses for both walking stick and demonstration of nautical knots.\n- **Sprite Details:** Slow, deliberate movements with surprising moments of agility. Teaching animations showing star charts and knot-tying. Wise nodding and pointing at celestial features.\n\n**Blackthorn's Crew**\n- **Appearance:** A motley collection of scarred, tattooed sailors in mismatched armor\u2014some wearing stolen naval uniforms, others in leather and chain. They carry an assortment of weapons: boarding axes, pistols, and hooked grappling lines.\n- **Sprite Details:** Aggressive movement patterns with swaggering walks and threatening gestures. Attack animations with various weapons. Some swing from ropes or climb ship rigging.",
+        "tile_mapping": {
+            "Deep ocean": "w",
+            "Shallow water": "s",
+            "Sandy beach": "b",
+            "Tropical grass": "g",
+            "Jungle foliage": "j",
+            "Palm tree": "p",
+            "Dirt path": "r",
+            "Dock wood": "d",
+            "Ship deck": "n",
+            "Rock cliff": "f",
+            "Cave floor": "c",
+            "Dark cave": "k",
+            "Coral reef": "e",
+            "Fog bank": "q",
+            "Harbor building": "h",
+            "Archive shelf": "L",
+            "Crystal key pedestal": "K",
+            "Tideheart shrine": "T",
+            "Cannon trap": "F",
+            "Navigation table": "N",
+            "Whirlpool": "W",
+            "young cartographer with spyglass": "@",
+            "scarred pirate lord": "#"
+        },
+        "goals": "The main goal for the protagonist, Coral, is to find the legendary Compass of Tides in the Maelstrom Archipelago and honor her mentor Captain Aldric's legacy.\n\n### Small Goals to Achieve the Main Goal:\n1. **Study Aldric's charts in the Harbormaster's Archive.**\n   - Reward: Reveals the general route to the Archipelago. (+10 points)\n   - Penalty: Sailing blind leads to wasted time and dangerous detours. (-5 points)\n\n2. **Secure a vessel and recruit a crew.**\n   - Reward: A seaworthy ship and loyal crew for the voyage. (+20 points)\n   - Penalty: A leaky hull or unreliable crew threatens the entire expedition. (-15 points)\n\n3. **Learn celestial navigation from Old Maren.**\n   - Reward: Ability to navigate without landmarks in open ocean. (+15 points)\n   - Penalty: Getting lost in featureless waters without this skill. (-10 points)\n\n4. **Navigate the Fog Bank of Whispers.**\n   - Reward: Safe passage through the mist with no hull damage. (+20 points)\n   - Penalty: Reef collision causes ship damage and crew injuries. (-15 points)\n\n5. **Make landfall on Thornback Isle.**\n   - Reward: Discovers the first waypoint and restocks fresh water. (+15 points)\n   - Penalty: Coral reefs tear the hull; emergency repairs needed. (-10 points)\n\n6. **Retrieve the crystal key from the Sunken Grotto.**\n   - Reward: Obtains the key required to access the Tideheart Shrine. (+25 points)\n   - Penalty: Without the key, the shrine remains sealed. (-20 points)\n\n7. **Outmaneuver the Crimson Maw in the Needle Straits.**\n   - Reward: Escapes Blackthorn and gains a significant lead. (+20 points)\n   - Penalty: Captured by Blackthorn's fleet, losing supplies and time. (-15 points)\n\n8. **Reach the Tideheart Shrine and defeat Blackthorn.**\n   - Reward: Claims the Compass of Tides and scatters the pirate fleet. (+50 points)\n   - Penalty: Blackthorn seizes the Compass, dooming the seas to pirate tyranny. (-30 points)",
+        "objectives": {
+            "Study Aldric's charts in the Archive": ["L", 2, 6],
+            "Secure a vessel and recruit a crew": ["n", 4, 4],
+            "Learn celestial navigation from Old Maren": ["N", 3, 10],
+            "Navigate the Fog Bank of Whispers": ["q", 8, 20],
+            "Make landfall on Thornback Isle": ["b", 12, 27],
+            "Retrieve the crystal key from the Sunken Grotto": ["K", 16, 28],
+            "Outmaneuver the Crimson Maw": ["f", 14, 24],
+            "Reach the Tideheart Shrine and defeat Blackthorn": ["#", 19, 28]
+        },
+        "important_tiles": "['@', '#', 'L', 'K', 'T', 'F', 'N', 'W', 'n', 'q', 'e', 'c', 'k', 'f', 'p']",
+        "walkable_tiles": "['w', 's', 'b', 'g', 'r', 'd', 'n', 'c', 'k', 'q', 'j', 'p', 'e', '@', 'F', 'N']",
+        "interactive_object_tiles": "['L', 'K', 'T', 'F', 'N', 'W']",
+        "world_1st_layer": {
+            "world": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nhhhhhsswwwwwwwwwwwwwwwwwwwwwwwwww\nhhhhhhsswwwwwwwwwwwwwwwwwwwwwwwww\nhhhhhddswwwwwwwwwwwwwwwwwwwwwwwww\nhhdddddsswwwwwwwwwwwwwwwwwwwwwwww\nbbbbbbbsswwwwwwwwwwwwwwwwwwwwwwww\nssssssssswwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwweebbfwww\nwwwwwwwwwwwwwwwwwwwwwwwebbbbffwww\nwwwwwwwwwwwwwwwwwwwwwwwbggjjffwww\nwwwwwwwwwwwwwwwwwwwwwwwbgjjjffwww\nwwwwwwwwwwwwwwwwwwwwwwwbgrjjfwwww\nwwwwwwwwwwwwwwwwwwwwwwwsbrccfwwww\nwwwwwwwwwwwwwwwwwwwwwwwwsbkkfwwww\nwwwwwwwwwwwwwwwwwwwwwwwwssfffwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+            "tiles": {
+                "Deep ocean": "w",
+                "Shallow water": "s",
+                "Sandy beach": "b",
+                "Tropical grass": "g",
+                "Jungle foliage": "j",
+                "Palm tree": "p",
+                "Dirt path": "r",
+                "Dock wood": "d",
+                "Harbor building": "h",
+                "Rock cliff": "f",
+                "Cave floor": "c",
+                "Dark cave": "k",
+                "Coral reef": "e"
+            }
+        },
+        "world": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nhhhhhsswwwwwwwwwwwwwwwwwwwwwwwwww\nhLhhhhsswwwwwwwwwwwwwwwwwwwwwwwww\nhhhhhNddswwwwwwwwwwwwwwwwwwwwwwww\nhhdddnddsswwwwwwwwwwwwwwwwwwwwwww\n@bbbbbbsswwwwwwwwwwwwwwwwwwwwwwww\nssssssssswwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwqqqwwwwwwwwwww\nwwwwwwwwwwwwwwwwwqqqqqqqwwwwwwwww\nwwwwwwwwwwwwwwwwwwwqqqwwwwwwwwwww\nwwwwwwwwwwwwwwwwwwwwwwwwweebbfwww\nwwwwwwwwwwwwwwwwwwwwwwwebbpbffwww\nwwwwwwwwwwwwwwwwwwwwwwwbggjjffwww\nwwwwwwwwwwwwwwwwwwwwwwwbFjpjffwww\nwwwwwwwwwwwwwwwwwwwwwwwbgrjjfwwww\nwwwwwwwwwwwwwwwwwwwwwwwsbrKckfwww\nwwwwwwwwwwwwwwwwwwwwwwwwsbkkfwwww\nwwwwwwwwwwwwwwwwwwwwwwwwssfffwwww\nwwwwwwwwwwwwwwwwwwwwwwwwwwww#Twww\nwwwwwwwwwwwwwwwwwwwwwwwwwWwwwwwww",
+        "evaluations": {
+            "Correct Walkable paths": 75,
+            "Aesthetics": 85,
+            "Placement of environment tiles": 85,
+            "Placement of character tiles": 80,
+            "Placement of objects that fulfill goals": 75,
+            "Adherence to story": 90,
+            "Accuracy_of_characters_placed": 100.0,
+            "Accuracy_of_important_tiles_placed": 73.33,
+            "Average_euclidean_distance": 0,
+            "agent_reward": -30,
+            "astar_path": 0
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [5, 6],
+            "total_objectives": 8
+        }
+    }
+}

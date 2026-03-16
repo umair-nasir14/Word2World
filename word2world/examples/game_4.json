@@ -1,0 +1,80 @@
+{
+    "round_0": {
+        "story": "Deep within the Luminous Hollow, a primeval forest where bioluminescent mushrooms towered like ancient oaks and pools of liquid starlight dotted the mossy floor, lived Fern, a young alchemist apprenticed to the forest's guardian druid. The Hollow had always been a place of harmony between nature and magic, but a creeping blight had begun spreading from its eastern edge\u2014plants withered, the luminous glow dimmed, and the forest spirits grew agitated. Fern discovered that the blight originated from the corruption of the Verdant Crystal, the Hollow's magical heart, poisoned by a shadow witch named Morvaine who sought to drain the forest's life force to fuel her own immortality.\n\nFern's first objective was to research the Verdant Crystal's properties in the druid's grimoire, learning what ingredients were needed for a purification elixir. Her second objective was to gather Moonpetal Blossoms from the Whispering Glade\u2014rare flowers that only opened under specific conditions and were a key ingredient. Her third was to earn passage through the Fairy Ring Circle, a gateway guarded by capricious forest sprites who tested all travelers with riddles and illusions.\n\nMorvaine, once a brilliant herbalist who had been exiled from the Hollow decades ago for forbidden experiments, had returned with dark purpose. From her Thorn Tower at the forest's corrupted heart, she commanded shadow vines and blighted creatures. Her objective was to complete the crystal's corruption before anyone could purify it, which would grant her permanent control over the Hollow's vast magical reserves.\n\nFern's journey wound deeper into the forest. Her fourth objective was to harvest Crystal Dewdrops from the Cavern of Echoes, an underground grotto where crystals grew in impossible formations and every sound was magnified a hundredfold. Her fifth was to befriend Bramble, a displaced forest guardian\u2014a massive moss-covered bear spirit\u2014who could guide her through the Blighted Zone where Morvaine's corruption was strongest. Her sixth objective was to brew the Purification Elixir at the Ancient Cauldron Stone, combining all gathered ingredients under precise alchemical conditions.\n\nAs Fern drew closer to the Verdant Crystal, Morvaine's defenses intensified. Fern's seventh objective was to navigate the Labyrinth of Thorns, a maze of razor-sharp shadow vines that Morvaine had grown around the crystal's grove, using her alchemical knowledge to dissolve the thorns with carefully prepared solvents.\n\nThe climax erupted at the Verdant Crystal's grove, where Morvaine stood channeling dark energy into the corrupted stone. Fern's eighth and final objective was to apply the Purification Elixir to the crystal while battling Morvaine's shadow magic. With Bramble holding off the blighted creatures and the forest sprites lending their light, Fern poured the elixir onto the crystal just as Morvaine unleashed her most powerful curse. The crystal absorbed both\u2014the purifying light and the dark curse\u2014and in a blinding explosion, chose the light. Morvaine's connection to the forest was severed, her shadow powers dissipating as the blight receded. The Luminous Hollow blazed with renewed brilliance, and Fern was anointed as its new guardian alchemist.",
+        "character_information": "**Fern - The Protagonist Alchemist**\n- **Appearance:** A small, nimble young woman with wild curly auburn hair adorned with tiny luminescent flowers that she cultivates herself. Her skin has a faint greenish tint from years of handling alchemical herbs. She wears a patchwork leather apron over a moss-green tunic, with dozens of small vials and pouches dangling from loops and hooks. Her eyes are a warm hazel that shifts to bright green when she channels plant magic. She carries a wooden mortar and pestle at her hip and a satchel overflowing with dried herbs.\n- **Sprite Details:** Quick, darting movements reflecting her energetic nature. Animations include mixing potions with theatrical flair, examining plants with magnifying glass, and tossing alchemical grenades. Shows wonder when discovering new ingredients.\n\n**Morvaine - The Antagonist Shadow Witch**\n- **Appearance:** A tall, gaunt woman who might have been beautiful once, now with ashen skin veined with black corruption lines. Her long hair is ink-black with streaks of sickly purple, floating as if suspended in water. She wears robes that appear to be woven from shadow itself, shifting and rippling with dark energy. Her eyes are void-black with pinpoints of violet light, and her fingers are elongated and tipped with thorn-like nails.\n- **Sprite Details:** Moves with unsettling fluidity, sometimes seeming to teleport through shadows. Animations include commanding shadow vines to rise from the ground, draining color from nearby plants, and cackling with dark energy crackling around her. Combat shows her projecting shadow bolts and summoning blighted creatures.\n\n**Bramble - The Forest Guardian Bear Spirit**\n- **Appearance:** An enormous bear, twice the size of a normal grizzly, covered in thick moss and small ferns growing directly from his fur. His eyes glow a gentle amber, and mushrooms sprout along his back ridge. Small woodland creatures nest in his fur. When angry, the plants on his body bristle and thorns extend from his claws.\n- **Sprite Details:** Slow, ponderous movement that belies surprising speed when provoked. Animations include gentle interactions with small creatures, protective stances, and devastating swipe attacks. Shows trust-building sequence with Fern.\n\n**Forest Sprites**\n- **Appearance:** Tiny humanoid beings about six inches tall, with dragonfly-like wings that shimmer with rainbow light. Each sprite has a unique color glow\u2014some gold, some blue, some pink\u2014and they wear clothing made from flower petals and spider silk.\n- **Sprite Details:** Rapid, unpredictable flight patterns leaving trails of colored light. Animations include playful teasing, riddle-posing (shown as floating symbols), and collective light-channeling during the finale.",
+        "tile_mapping": {
+            "Mossy ground": "g",
+            "Giant mushroom cap": "m",
+            "Mushroom stem": "u",
+            "Glowing pool": "p",
+            "Fairy ring grass": "f",
+            "Ancient tree trunk": "t",
+            "Root path": "r",
+            "Stone path": "s",
+            "Vine curtain": "v",
+            "Dark blighted soil": "d",
+            "Crystal formation": "c",
+            "Cave stone": "k",
+            "Bramble thicket": "b",
+            "Luminous moss": "l",
+            "Enchanted flower": "e",
+            "Cauldron stone": "C",
+            "Grimoire pedestal": "G",
+            "Potion shelf": "P",
+            "Thorn gate": "F",
+            "Verdant Crystal": "V",
+            "Shadow altar": "W",
+            "young alchemist with herb satchel": "@",
+            "gaunt shadow witch": "#"
+        },
+        "goals": "The main goal for the protagonist, Fern, is to purify the corrupted Verdant Crystal and save the Luminous Hollow from Morvaine's blighting shadow magic.\n\n### Small Goals to Achieve the Main Goal:\n1. **Research the Verdant Crystal in the druid's grimoire.**\n   - Reward: Learns the purification elixir recipe and crystal's vulnerabilities. (+10 points)\n   - Penalty: Attempting purification without knowledge risks making the corruption worse. (-5 points)\n\n2. **Gather Moonpetal Blossoms from the Whispering Glade.**\n   - Reward: Secures a critical elixir ingredient. (+15 points)\n   - Penalty: Without Moonpetals, the elixir will be incomplete and ineffective. (-10 points)\n\n3. **Earn passage through the Fairy Ring Circle.**\n   - Reward: Gains fairy allies and a shortcut deeper into the forest. (+20 points)\n   - Penalty: Fairies redirect Fern into dangerous territory. (-15 points)\n\n4. **Harvest Crystal Dewdrops from the Cavern of Echoes.**\n   - Reward: Obtains a rare catalyst that amplifies the elixir's power. (+20 points)\n   - Penalty: Cavern collapse traps Fern temporarily, wasting time. (-15 points)\n\n5. **Befriend Bramble, the forest guardian spirit.**\n   - Reward: Gains a powerful protector for the journey through blighted territory. (+25 points)\n   - Penalty: Traversing the Blighted Zone alone is nearly suicidal. (-20 points)\n\n6. **Brew the Purification Elixir at the Ancient Cauldron Stone.**\n   - Reward: Creates the only substance capable of cleansing the Verdant Crystal. (+30 points)\n   - Penalty: Failed brewing wastes ingredients and requires re-gathering. (-25 points)\n\n7. **Navigate the Labyrinth of Thorns.**\n   - Reward: Reaches the Verdant Crystal's grove with elixir intact. (+20 points)\n   - Penalty: Torn equipment and injuries from shadow thorns. (-15 points)\n\n8. **Purify the Verdant Crystal and defeat Morvaine.**\n   - Reward: Saves the Luminous Hollow and becomes its guardian. (+50 points)\n   - Penalty: The Hollow dies and Morvaine achieves immortality. (-30 points)",
+        "objectives": {
+            "Research the Verdant Crystal in the grimoire": ["G", 2, 4],
+            "Gather Moonpetal Blossoms": ["e", 5, 25],
+            "Earn passage through the Fairy Ring": ["f", 8, 15],
+            "Harvest Crystal Dewdrops from the Cavern": ["c", 13, 5],
+            "Befriend Bramble the forest guardian": ["l", 10, 22],
+            "Brew the Purification Elixir": ["C", 11, 15],
+            "Navigate the Labyrinth of Thorns": ["F", 16, 15],
+            "Purify the Crystal and defeat Morvaine": ["#", 19, 15]
+        },
+        "important_tiles": "['@', '#', 'G', 'C', 'P', 'V', 'W', 'F', 'c', 'e', 'f', 'l', 'm', 'p', 'd']",
+        "walkable_tiles": "['g', 'r', 's', 'f', 'l', 'e', 'd', 'c', 'k', 'u', 'b', 'p', '@', 'F', 'G']",
+        "interactive_object_tiles": "['G', 'C', 'P', 'V', 'W', 'F', 'e']",
+        "world_1st_layer": {
+            "world": "ttttttttggggggggggggggggggggtttttt\nttggggggggmmmggggggggmmmggggggtt\ntggggggggguuuggggggggguuugggggt\ntggggggggggggggggggggggggggggggt\ngggggggggggggggggggggggggggggggg\nggmmggggrrrrrrrrrrrrrrggggmmmggg\nggmmggggrgggggggggggggrggguuuggg\nggggggggrgggggggggggggrggggggggg\nggggggggrggggffgffggggrggggggggg\nggggggggrgggfffffffgggrgggggggg\nggggggggrggggfffgfffggrggggggggg\nggggggggrgggggggggggggrggggggggg\nggggggggrrrrrkkkkkrrrrrgggggggg\nggggggggggggkkkkkkgggggggggggg\ngggggggggggkkkcckkkgggggggggggg\ngggggggggggkkkkkkkkggggggggggg\nggggggggddddddddddddddddgggggggg\nggggggddddddddddddddddddddgggggg\nggggddddddddddddddddddddddddgggg\nggddddddddddddddddddddddddddddgg\nggggddddddddddddddddddddddddgggg\ngggggggggggggggggggggggggggggggg",
+            "tiles": {
+                "Mossy ground": "g",
+                "Giant mushroom cap": "m",
+                "Mushroom stem": "u",
+                "Fairy ring grass": "f",
+                "Ancient tree trunk": "t",
+                "Root path": "r",
+                "Dark blighted soil": "d",
+                "Crystal formation": "c",
+                "Cave stone": "k"
+            }
+        },
+        "world": "ttttttttggggggggggggggggggggtttttt\nttggggggggmmmggggggggmmmggggggtt\ntgggGgggggeuuuggggggggguuugggggt\nt@gggggggggggggPgggggggggggggggt\ngggggggggggggggggggggggggggggggg\nggmmggggrrrrrrrrrrrrrrggggemmggg\nggmmggggrgggggggggggggrggguuuggg\nggggggggrgggggggggggggrggggggggg\nggggggggrggggffgffggggrglgggggg\nggggggggrgggfffffffgggrgggggggg\nggggggggrggggfffgfffggrglllgggg\nggggggggrgggggCgggggggrggggggggg\nggggggggrrrrrkkkkkrrrrrgggggggg\nggggggggggggkkckkkgggggggggggg\ngggggggggggkkkcckkkgggggggggggg\ngggggggggggkkkkkkkkggggggggggg\nggggggggdddddddFddddddddgggggggg\nggggggddddddddddddddddddddgggggg\nggggddddddddddddddddddddddddgggg\nggdddddddddddddV#dddddddddddddgg\nggggddddddddddWddddddddddddgggg\ngggggggggggggggggggggggggggggggg",
+        "evaluations": {
+            "Correct Walkable paths": 85,
+            "Aesthetics": 90,
+            "Placement of environment tiles": 90,
+            "Placement of character tiles": 80,
+            "Placement of objects that fulfill goals": 85,
+            "Adherence to story": 95,
+            "Accuracy_of_characters_placed": 100.0,
+            "Accuracy_of_important_tiles_placed": 80.0,
+            "Average_euclidean_distance": 0,
+            "agent_reward": -15,
+            "astar_path": 0
+        },
+        "complexity": {
+            "good_feedback_check": 0,
+            "bad_feedback_check": 0,
+            "no_of_important_tiles": 15,
+            "story_paragraphs": [5, 6],
+            "total_objectives": 8
+        }
+    }
+}
